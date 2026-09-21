@@ -96,26 +96,48 @@ con tu mejor criterio.
 - Nunca modificar antigua/
 
 ## Forma de trabajo
-### Fase 0 — Inventario de imágenes
-Abre cada imagen de recursos/imagenes/sin-clasificar/. Ponle un nombre descriptivo
-en minúsculas con guiones (ej: ventana-corredera-salon-obra.jpg) y muévela a
-productos/, obras/, fabrica/ u otras/. Crea recursos/imagenes/INVENTARIO.md con una
-tabla: nombre nuevo, nombre original, qué muestra, calidad (buena / aceptable / baja),
-uso sugerido. Haz commit y PARA para revisión.
+Trabajo **autónomo hasta terminar la web completa, sin parar entre fases**. Ante una
+duda: decidir con el mejor criterio, seguir y anotarla en PREGUNTAS.md junto con lo
+decidido, para revisarla al final. Solo se interrumpe para pedir algo imprescindible
+(por ejemplo, sudo para instalar dependencias).
+
+### Fase 0 — Inventario de imágenes (HECHA)
+Imágenes clasificadas en productos/, obras/, fabrica/ y otras/, con
+recursos/imagenes/INVENTARIO.md.
 
 ### Fase 1 — Dirección visual
-Construye la portada y una página de sistema (ventanas/a84-abisagrada) como muestra,
-más web/estilo.html con la paleta, las tipografías y los componentes. Haz commit y
-PARA para revisión.
+Portada y una página de sistema (ventanas/a84-abisagrada) como muestra, más
+web/estilo.html con la paleta, las tipografías y los componentes. Commit y seguir.
 
 ### Fase 2 — Construcción completa
-Tras aprobar la Fase 1, construye el resto de páginas del mapa del sitio.
-Crea REDIRECCIONES.md con la correspondencia URL antigua → URL nueva.
-Haz commit al terminar cada bloque de páginas.
+Resto de páginas del mapa del sitio. Crear REDIRECCIONES.md con la correspondencia
+URL antigua → URL nueva. Commit al terminar cada bloque de páginas.
 
 ### Fase 3 — Revisión
-Revisa todas las páginas en ancho de móvil y de escritorio: enlaces rotos, imágenes,
-textos alternativos, títulos. Rellena CHECKLIST.md con lo comprobado. Commit final.
+Revisar todas las páginas en ancho de móvil y de escritorio: enlaces rotos, imágenes,
+textos alternativos, títulos. Rellenar CHECKLIST.md con lo comprobado. Commit final.
+
+### Revisión visual con capturas
+`herramientas/capturas.py` (Playwright + Chromium en .venv) genera capturas de las
+páginas de web/ a 390 px (móvil) y 1440 px (escritorio) en referencia/capturas/.
+Tras cada bloque de páginas: hacer capturas, revisarlas y corregir lo que no esté a la
+altura del brief antes del commit.
+
+### Decisiones ya tomadas por el responsable
+- Cortizo es el proveedor de perfiles; los sistemas A70, A84, A84 HO, C70 y E170 son
+  suyos. Figura entre los partners y se menciona en los textos, sin inventar datos.
+- Las fotos de obra se usan de forma provisional (licencia por confirmar con Cortizo).
+- Logos: de momento los PNG; los vectoriales se pedirán.
+- Descartadas: mapamundi, foto de reunión y foto de la acería.
+- PremiDoor 76: queda fuera de la web (anotado en PREGUNTAS.md).
+- Imagen principal de portada: obras/corredera-elevadora-comedor-vistas-valle.jpeg
+
+### Meta final
+- Todas las páginas del mapa del sitio construidas en web/
+- REDIRECCIONES.md completo
+- CHECKLIST.md rellenado tras revisar todas las páginas en móvil y escritorio
+- PREGUNTAS.md con las decisiones tomadas y lo que falta (fotos, logos, formulario)
+- Resumen final de lo hecho y de lo pendiente por parte del responsable
 
 ## Cómo revisa el responsable
 `python3 -m http.server 8080 --bind 0.0.0.0 --directory web`

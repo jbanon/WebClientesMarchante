@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guía de estilo · Marchante PVC</title>
+  <meta name="description" content="Paleta, tipografías y componentes de la web de Marchante PVC.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+<!-- cabecera -->
+<a class="salto" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor cabecera__barra">
+    <a class="cabecera__logo" href="/" aria-label="Marchante PVC, inicio">
+      <img src="/img/marca/logo-marchante.png" alt="Marchante, sistemas de ventanas" width="352" height="149">
+    </a>
+    <button class="menu-boton" type="button" aria-expanded="false" aria-controls="nav">
+      <span class="menu-boton__texto">Menú</span><span class="menu-boton__icono" aria-hidden="true"></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul class="nav__lista">
+        <li><a href="/ventanas/">Ventanas</a>
+          <ul class="nav__sub">
+            <li><a href="/ventanas/a70-abisagrada/">A70 Abisagrada</a></li>
+            <li><a href="/ventanas/a84-abisagrada/">A84 Abisagrada</a></li>
+            <li><a href="/ventanas/a84-ho-abisagrada/">A84 HO Hoja oculta</a></li>
+            <li><a href="/ventanas/c70-corredera/">C70 Corredera</a></li>
+            <li><a href="/ventanas/e170-elevadora/">E170 Elevadora</a></li>
+            <li><a href="/paneles-y-accesorios/">Paneles y accesorios</a></li>
+          </ul>
+        </li>
+        <li><a href="/acabados/">Acabados</a>
+          <ul class="nav__sub">
+            <li><a href="/acabados/pvc-blanco/">PVC blanco</a></li>
+            <li><a href="/acabados/pvc-foliado/">PVC foliado</a></li>
+            <li><a href="/acabados/vidrios/">Vidrios</a></li>
+          </ul>
+        </li>
+        <li><a href="/profesionales/">Profesionales</a></li>
+        <li><a href="/distribuidores/">Distribuidores</a></li>
+        <li><a href="/empresa/">Empresa</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a class="nav__tel" href="tel:+34967095320">967 095 320</a>
+        <a class="boton" href="/contacto/#presupuesto">Pedir presupuesto</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /cabecera -->
+
+<main id="contenido">
+  <section class="portadilla">
+    <div class="contenedor">
+      <p class="sobretitulo">Documento interno</p>
+      <h1>Guía de <em>estilo</em></h1>
+      <p class="entradilla">Paleta, tipografías y componentes. La idea: mucho blanco, fotografía grande, líneas finas que recuerdan al marco del logotipo y el rojo solo como acento.</p>
+    </div>
+  </section>
+
+  <div class="contenedor">
+
+    <section class="guia-bloque">
+      <h2>Paleta</h2>
+      <ul class="guia-color">
+        <li><div style="background:#17262f"></div><strong>Tinta · #17262F</strong>Titulares, fondos oscuros</li>
+        <li><div style="background:#121c22"></div><strong>Tinta 2 · #121C22</strong>Pie de página</li>
+        <li><div style="background:#4a5257"></div><strong>Texto · #4A5257</strong>Texto corrido (7,9:1)</li>
+        <li><div style="background:#6b7378"></div><strong>Gris medio · #6B7378</strong>Texto auxiliar (4,8:1)</li>
+        <li><div style="background:#abafb5"></div><strong>Gris · #ABAFB5</strong>Texto sobre oscuro</li>
+        <li><div style="background:#e2e4e6"></div><strong>Línea · #E2E4E6</strong>Filetes y rejillas</li>
+        <li><div style="background:#f5f4f1"></div><strong>Papel 2 · #F5F4F1</strong>Secciones alternas</li>
+        <li><div style="background:#fff"></div><strong>Papel · #FFFFFF</strong>Fondo principal</li>
+        <li><div style="background:#ec1c24"></div><strong>Rojo · #EC1C24</strong>Corporativo. Solo filetes y detalles</li>
+        <li><div style="background:#c9121a"></div><strong>Rojo UI · #C9121A</strong>Botones y enlaces (5,9:1 con blanco)</li>
+      </ul>
+      <p class="formulario__nota" style="margin-top:1.5rem">El rojo corporativo #EC1C24 no alcanza contraste AA (4,4:1) con texto blanco pequeño; por eso botones y enlaces usan una variante algo más oscura. Nunca se usa rojo como fondo de grandes superficies.</p>
+    </section>
+
+    <section class="guia-bloque">
+      <h2>Tipografías · servidas desde /fonts/ (licencia OFL)</h2>
+      <p class="t-xl">Instrument Serif <em>Itálica</em></p>
+      <p class="formulario__nota" style="margin:0.5rem 0 2.5rem">Titulares. Peso único 400 y cursiva para el énfasis. Estrecha y elegante: permite cuerpos grandes sin ocupar demasiado.</p>
+      <p class="t-l" style="font-family:var(--sans); font-weight:500">Instrument Sans 400 · 500 · 600</p>
+      <p class="formulario__nota" style="margin:0.5rem 0 2.5rem">Texto, navegación, datos técnicos y formularios. Variable.</p>
+      <h1>Título 1 · Ventanas <em>de PVC</em></h1><br>
+      <h2>Título 2 · Cinco sistemas, <em>una forma</em> de fabricarlos</h2><br>
+      <h3>Título 3 · Para profesionales</h3><br>
+      <h4>Título 4 · Instrucciones de montaje</h4><br>
+      <p class="sobretitulo">Sobretítulo con filete rojo</p>
+      <p class="entradilla">Entradilla. Marchante PVC fabrica y distribuye carpintería de Cortizo PVC®: ventanas, puertas y cerramientos.</p><br>
+      <p class="medida">Texto corrido. La experiencia en fabricación e instalación de ventanas fue el punto de partida. <strong>Negrita para datos importantes</strong> y <a href="#">enlaces subrayados</a> dentro del texto.</p>
+    </section>
+
+    <section class="guia-bloque">
+      <h2>Botones y enlaces</h2>
+      <div class="botones" style="margin-top:0">
+        <a class="boton" href="#">Pedir presupuesto</a>
+        <a class="boton boton--linea" href="#">Ver sistemas</a>
+        <a class="enlace" href="#" style="align-self:center">Enlace con flecha</a>
+      </div>
+    </section>
+
+    <section class="guia-bloque">
+      <h2>Datos clave</h2>
+      <dl class="datos">
+        <div><dt>Transmitancia Uw desde</dt><dd>0,79 <small>W/m²K</small></dd></div>
+        <div><dt>Profundidad de marco</dt><dd>84 <small>mm</small></dd></div>
+        <div><dt>Cámaras</dt><dd>6</dd></div>
+        <div><dt>Acristalamiento máx.</dt><dd>54 <small>mm</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guia-bloque">
+      <h2>Tarjeta de sistema</h2>
+      <ul class="sistemas" style="max-width:54rem; grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))">
+        <li style="grid-column:auto"><a class="sistema" href="/ventanas/a84-abisagrada/">
+          <span class="sistema__num">02</span>
+          <img class="sistema__img" src="/img/productos/perfil-a84-abisagrada-400.webp" width="400" height="400" loading="lazy" alt="Sección del perfil A84">
+          <p class="sistema__tipo">Abisagrada</p><h3>A84</h3>
+          <p>84 mm de marco, 6 cámaras y hasta 54 mm de acristalamiento.</p>
+          <span class="sistema__dato"><span>Uw desde 0,79 W/m²K</span><span aria-hidden="true">→</span></span>
+        </a></li>
+        <li style="grid-column:auto"><a class="sistema" href="/ventanas/e170-elevadora/">
+          <span class="sistema__num">05</span>
+          <img class="sistema__img" src="/img/productos/perfil-e170-elevadora-400.webp" width="400" height="400" loading="lazy" alt="Sección del perfil E170">
+          <p class="sistema__tipo">Corredera elevadora</p><h3>E170</h3>
+          <p>Cerramientos de grandes dimensiones.</p>
+          <span class="sistema__dato"><span>Uw desde 0,9 W/m²K</span><span aria-hidden="true">→</span></span>
+        </a></li>
+      </ul>
+    </section>
+
+    <section class="guia-bloque">
+      <h2>Tabla técnica, lista y descarga</h2>
+      <div class="medida">
+        <table class="tabla">
+          <caption>Ensayo de referencia AEV: 1,23 × 1,48 m, 2 hojas.</caption>
+          <tr><th scope="row">Permeabilidad al aire</th><td>Clase 4</td></tr>
+          <tr><th scope="row">Estanqueidad al agua</th><td>Clase E1500</td></tr>
+        </table>
+        <br>
+        <ul class="lista-limpia"><li><strong>Interior:</strong> practicable y oscilo-batiente.</li><li><strong>Exterior:</strong> practicable.</li></ul>
+        <a class="descarga" href="/docs/ficha-tecnica-a84-abisagrada.pdf"><span class="descarga__tipo" aria-hidden="true">PDF</span><span class="descarga__texto"><strong>Ficha técnica A84 Abisagrada</strong><span>PDF · 2,5 MB</span></span></a>
+      </div>
+    </section>
+
+    <section class="guia-bloque">
+      <h2>Muestras de color</h2>
+      <div class="muestras">
+        <figure class="muestra"><img src="/img/foliado/01-hb-roble-natural.webp" width="480" height="480" loading="lazy" alt="Roble natural"><figcaption><span>HB</span>Roble natural</figcaption></figure>
+        <figure class="muestra"><img src="/img/foliado/04-ud-gris-forja-ultimate.webp" width="480" height="480" loading="lazy" alt="Gris forja"><figcaption><span>UD</span>Gris forja</figcaption></figure>
+        <figure class="muestra"><img src="/img/foliado/03-58-verde-pino.webp" width="480" height="480" loading="lazy" alt="Verde pino"><figcaption><span>58</span>Verde pino</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="guia-bloque">
+      <h2>Preguntas, opinión y aviso</h2>
+      <div class="medida">
+        <div class="preguntas"><details open><summary>¿Necesita algún mantenimiento especial?</summary><div><p>Ninguno especial: un paño, agua y jabón.</p></div></details><details><summary>Pregunta cerrada</summary><div><p>Respuesta.</p></div></details></div>
+        <br><br>
+        <figure class="opinion"><blockquote><p>«Ventanas de PVC fabulosas, presupuesto ajustado y cumplen sus plazos.»</p></blockquote><figcaption><strong>Benito Velasco Mena</strong> <span>· Google Reviews</span></figcaption></figure>
+        <div class="aviso"><h4>Aviso</h4><p>Bloque para advertencias técnicas, como la retirada del film protector antes de tres meses.</p></div>
+      </div>
+    </section>
+
+    <section class="guia-bloque">
+      <h2>Marcador de foto pendiente</h2>
+      <div class="medida"><div class="pendiente" role="img" aria-label="Foto pendiente"><strong>Foto pendiente</strong><span>Descripción de la foto que hace falta en este hueco.</span></div></div>
+    </section>
+
+    <section class="guia-bloque">
+      <h2>Formulario</h2>
+      <form class="formulario medida" action="#" onsubmit="return false">
+        <div class="campo--doble">
+          <div class="campo"><label for="g-n">Nombre</label><input id="g-n" type="text"></div>
+          <div class="campo"><label for="g-s">Sistema</label><select id="g-s"><option>A84 Abisagrada</option></select></div>
+        </div>
+        <fieldset class="campo"><legend>Soy</legend><div class="radios"><label><input type="radio" name="g" checked><span>Particular</span></label><label><input type="radio" name="g"><span>Profesional</span></label></div></fieldset>
+        <div><button class="boton" type="submit">Enviar</button></div>
+      </form>
+    </section>
+  </div>
+
+  <section class="seccion seccion--oscura" style="margin-top:3rem">
+    <div class="contenedor llamada">
+      <div><p class="sobretitulo">Sección oscura</p><h2>Banda de contacto sobre tinta</h2>
+        <div class="botones"><a class="boton" href="#">Pedir presupuesto</a><a class="boton boton--linea" href="#">Escribir por WhatsApp</a></div></div>
+      <div class="llamada__datos"><a class="llamada__tel" href="#">967 095 320</a></div>
+    </div>
+  </section>
+</main>
+
+<!-- pie -->
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div class="pie__marca">
+        <img src="/img/marca/logo-marchante-blanco.png" alt="Marchante, sistemas de ventanas" width="352" height="150" loading="lazy">
+        <p>Fabricante de ventanas, puertas y cerramientos de PVC en Villarrobledo. Fabricante oficial de la red Cortizo PVC®.</p>
+      </div>
+      <div>
+        <h2>Producto</h2>
+        <ul>
+          <li><a href="/ventanas/">Sistemas de ventanas</a></li>
+          <li><a href="/acabados/">Acabados y vidrios</a></li>
+          <li><a href="/acabados/pvc-foliado/">Colores foliados</a></li>
+          <li><a href="/paneles-y-accesorios/">Paneles y accesorios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Marchante</h2>
+        <ul>
+          <li><a href="/empresa/">Empresa</a></li>
+          <li><a href="/profesionales/">Profesionales</a></li>
+          <li><a href="/distribuidores/">Distribuidores</a></li>
+          <li><a href="/contacto/">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contacto</h2>
+        <address>
+          Calle Arturo Díaz Jiménez, 3<br>
+          02600 Villarrobledo (Albacete)<br>
+          <a href="tel:+34967095320">967 095 320</a> · <a href="tel:+34623146934">623 146 934</a><br>
+          <a href="mailto:info@marchantepvc.com">info@marchantepvc.com</a>
+        </address>
+        <ul style="margin-top:1rem; display:flex; gap:1.25rem">
+          <li><a href="https://www.instagram.com/marchantepvc/" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/marchantepvc" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie__base">
+      <p>© Marchante PVC · Sistemas de ventanas</p>
+      <ul>
+        <li><a href="/aviso-legal/">Aviso legal</a></li>
+        <li><a href="/privacidad/">Privacidad</a></li>
+        <li><a href="/cookies/">Cookies</a></li>
+        <li><a href="/proteccion-de-datos/">Protección de datos</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<a class="whatsapp" href="https://wa.me/34623146934" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.42 15.1L2 22l5.03-1.58A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.13 15.07l-.3-.18-2.98.94.96-2.9-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.4 3.9c-.17 0-.45.06-.68.32-.24.26-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.78 2.85 4.4 3.88 2.17.86 2.62.69 3.09.64.47-.04 1.52-.62 1.74-1.22.21-.6.21-1.11.15-1.22-.07-.1-.24-.17-.5-.3-.26-.13-1.52-.75-1.76-.84-.23-.08-.4-.13-.58.13-.17.26-.66.84-.81 1.01-.15.17-.3.2-.56.07-.26-.13-1.09-.4-2.07-1.28a7.8 7.8 0 0 1-1.44-1.79c-.15-.26-.02-.4.11-.53.12-.11.26-.3.39-.45.13-.15.17-.26.26-.43.08-.17.04-.32-.02-.45-.07-.13-.57-1.42-.8-1.94-.2-.47-.41-.4-.57-.41h-.5Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+<script src="/js/sitio.js" defer></script>
+<!-- /pie -->
+</body>
+</html>

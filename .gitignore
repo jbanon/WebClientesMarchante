@@ -2,3 +2,5 @@ antigua/
 .DS_Store
 Thumbs.db
 .venv/
+referencia/capturas/*.png
+__pycache__/
