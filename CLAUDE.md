@@ -123,6 +123,15 @@ páginas de web/ a 390 px (móvil) y 1440 px (escritorio) en referencia/capturas
 Tras cada bloque de páginas: hacer capturas, revisarlas y corregir lo que no esté a la
 altura del brief antes del commit.
 
+### Otras herramientas de autoría (herramientas/)
+Las páginas de web/ son HTML completo y son la fuente de verdad (no hay compilación).
+- `comunes.py`: copia cabecera y pie (herramientas/comunes/*.html) a todas las páginas,
+  entre los marcadores `<!-- cabecera -->` y `<!-- pie -->`. Ejecutar tras tocar el menú
+  o el pie, o al crear una página nueva.
+- `imagenes.py`: regenera web/img/ (WebP) desde recursos/.
+- `enlaces.py`: enlaces rotos, alt, title/description, h1.
+- `captura_menu.py` y `trozo.py`: capturas del menú y recortes para revisar.
+
 ### Decisiones ya tomadas por el responsable
 - Cortizo es el proveedor de perfiles; los sistemas A70, A84, A84 HO, C70 y E170 son
   suyos. Figura entre los partners y se menciona en los textos, sin inventar datos.
