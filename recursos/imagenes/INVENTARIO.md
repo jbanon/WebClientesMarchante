@@ -53,13 +53,37 @@ PREGUNTAS.md; mientras tanto se pondrán marcadores visibles.
 
 ## otras/
 
-| Nombre nuevo | Nombre original | Qué muestra | Tamaño | Calidad | Uso sugerido |
-|---|---|---|---|---|---|
-| `logo-marchante-texto-blanco.png` | `Diseno-sin-titulo-copia-2.png` | Logo Marchante "Sistemas de ventanas" con texto blanco y marco rojo, fondo transparente (versión para fondos oscuros) | 352×150 | baja | Pie de página oscuro, solo a tamaño pequeño. Pedir logo vectorial (SVG/AI). Propuesta: moverlo a `recursos/marca/` |
-| `logo-cortizo-negro.png` | `images.png` | Logo de Cortizo en negro sobre blanco | 800×200 | aceptable | Franja de marcas colaboradoras (aparecía en inicio, empresa, distribuidores y contacto). Propuesta: moverlo a `recursos/marca/partners/` |
-| `mapamundi-puntos-gris.png` | `map.png` | Mapamundi de puntos gris muy claro, fondo transparente. Decoración de la plantilla Industrium | 1340×670 | aceptable | No usar: es relleno decorativo de la plantilla y no lo referencia ninguna página. Candidata a `descartadas/` |
-| `reunion-equipo-desenfocada-cabecera.jpg` | `Diseno-sin-titulo-3.jpg` | Foto de stock desenfocada y velada: personas de espaldas en una mesa de reunión, tablero de madera en primer plano | 1297×595 | baja | No usar: stock genérico, sin relación con el producto, no la referencia ninguna página. Candidata a `descartadas/` |
-| `stock-acereria-fundicion-unsplash.jpg` | `ant-rozetsky-_qWeqqmpBpU-unsplash.jpg` | **STOCK (Unsplash, Ant Rozetsky).** Interior de una acería con cuchara de colada y metal fundido | 1920×1276 | buena (técnica) | No usar: industria pesada del acero, nada que ver con ventanas de PVC, y tono oscuro/naranja opuesto a la dirección visual. No la referencia ninguna página |
+Vacía tras la revisión de la Fase 0 (ver «Movimientos posteriores»).
+
+## Movimientos posteriores a la revisión de la Fase 0
+
+| Archivo | Nombre original | Destino | Motivo |
+|---|---|---|---|
+| `logo-marchante-texto-blanco.png` | `Diseno-sin-titulo-copia-2.png` | `recursos/marca/` | Logo para fondos oscuros (352×150, calidad baja; se usa en el pie). Pendiente vectorial |
+| `logo-cortizo-negro.png` | `images.png` | `recursos/marca/partners/` | Cortizo es el proveedor de perfiles: primer logo de la franja de marcas |
+| `mapamundi-puntos-gris.png` | `map.png` | `descartadas/` | Decoración de la plantilla Industrium |
+| `reunion-equipo-desenfocada-cabecera.jpg` | `Diseno-sin-titulo-3.jpg` | `descartadas/` | Stock genérico de la plantilla |
+| `stock-acereria-fundicion-unsplash.jpg` | `ant-rozetsky-_qWeqqmpBpU-unsplash.jpg` | `descartadas/` | **STOCK (Unsplash, Ant Rozetsky)**: una acería. No se usa |
+
+**No se usa ninguna imagen de stock en la web.**
+
+## Uso real en la web (Fase 2)
+
+| Imagen | Páginas |
+|---|---|
+| `obras/corredera-elevadora-comedor-vistas-valle.jpeg` | Portada (imagen principal), ficha E170, imagen para compartir en redes (`web/img/compartir.jpg`) |
+| `obras/vivienda-unifamiliar-…jpeg` | Portada (bloque empresa), `/empresa/`, `/acabados/`, ficha A84 HO |
+| `obras/fachada-edificio-…jpeg` | `/profesionales/`, `/empresa/`, `/acabados/pvc-foliado/`, ficha A70 |
+| `obras/sala-reuniones-…jpeg` | `/ventanas/`, `/distribuidores/`, ficha A84 |
+| `obras/atico-terraza-…jpeg` | Portada (tarjeta vidrios), `/acabados/vidrios/` |
+| `obras/nino-junto-a-corredera-…jpeg` | `/profesionales/` (mantenimiento), ficha C70 |
+| `obras/…-oscurecida.jpg` | No se usa (se prefiere la versión limpia) |
+| `productos/perfil-*-seccion.webp` (5) | Portada, `/ventanas/`, cada ficha, `/acabados/pvc-blanco/` |
+| `productos/perfil-premidoor76-…png` | No se usa (sistema fuera de la web) |
+| `colores-foliado/*` (18) | `/acabados/pvc-foliado/`, portada, `/acabados/`, fichas |
+
+Las versiones WebP para la web se generan con `herramientas/imagenes.py` en `web/img/`
+(fotos a 640/1024/1600 px, renders recortados a cuadrado a 400/700 px, muestras a 480 px).
 
 ## Resumen para el diseño
 

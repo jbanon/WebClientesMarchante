@@ -18,7 +18,7 @@ ANCHOS = {"movil": (390, 844), "escritorio": (1440, 900)}
 def rutas():
     r = ["/" + str(p.parent.relative_to(WEB)).replace(".", "") for p in sorted(WEB.rglob("index.html"))]
     r = [x if x.endswith("/") else x + "/" for x in r]
-    return r + (["/estilo.html"] if (WEB / "estilo.html").exists() else [])
+    return r + [f"/{n}" for n in ("estilo.html", "404.html") if (WEB / n).exists()]
 
 
 def main():

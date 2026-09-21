@@ -559,3 +559,14 @@ body.menu-abierto .whatsapp { display: none; }
 .tabla--comparativa tbody th a:hover { color: var(--rojo-ui); }
 .tabla--comparativa tbody tr:hover td, .tabla--comparativa tbody tr:hover th { background: var(--papel-2); }
 .tabla-envoltura:focus-visible { outline-offset: 0; }
+
+/* Los hijos de rejilla pueden encoger: evita desbordes por tablas o palabras largas */
+.con-indice > *, .partido > *, .contacto > *, .ficha > * { min-width: 0; }
+.prosa .tabla-envoltura { margin-bottom: 1.5rem; }
+.prosa .tabla-envoltura table { min-width: 42rem; margin-bottom: 0; }
+.prosa { overflow-wrap: break-word; }
+
+/* Objetivos táctiles cómodos en el pie */
+.pie__rejilla ul { gap: 0.1rem; }
+.pie li a, .pie address a { display: inline-block; padding-block: 0.3rem; }
+.pie address { line-height: 1.5; }
