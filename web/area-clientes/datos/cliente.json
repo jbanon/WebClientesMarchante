@@ -1,0 +1,62 @@
+{
+ "meta": {
+  "demo": true,
+  "aviso": "Datos ficticios",
+  "generado": "2026-09-21"
+ },
+ "datos": {
+  "id": 1042,
+  "codigo": "C-01042",
+  "razonSocial": "Carpintería Ejemplo Demo, S.L. (cliente ficticio)",
+  "nif": "B00000000",
+  "tipo": "Instalador / taller",
+  "direccionFiscal": {
+   "linea": "Pol. Ind. Ficticio, nave 7",
+   "cp": "00000",
+   "localidad": "Pueblo Demo",
+   "provincia": "Provincia Inventada"
+  },
+  "direccionesEntrega": [
+   {
+    "alias": "Taller",
+    "linea": "Pol. Ind. Ficticio, nave 7 · 00000 Pueblo Demo",
+    "horario": "L–V 8:00–14:00"
+   },
+   {
+    "alias": "Obra Los Almendros",
+    "linea": "C/ de la Muestra, s/n · Villaejemplo",
+    "horario": "Avisar 24 h antes"
+   }
+  ],
+  "usuarios": [
+   {
+    "nombre": "Usuario Demo",
+    "email": "usuario@cliente-demo.example",
+    "rol": "Administrador",
+    "ultimoAcceso": "2026-09-21"
+   },
+   {
+    "nombre": "Oficina Técnica Demo",
+    "email": "tecnica@cliente-demo.example",
+    "rol": "Solo consulta",
+    "ultimoAcceso": "2026-09-18"
+   }
+  ],
+  "comercial": {
+   "nombre": "Comercial Demo (persona ficticia)",
+   "telefono": "967 095 320",
+   "email": "info@marchantepvc.com"
+  },
+  "condiciones": {
+   "formaPago": "Transferencia 30 días",
+   "tarifa": "Profesional",
+   "descuentoHabitualPct": 10
+  },
+  "avisos": {
+   "pedidoCambiaDeFase": true,
+   "presupuestoPorCaducar": true,
+   "facturaNueva": true,
+   "incidenciaActualizada": true
+  }
+ }
+}

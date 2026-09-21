@@ -42,6 +42,10 @@ def main():
             pag.on("response", lambda r: errores.append(f"{r.status} {r.url}") if r.status >= 400 else None)
             for ruta in sys.argv[1:] or rutas():
                 pag.goto(base + ruta, wait_until="networkidle")
+                if ruta.startswith("/area-clientes/") and ruta != "/area-clientes/":  # demo del portal: sesión simulada
+                    pag.evaluate("sessionStorage.setItem('mpvc-demo-sesion', '1')")
+                    sufijo = "?id=" + {"presupuestos": "PR-2026-0214", "pedidos": "PE-2026-0321", "incidencias": "IN-2026-0031"}.get(ruta.split("/")[2], "") if "detalle" in ruta else ""
+                    pag.goto(base + ruta + sufijo, wait_until="networkidle")
                 # fuerza la carga de las imágenes lazy antes de la captura
                 pag.evaluate("document.querySelectorAll('img[loading=lazy]').forEach(i => i.loading = 'eager')")
                 pag.wait_for_load_state("networkidle")

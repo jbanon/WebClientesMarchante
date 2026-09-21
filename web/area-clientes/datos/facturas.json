@@ -1,0 +1,58 @@
+{
+ "meta": {
+  "demo": true,
+  "aviso": "Datos ficticios",
+  "generado": "2026-09-21"
+ },
+ "datos": [
+  {
+   "id": "FV-2026-0455",
+   "fecha": "2026-09-08",
+   "pedidoId": "PE-2026-0321",
+   "obra": {
+    "nombre": "Residencial Los Almendros (obra ficticia)",
+    "localidad": "Villaejemplo"
+   },
+   "concepto": "Anticipo 40 %",
+   "baseImponible": 2436.84,
+   "iva": 511.74,
+   "total": 2948.58,
+   "vencimiento": "2026-10-08",
+   "formaPago": "Transferencia 30 días",
+   "estado": "pendiente",
+   "pdf": "/area-clientes/docs-demo/factura-demo.pdf"
+  },
+  {
+   "id": "FV-2026-0388",
+   "fecha": "2026-07-21",
+   "pedidoId": "PE-2026-0274",
+   "obra": {
+    "nombre": "Reforma vivienda C/ Inventada, 12",
+    "localidad": "Pueblo Demo"
+   },
+   "baseImponible": 1381.84,
+   "iva": 290.19,
+   "total": 1672.03,
+   "vencimiento": "2026-08-20",
+   "formaPago": "Transferencia 30 días",
+   "estado": "pagada",
+   "pdf": "/area-clientes/docs-demo/factura-demo.pdf"
+  },
+  {
+   "id": "FV-2026-0281",
+   "fecha": "2026-05-22",
+   "pedidoId": "PE-2026-0203",
+   "obra": {
+    "nombre": "Residencial Los Almendros (obra ficticia)",
+    "localidad": "Villaejemplo"
+   },
+   "baseImponible": 2047.0,
+   "iva": 429.87,
+   "total": 2476.87,
+   "vencimiento": "2026-06-21",
+   "formaPago": "Transferencia 30 días",
+   "estado": "pagada",
+   "pdf": "/area-clientes/docs-demo/factura-demo.pdf"
+  }
+ ]
+}

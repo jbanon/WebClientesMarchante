@@ -41,10 +41,10 @@ JS_FIJOS = r"""
 () => { // al final de la página: ¿algún elemento fijo tapa un enlace o botón?
   window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'instant' });
   const tapados = [];
-  document.querySelectorAll('.whatsapp, .barra-contacto').forEach(f => {
+  document.querySelectorAll('.whatsapp, .barra-contacto, .p-nav').forEach(f => {
     if (getComputedStyle(f).display === 'none') return;
     const fr = f.getBoundingClientRect();
-    document.querySelectorAll('main a, main button, footer a, .portal a, .portal button').forEach(e => {
+    document.querySelectorAll('main a, main button, footer a').forEach(e => {
       if (f.contains(e)) return; const r = e.getBoundingClientRect();
       if (r.width && r.bottom > fr.top + 2 && r.top < fr.bottom - 2 && r.right > fr.left + 2 && r.left < fr.right - 2) tapados.push(e.textContent.trim().slice(0, 24));
     });
@@ -80,7 +80,8 @@ def main():
                 # la demo del portal redirige al login si no hay sesión: se simula
                 if ruta.startswith("/area-clientes/") and "acceso" not in ruta:
                     pag.evaluate("try { sessionStorage.setItem('mpvc-demo-sesion', '1'); localStorage.setItem('mpvc-demo-sesion', '1') } catch (e) {}")
-                    pag.goto(base + ruta, wait_until="networkidle")
+                    sufijo = "?id=" + {"presupuestos": "PR-2026-0214", "pedidos": "PE-2026-0321", "incidencias": "IN-2026-0031"}.get(ruta.split("/")[2], "") if "detalle" in ruta else ""
+                    pag.goto(base + ruta + sufijo, wait_until="networkidle")
                 r = pag.evaluate(JS); tap = pag.evaluate(JS_FIJOS)
                 fallos = []
                 if r["desborde"]: fallos.append("SCROLL HORIZONTAL " + ", ".join(r["anchos"]))

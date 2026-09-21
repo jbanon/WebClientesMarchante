@@ -1,0 +1,37 @@
+{
+ "meta": {
+  "demo": true,
+  "aviso": "Datos ficticios",
+  "generado": "2026-09-21"
+ },
+ "datos": [
+  {
+   "id": "AL-2026-0402",
+   "fecha": "2026-07-21",
+   "pedidoId": "PE-2026-0274",
+   "obra": {
+    "nombre": "Reforma vivienda C/ Inventada, 12",
+    "localidad": "Pueblo Demo"
+   },
+   "bultos": 3,
+   "unidades": 6,
+   "estado": "entregado",
+   "recibidoPor": "Almacén Demo",
+   "pdf": "/area-clientes/docs-demo/albaran-demo.pdf"
+  },
+  {
+   "id": "AL-2026-0297",
+   "fecha": "2026-05-22",
+   "pedidoId": "PE-2026-0203",
+   "obra": {
+    "nombre": "Residencial Los Almendros (obra ficticia)",
+    "localidad": "Villaejemplo"
+   },
+   "bultos": 2,
+   "unidades": 5,
+   "estado": "entregado",
+   "recibidoPor": "Almacén Demo",
+   "pdf": "/area-clientes/docs-demo/albaran-demo.pdf"
+  }
+ ]
+}

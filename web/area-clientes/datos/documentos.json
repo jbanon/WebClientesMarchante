@@ -1,0 +1,185 @@
+{
+ "meta": {
+  "demo": true,
+  "aviso": "Datos ficticios",
+  "generado": "2026-09-21"
+ },
+ "datos": [
+  {
+   "id": "DOC-001",
+   "categoria": "ficha_tecnica",
+   "titulo": "Ficha técnica A70 Abisagrada",
+   "sistema": "A70",
+   "url": "/docs/ficha-tecnica-a70-abisagrada.pdf",
+   "pesoMB": 1.5
+  },
+  {
+   "id": "DOC-002",
+   "categoria": "ficha_tecnica",
+   "titulo": "Ficha técnica A84 Abisagrada",
+   "sistema": "A84",
+   "url": "/docs/ficha-tecnica-a84-abisagrada.pdf",
+   "pesoMB": 2.5
+  },
+  {
+   "id": "DOC-003",
+   "categoria": "ficha_tecnica",
+   "titulo": "Ficha técnica A84 Hoja Oculta",
+   "sistema": "A84 Hoja Oculta",
+   "url": "/docs/ficha-tecnica-a84-ho.pdf",
+   "pesoMB": 1.9
+  },
+  {
+   "id": "DOC-004",
+   "categoria": "ficha_tecnica",
+   "titulo": "Ficha técnica C70 Corredera",
+   "sistema": "C70",
+   "url": "/docs/ficha-tecnica-c70-corredera.pdf",
+   "pesoMB": 2.7
+  },
+  {
+   "id": "DOC-005",
+   "categoria": "ficha_tecnica",
+   "titulo": "Ficha técnica E170 Corredera Elevable",
+   "sistema": "E170",
+   "url": "/docs/ficha-tecnica-e170-corredera-elevable.pdf",
+   "pesoMB": 2.1
+  },
+  {
+   "id": "DOC-006",
+   "categoria": "catalogo",
+   "titulo": "Paneles de puerta: todos los modelos",
+   "sistema": null,
+   "url": "/docs/pdf-paneles-miniaturas.pdf",
+   "pesoMB": 4.4
+  },
+  {
+   "id": "DOC-007",
+   "categoria": "catalogo",
+   "titulo": "Catálogo de accesorios",
+   "sistema": null,
+   "url": "/docs/pdf-accesorios.pdf",
+   "pesoMB": 6.8
+  },
+  {
+   "id": "DOC-008",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Avant",
+   "sistema": null,
+   "url": "/docs/01-avant.pdf",
+   "pesoMB": 3.4
+  },
+  {
+   "id": "DOC-009",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Lido",
+   "sistema": null,
+   "url": "/docs/02-lido.pdf",
+   "pesoMB": 1.1
+  },
+  {
+   "id": "DOC-010",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Natura",
+   "sistema": null,
+   "url": "/docs/03-natura.pdf",
+   "pesoMB": 1.2
+  },
+  {
+   "id": "DOC-011",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Avplus",
+   "sistema": null,
+   "url": "/docs/04-avplus.pdf",
+   "pesoMB": 1.2
+  },
+  {
+   "id": "DOC-012",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Innova",
+   "sistema": null,
+   "url": "/docs/05-innova.pdf",
+   "pesoMB": 0.8
+  },
+  {
+   "id": "DOC-013",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Taracea",
+   "sistema": null,
+   "url": "/docs/06-taracea.pdf",
+   "pesoMB": 0.7
+  },
+  {
+   "id": "DOC-014",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Básica",
+   "sistema": null,
+   "url": "/docs/07-basica.pdf",
+   "pesoMB": 0.8
+  },
+  {
+   "id": "DOC-015",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Rústica",
+   "sistema": null,
+   "url": "/docs/08-rustica.pdf",
+   "pesoMB": 1.8
+  },
+  {
+   "id": "DOC-016",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Clásica",
+   "sistema": null,
+   "url": "/docs/09-clasica2.pdf",
+   "pesoMB": 1.5
+  },
+  {
+   "id": "DOC-017",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Tempo",
+   "sistema": null,
+   "url": "/docs/10-tempo.pdf",
+   "pesoMB": 8.4
+  },
+  {
+   "id": "DOC-018",
+   "categoria": "catalogo",
+   "titulo": "Paneles · Colección Ipstamp",
+   "sistema": null,
+   "url": "/docs/11-ip.pdf",
+   "pesoMB": 3.3
+  },
+  {
+   "id": "GUIA-1",
+   "categoria": "guia",
+   "titulo": "Requisitos y técnicas de instalación",
+   "sistema": null,
+   "url": "/profesionales/#instalacion",
+   "pesoMB": null
+  },
+  {
+   "id": "GUIA-2",
+   "categoria": "guia",
+   "titulo": "Mantenimiento de ventanas",
+   "sistema": null,
+   "url": "/profesionales/#mantenimiento",
+   "pesoMB": null
+  },
+  {
+   "id": "GUIA-3",
+   "categoria": "guia",
+   "titulo": "Almacenaje y transporte",
+   "sistema": null,
+   "url": "/profesionales/#transporte",
+   "pesoMB": null
+  },
+  {
+   "id": "GUIA-4",
+   "categoria": "guia",
+   "titulo": "Carta de colores foliados",
+   "sistema": null,
+   "url": "/acabados/pvc-foliado/",
+   "pesoMB": null
+  }
+ ]
+}

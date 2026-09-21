@@ -1,0 +1,465 @@
+{
+ "meta": {
+  "demo": true,
+  "aviso": "Datos ficticios",
+  "generado": "2026-09-21"
+ },
+ "datos": [
+  {
+   "id": "PR-2026-0214",
+   "fecha": "2026-09-15",
+   "validoHasta": "2026-10-15",
+   "estado": "pendiente",
+   "obra": {
+    "nombre": "8 adosados Camino del Ejemplo",
+    "localidad": "Aldea Simulada"
+   },
+   "referenciaCliente": "ADOSADOS-F1",
+   "lineas": [
+    {
+     "posicion": 1,
+     "sistema": "A70 Abisagrada",
+     "descripcion": "Ventana 2 hojas oscilobatiente",
+     "apertura": "Oscilobatiente + practicable",
+     "anchoMm": 1200,
+     "altoMm": 1200,
+     "unidades": 16,
+     "color": {
+      "exterior": "Roble Dorado",
+      "interior": "Blanco"
+     },
+     "vidrio": "4/16/4 bajo emisivo",
+     "precioUnitario": 356.0,
+     "importe": 5696.0
+    },
+    {
+     "posicion": 2,
+     "sistema": "A70 Abisagrada",
+     "descripcion": "Balconera 2 hojas",
+     "apertura": "Practicable",
+     "anchoMm": 1500,
+     "altoMm": 2100,
+     "unidades": 8,
+     "color": {
+      "exterior": "Roble Dorado",
+      "interior": "Blanco"
+     },
+     "vidrio": "3+3/14/4 bajo emisivo",
+     "precioUnitario": 512.0,
+     "importe": 4096.0
+    },
+    {
+     "posicion": 3,
+     "sistema": "C70 Corredera",
+     "descripcion": "Corredera 2 hojas cocina",
+     "apertura": "Corredera",
+     "anchoMm": 1400,
+     "altoMm": 1000,
+     "unidades": 8,
+     "color": {
+      "exterior": "Roble Dorado",
+      "interior": "Blanco"
+     },
+     "vidrio": "4/12/4",
+     "precioUnitario": 268.0,
+     "importe": 2144.0
+    }
+   ],
+   "unidades": 32,
+   "importes": {
+    "bruto": 11936.0,
+    "descuentoPct": 12,
+    "descuento": 1432.32,
+    "baseImponible": 10503.68,
+    "ivaPct": 21,
+    "iva": 2205.77,
+    "total": 12709.45
+   },
+   "plazoEstimadoDias": 25,
+   "observaciones": "Precios con vidrio incluido. Transporte a obra incluido.",
+   "pedidoId": null,
+   "pdf": "/area-clientes/docs-demo/presupuesto-demo.pdf"
+  },
+  {
+   "id": "PR-2026-0209",
+   "fecha": "2026-09-09",
+   "validoHasta": "2026-10-09",
+   "estado": "pendiente",
+   "obra": {
+    "nombre": "Ático Mirador de Prueba",
+    "localidad": "Villaejemplo"
+   },
+   "referenciaCliente": "ATICO-MIRADOR",
+   "lineas": [
+    {
+     "posicion": 1,
+     "sistema": "E170 Corredera Elevable",
+     "descripcion": "Corredera elevable 4 hojas",
+     "apertura": "2 hojas móviles + 2 fijos",
+     "anchoMm": 5600,
+     "altoMm": 2400,
+     "unidades": 1,
+     "color": {
+      "exterior": "Blanco",
+      "interior": "Blanco"
+     },
+     "vidrio": "4+4/16/6 control solar",
+     "precioUnitario": 5240.0,
+     "importe": 5240.0
+    }
+   ],
+   "unidades": 1,
+   "importes": {
+    "bruto": 5240.0,
+    "descuentoPct": 8,
+    "descuento": 419.2,
+    "baseImponible": 4820.8,
+    "ivaPct": 21,
+    "iva": 1012.37,
+    "total": 5833.17
+   },
+   "plazoEstimadoDias": 30,
+   "observaciones": "Requiere medición definitiva en obra antes de fabricar.",
+   "pedidoId": null,
+   "pdf": "/area-clientes/docs-demo/presupuesto-demo.pdf"
+  },
+  {
+   "id": "PR-2026-0198",
+   "fecha": "2026-08-28",
+   "validoHasta": "2026-09-27",
+   "estado": "en_revision",
+   "obra": {
+    "nombre": "Oficinas Nave Imaginaria",
+    "localidad": "Polígono Ficticio"
+   },
+   "referenciaCliente": "NAVE-OFIC",
+   "lineas": [
+    {
+     "posicion": 1,
+     "sistema": "A84 Abisagrada",
+     "descripcion": "Ventana 1 hoja + fijo inferior",
+     "apertura": "Oscilobatiente",
+     "anchoMm": 1000,
+     "altoMm": 1600,
+     "unidades": 5,
+     "color": {
+      "exterior": "Nogal",
+      "interior": "Nogal"
+     },
+     "vidrio": "4/16/4 bajo emisivo",
+     "precioUnitario": 445.0,
+     "importe": 2225.0
+    }
+   ],
+   "unidades": 5,
+   "importes": {
+    "bruto": 2225.0,
+    "descuentoPct": 8,
+    "descuento": 178.0,
+    "baseImponible": 2047.0,
+    "ivaPct": 21,
+    "iva": 429.87,
+    "total": 2476.87
+   },
+   "plazoEstimadoDias": 20,
+   "observaciones": "Pendiente de confirmar el color interior.",
+   "pedidoId": null,
+   "pdf": "/area-clientes/docs-demo/presupuesto-demo.pdf"
+  },
+  {
+   "id": "PR-2026-0187",
+   "fecha": "2026-08-04",
+   "validoHasta": "2026-09-03",
+   "estado": "aceptado",
+   "obra": {
+    "nombre": "Residencial Los Almendros (obra ficticia)",
+    "localidad": "Villaejemplo"
+   },
+   "referenciaCliente": "ALM-BLOQUE-A",
+   "lineas": [
+    {
+     "posicion": 1,
+     "sistema": "A84 Abisagrada",
+     "descripcion": "Ventana 2 hojas oscilobatiente",
+     "apertura": "Oscilobatiente + practicable",
+     "anchoMm": 1400,
+     "altoMm": 1200,
+     "unidades": 6,
+     "color": {
+      "exterior": "Gris Antracita",
+      "interior": "Blanco"
+     },
+     "vidrio": "4/16/4 bajo emisivo",
+     "precioUnitario": 412.5,
+     "importe": 2475.0
+    },
+    {
+     "posicion": 2,
+     "sistema": "A84 Abisagrada",
+     "descripcion": "Balconera 1 hoja oscilobatiente",
+     "apertura": "Oscilobatiente",
+     "anchoMm": 900,
+     "altoMm": 2150,
+     "unidades": 3,
+     "color": {
+      "exterior": "Gris Antracita",
+      "interior": "Blanco"
+     },
+     "vidrio": "3+3/14/4 bajo emisivo",
+     "precioUnitario": 468.0,
+     "importe": 1404.0
+    },
+    {
+     "posicion": 3,
+     "sistema": "E170 Corredera Elevable",
+     "descripcion": "Corredera elevable 2 hojas",
+     "apertura": "1 hoja móvil + 1 fijo",
+     "anchoMm": 3200,
+     "altoMm": 2300,
+     "unidades": 1,
+     "color": {
+      "exterior": "Gris Antracita",
+      "interior": "Blanco"
+     },
+     "vidrio": "4+4/16/6 control solar",
+     "precioUnitario": 2890.0,
+     "importe": 2890.0
+    }
+   ],
+   "unidades": 10,
+   "importes": {
+    "bruto": 6769.0,
+    "descuentoPct": 10,
+    "descuento": 676.9,
+    "baseImponible": 6092.1,
+    "ivaPct": 21,
+    "iva": 1279.34,
+    "total": 7371.44
+   },
+   "plazoEstimadoDias": 25,
+   "observaciones": "",
+   "pedidoId": "PE-2026-0321",
+   "pdf": "/area-clientes/docs-demo/presupuesto-demo.pdf"
+  },
+  {
+   "id": "PR-2026-0171",
+   "fecha": "2026-07-14",
+   "validoHasta": "2026-08-13",
+   "estado": "aceptado",
+   "obra": {
+    "nombre": "Oficinas Nave Imaginaria",
+    "localidad": "Polígono Ficticio"
+   },
+   "referenciaCliente": "NAVE-FACHADA",
+   "lineas": [
+    {
+     "posicion": 1,
+     "sistema": "A84 Hoja Oculta",
+     "descripcion": "Ventana 2 hojas, hoja oculta",
+     "apertura": "Oscilobatiente + practicable",
+     "anchoMm": 1800,
+     "altoMm": 1400,
+     "unidades": 10,
+     "color": {
+      "exterior": "Negro Ultramate",
+      "interior": "Negro Ultramate"
+     },
+     "vidrio": "4/18/4/18/4 bajo emisivo",
+     "precioUnitario": 698.0,
+     "importe": 6980.0
+    },
+    {
+     "posicion": 2,
+     "sistema": "A84 Hoja Oculta",
+     "descripcion": "Fijo lateral",
+     "apertura": "Fijo",
+     "anchoMm": 600,
+     "altoMm": 1400,
+     "unidades": 10,
+     "color": {
+      "exterior": "Negro Ultramate",
+      "interior": "Negro Ultramate"
+     },
+     "vidrio": "4/18/4/18/4 bajo emisivo",
+     "precioUnitario": 214.0,
+     "importe": 2140.0
+    }
+   ],
+   "unidades": 20,
+   "importes": {
+    "bruto": 9120.0,
+    "descuentoPct": 10,
+    "descuento": 912.0,
+    "baseImponible": 8208.0,
+    "ivaPct": 21,
+    "iva": 1723.68,
+    "total": 9931.68
+   },
+   "plazoEstimadoDias": 30,
+   "observaciones": "",
+   "pedidoId": "PE-2026-0298",
+   "pdf": "/area-clientes/docs-demo/presupuesto-demo.pdf"
+  },
+  {
+   "id": "PR-2026-0156",
+   "fecha": "2026-06-22",
+   "validoHasta": "2026-07-22",
+   "estado": "aceptado",
+   "obra": {
+    "nombre": "Reforma vivienda C/ Inventada, 12",
+    "localidad": "Pueblo Demo"
+   },
+   "referenciaCliente": "REF-INV-12",
+   "lineas": [
+    {
+     "posicion": 1,
+     "sistema": "A70 Abisagrada",
+     "descripcion": "Ventana 1 hoja oscilobatiente",
+     "apertura": "Oscilobatiente",
+     "anchoMm": 800,
+     "altoMm": 1100,
+     "unidades": 4,
+     "color": {
+      "exterior": "Blanco",
+      "interior": "Blanco"
+     },
+     "vidrio": "4/16/4",
+     "precioUnitario": 228.0,
+     "importe": 912.0
+    },
+    {
+     "posicion": 2,
+     "sistema": "C70 Corredera",
+     "descripcion": "Corredera 2 hojas",
+     "apertura": "Corredera",
+     "anchoMm": 1600,
+     "altoMm": 1200,
+     "unidades": 2,
+     "color": {
+      "exterior": "Blanco",
+      "interior": "Blanco"
+     },
+     "vidrio": "4/12/4",
+     "precioUnitario": 295.0,
+     "importe": 590.0
+    }
+   ],
+   "unidades": 6,
+   "importes": {
+    "bruto": 1502.0,
+    "descuentoPct": 8,
+    "descuento": 120.16,
+    "baseImponible": 1381.84,
+    "ivaPct": 21,
+    "iva": 290.19,
+    "total": 1672.03
+   },
+   "plazoEstimadoDias": 15,
+   "observaciones": "",
+   "pedidoId": "PE-2026-0274",
+   "pdf": "/area-clientes/docs-demo/presupuesto-demo.pdf"
+  },
+  {
+   "id": "PR-2026-0139",
+   "fecha": "2026-06-02",
+   "validoHasta": "2026-07-02",
+   "estado": "caducado",
+   "obra": {
+    "nombre": "Reforma vivienda C/ Inventada, 12",
+    "localidad": "Pueblo Demo"
+   },
+   "referenciaCliente": "REF-INV-12-B",
+   "lineas": [
+    {
+     "posicion": 1,
+     "sistema": "A70 Abisagrada",
+     "descripcion": "Ventana 1 hoja oscilobatiente",
+     "apertura": "Oscilobatiente",
+     "anchoMm": 800,
+     "altoMm": 1100,
+     "unidades": 4,
+     "color": {
+      "exterior": "Blanco",
+      "interior": "Blanco"
+     },
+     "vidrio": "4/16/4",
+     "precioUnitario": 228.0,
+     "importe": 912.0
+    },
+    {
+     "posicion": 2,
+     "sistema": "C70 Corredera",
+     "descripcion": "Corredera 2 hojas",
+     "apertura": "Corredera",
+     "anchoMm": 1600,
+     "altoMm": 1200,
+     "unidades": 2,
+     "color": {
+      "exterior": "Blanco",
+      "interior": "Blanco"
+     },
+     "vidrio": "4/12/4",
+     "precioUnitario": 295.0,
+     "importe": 590.0
+    }
+   ],
+   "unidades": 6,
+   "importes": {
+    "bruto": 1502.0,
+    "descuentoPct": 5,
+    "descuento": 75.1,
+    "baseImponible": 1426.9,
+    "ivaPct": 21,
+    "iva": 299.65,
+    "total": 1726.55
+   },
+   "plazoEstimadoDias": 15,
+   "observaciones": "",
+   "pedidoId": null,
+   "pdf": "/area-clientes/docs-demo/presupuesto-demo.pdf"
+  },
+  {
+   "id": "PR-2026-0102",
+   "fecha": "2026-04-20",
+   "validoHasta": "2026-05-20",
+   "estado": "aceptado",
+   "obra": {
+    "nombre": "Residencial Los Almendros (obra ficticia)",
+    "localidad": "Villaejemplo"
+   },
+   "referenciaCliente": "ALM-PILOTO",
+   "lineas": [
+    {
+     "posicion": 1,
+     "sistema": "A84 Abisagrada",
+     "descripcion": "Ventana 1 hoja + fijo inferior",
+     "apertura": "Oscilobatiente",
+     "anchoMm": 1000,
+     "altoMm": 1600,
+     "unidades": 5,
+     "color": {
+      "exterior": "Nogal",
+      "interior": "Nogal"
+     },
+     "vidrio": "4/16/4 bajo emisivo",
+     "precioUnitario": 445.0,
+     "importe": 2225.0
+    }
+   ],
+   "unidades": 5,
+   "importes": {
+    "bruto": 2225.0,
+    "descuentoPct": 8,
+    "descuento": 178.0,
+    "baseImponible": 2047.0,
+    "ivaPct": 21,
+    "iva": 429.87,
+    "total": 2476.87
+   },
+   "plazoEstimadoDias": 20,
+   "observaciones": "",
+   "pedidoId": "PE-2026-0203",
+   "pdf": "/area-clientes/docs-demo/presupuesto-demo.pdf"
+  }
+ ]
+}

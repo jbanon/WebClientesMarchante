@@ -1,0 +1,63 @@
+{
+ "meta": {
+  "demo": true,
+  "aviso": "Datos ficticios",
+  "generado": "2026-09-21"
+ },
+ "datos": [
+  {
+   "id": "IN-2026-0031",
+   "fechaApertura": "2026-07-24",
+   "pedidoId": "PE-2026-0274",
+   "tipo": "Vidrio",
+   "asunto": "Vidrio rayado en corredera de cocina",
+   "descripcion": "Al retirar el film hemos visto un arañazo de unos 10 cm en el vidrio exterior de la corredera (posición 2).",
+   "estado": "en_curso",
+   "fotos": 2,
+   "historial": [
+    {
+     "fecha": "2026-07-24",
+     "autor": "Usuario Demo",
+     "texto": "Incidencia abierta desde el portal con 2 fotos."
+    },
+    {
+     "fecha": "2026-07-25",
+     "autor": "Posventa Marchante (ficticio)",
+     "texto": "Recibido. Pedimos el vidrio de reposición al proveedor."
+    },
+    {
+     "fecha": "2026-09-16",
+     "autor": "Posventa Marchante (ficticio)",
+     "texto": "Vidrio recibido en fábrica. Os llamamos para acordar la sustitución."
+    }
+   ]
+  },
+  {
+   "id": "IN-2026-0019",
+   "fechaApertura": "2026-05-28",
+   "pedidoId": "PE-2026-0203",
+   "tipo": "Herraje",
+   "asunto": "Manilla con holgura en ventana del salón",
+   "descripcion": "La manilla de una de las ventanas tiene holgura y no queda firme en posición de cierre.",
+   "estado": "resuelta",
+   "fotos": 1,
+   "historial": [
+    {
+     "fecha": "2026-05-28",
+     "autor": "Usuario Demo",
+     "texto": "Incidencia abierta desde el portal."
+    },
+    {
+     "fecha": "2026-05-29",
+     "autor": "Posventa Marchante (ficticio)",
+     "texto": "Enviamos manilla de reposición con el siguiente reparto."
+    },
+    {
+     "fecha": "2026-06-04",
+     "autor": "Posventa Marchante (ficticio)",
+     "texto": "Manilla sustituida. Incidencia resuelta."
+    }
+   ]
+  }
+ ]
+}

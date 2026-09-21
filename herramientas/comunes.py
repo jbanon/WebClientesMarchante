@@ -17,6 +17,8 @@ WEB, COM = RAIZ / "web", RAIZ / "herramientas" / "comunes"
 def main():
     partes = {n: (COM / f"{n}.html").read_text(encoding="utf-8").strip() for n in ("cabecera", "pie")}
     for pag in sorted(WEB.rglob("*.html")):
+        if "area-clientes" in pag.parts:  # la demo del portal pinta su propio marco con portal.js
+            continue
         ruta = "/" + str(pag.parent.relative_to(WEB)).strip(".") + "/"
         ruta = ruta.replace("//", "/")
         html = pag.read_text(encoding="utf-8")
