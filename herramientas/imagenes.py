@@ -40,8 +40,8 @@ def main():
     for dest, orig in FOTOS.items():
         im = ImageOps.exif_transpose(Image.open(REC / orig)).convert("RGB")
         for w in (640, 1024, 1600):
-            w = min(w, im.width)
-            guardar(im.resize((w, round(im.height * w / im.width)), Image.LANCZOS), IMG / f"{dest}-{w}.webp")
+            real = min(w, im.width)  # el nombre lleva el ancho nominal aunque el original sea 1 px menor
+            guardar(im.resize((real, round(im.height * real / im.width)), Image.LANCZOS), IMG / f"{dest}-{w}.webp")
 
     # Renders de perfil: recorte cuadrado centrado en el sujeto (ocupa el tercio central)
     for p in PERFILES:
