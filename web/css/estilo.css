@@ -253,7 +253,7 @@ body.menu-abierto { overflow: hidden; }
 .sistema__img { margin: 0.5rem auto 1rem; width: min(100%, 17rem); aspect-ratio: 1; object-fit: contain; transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
 .sistema:hover .sistema__img { transform: scale(1.04); }
 .sistema__tipo { font-size: 0.8125rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gris-medio); margin: 0 0 0.35rem; }
-.sistema h3 { margin-bottom: 0.75rem; }
+.sistema h3, .sistema h2 { margin-bottom: 0.75rem; }
 .sistema p { font-size: 0.9688rem; line-height: 1.55; margin-bottom: 1.25rem; }
 .sistema__dato { margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding-top: 1rem; border-top: 1px solid var(--linea); font-size: 0.9063rem; color: var(--tinta); }
 .sistema__dato span:last-child { color: var(--rojo-ui); transition: transform 0.2s; }
@@ -548,3 +548,14 @@ body.menu-abierto .whatsapp { display: none; }
   .cabecera, .whatsapp, .pie, .llamada, .menu-boton { display: none !important; }
   body { font-size: 11pt; color: #000; }
 }
+
+/* ---------- Tabla comparativa ---------- */
+.tabla--comparativa { min-width: 46rem; font-size: 0.9688rem; }
+.tabla--comparativa thead th { border-top: 0 !important; border-bottom: 1px solid var(--tinta); padding: 0 1rem 0.75rem 0; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gris-medio); font-weight: 500; white-space: nowrap; }
+.tabla--comparativa tbody tr:first-child th, .tabla--comparativa tbody tr:first-child td { border-top: 0; }
+.tabla--comparativa td { text-align: left; font-weight: 400; color: var(--texto); padding-right: 1rem; white-space: nowrap; }
+.tabla--comparativa tbody th { font-family: var(--serif); font-size: 1.6rem; line-height: 1; color: var(--tinta); white-space: nowrap; }
+.tabla--comparativa tbody th a { text-decoration: none; }
+.tabla--comparativa tbody th a:hover { color: var(--rojo-ui); }
+.tabla--comparativa tbody tr:hover td, .tabla--comparativa tbody tr:hover th { background: var(--papel-2); }
+.tabla-envoltura:focus-visible { outline-offset: 0; }
