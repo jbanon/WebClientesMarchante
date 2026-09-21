@@ -52,14 +52,9 @@ def main():
         for w in (400, 700):
             guardar(cuadrado.resize((w, w), Image.LANCZOS), IMG / f"productos/perfil-{p}-{w}.webp", 86)
 
-    # Muestras de foliado: recorte cuadrado central
-    for f in sorted((REC / "imagenes/colores-foliado").glob("*.jpg")):
-        im = Image.open(f).convert("RGB")
-        lado = min(im.size) // 2
-        cx, cy = im.width // 2, im.height // 2
-        im = im.crop((cx - lado // 2, cy - lado // 2, cx + lado // 2, cy + lado // 2)).resize((480, 480), Image.LANCZOS)
-        nombre = f.stem.lower().replace("-scaled", "")
-        guardar(im, IMG / f"foliado/{nombre}.webp", 80)
+    # Carta de foliados de Cortizo (recursos/imagenes/colores-cortizo/, 496x238): se sirven en local
+    for f in sorted((REC / "imagenes/colores-cortizo").glob("*.png")):
+        guardar(Image.open(f).convert("RGB"), IMG / f"colores/{f.stem}.webp", 82)
 
     for dest, orig in LOGOS.items():
         im = Image.open(REC / orig).convert("RGBA")

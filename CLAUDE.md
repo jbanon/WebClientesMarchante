@@ -16,7 +16,9 @@ Objetivo principal de la web: que el visitante pida presupuesto o contacte.
 - `contenido/paginas/*.md` — texto extraído de cada página. Cada fichero lista las
   imágenes y PDFs que usaba esa página.
 - `recursos/marca/` — logo propio, logos de marcas colaboradoras (partners/) y colores.md
-- `recursos/imagenes/colores-foliado/` — muestras de los colores del PVC foliado
+- `recursos/imagenes/colores-cortizo/` — carta oficial de foliados de Cortizo (48 muestras
+  descargadas de su web + `colores.json` con familia, nombre y origen)
+- `referencia/cortizo.md` — carta de colores y páginas oficiales de los sistemas (solo DATOS)
 - `recursos/imagenes/sin-clasificar/` — resto de imágenes (ver Fase 0)
 - `recursos/imagenes/descartadas/` — imágenes de demo de la plantilla. NO usar.
 - `recursos/documentos/fichas-tecnicas/` — fichas técnicas de cada sistema de ventana
@@ -29,10 +31,9 @@ Objetivo principal de la web: que el visitante pida presupuesto o contacte.
   se usan rutas en español.
 - Las páginas `/team/` de la web antigua son contenido de demostración de la
   plantilla. No existen para nosotros.
-- Hay una imagen `Sistema-PremiDoor76.png` que sugiere un sistema de puerta que no
-  tiene página propia. Anótalo en PREGUNTAS.md.
-- `ant-rozetsky-*-unsplash.jpg` es una foto de stock. Si la usas, anótalo en
-  INVENTARIO.md como stock.
+- En el material había una imagen de un sistema de puerta elevadora de OTRO fabricante de
+  perfiles. Está en descartadas/ y no se usa.
+- La foto de stock de Unsplash (una acería) está en descartadas/. No se usa.
 
 ## Mapa del sitio nuevo
 - `/` Inicio
@@ -46,7 +47,7 @@ Objetivo principal de la web: que el visitante pida presupuesto o contacte.
   Cada sistema enlaza su ficha técnica en PDF.
 - `/acabados/` con:
   - `/acabados/pvc-blanco/`
-  - `/acabados/pvc-foliado/` (galería de colores con recursos/imagenes/colores-foliado)
+  - `/acabados/pvc-foliado/` (carta de foliados Cortizo por familias, con recursos/imagenes/colores-cortizo)
   - `/acabados/vidrios/` (fusiona tipo-de-vidrios y v-vis-v-vinilos-y-vidrios)
 - `/profesionales/` Guías técnicas: instalación, mantenimiento, almacenaje y transporte
 - `/distribuidores/`
@@ -95,6 +96,68 @@ con tu mejor criterio.
 - Ante una duda que no bloquee: decidir, seguir y anotarla en PREGUNTAS.md
 - Nunca modificar antigua/
 
+## Proveedor de perfiles: Cortizo (regla permanente)
+Marchante trabaja SOLO con perfiles Cortizo PVC®. Fuente de datos: `referencia/cortizo.md`
+y las páginas oficiales que enlaza.
+- De Cortizo se toman DATOS (cifras, clases de ensayo, nombres de color); nunca sus textos
+  literales. Se redacta con palabras propias.
+- Ante una contradicción entre la web antigua, las fichas PDF y la web oficial de
+  Cortizo: manda la web oficial. Anotar en PREGUNTAS.md el dato elegido y la fuente.
+- Denominación Cortizo donde ayude («A 84 Hoja Oculta», «E 170 Corredera Elevable»),
+  manteniendo las URLs actuales.
+- Carta de colores: la de Cortizo, por sus familias (estándar 2 caras, estándar 1 cara,
+  especiales, Ultra Performance), con el aviso de colores orientativos. Las muestras se
+  sirven desde la propia web. En la demo del portal, los colores son de esta carta.
+- No añadir sistemas de Cortizo que no estén ya en la web de Marchante: van a
+  PREGUNTAS_CLIENTE.md.
+- La web antigua mezclaba material de OTRO fabricante de perfiles (colores foliados y una
+  imagen de puerta elevadora). No debe aparecer ninguna referencia a ese fabricante ni a
+  sus nombres comerciales en web/, documentos ni herramientas. (antigua/ y
+  contenido/paginas/ son material de origen de solo lectura y llevan aviso.)
+
+## Publicación
+- La web está publicada sin contraseña en https://clientesmarchante.winsoft.es (nginx).
+- Publicar con `herramientas/publicar.sh` al terminar cada bloque de trabajo.
+- `despliegue/redirecciones.nginx.conf`: traducción a nginx de `web/.htaccess` (para
+  incluir en el bloque server). Mantener los dos a la par con REDIRECCIONES.md.
+- **Cero peticiones a terceros**: fuentes, imágenes y scripts se sirven siempre desde web/.
+
+## Móvil: requisito prioritario
+La web debe verse perfectamente en el móvil. Revisar SIEMPRE en 360, 390 y 414 px de
+ancho y en horizontal (844 × 390), con Chromium y con WebKit (motor de Safari en iPhone):
+- Nunca scroll horizontal
+- Textos legibles sin zoom; campos de formulario con fuente ≥ 16 px
+- Botones y enlaces con zona táctil ≥ 44 × 44 px
+- Menú cómodo con una mano, con «Área clientes»
+- Las tablas se adaptan al móvil (tarjetas o similar), nunca una tabla diminuta
+- El botón de WhatsApp no tapa contenido ni botones
+`herramientas/movil.py` automatiza estas comprobaciones.
+
+## Área clientes (demo del portal) — web/area-clientes/
+Demo navegable del portal de clientes de una FÁBRICA DE VENTANAS DE PVC. No es una
+aplicación real.
+- Estática: datos ficticios en JSON/JS, sin servidor ni base de datos. La estructura de
+  datos se diseña como si viniera de una API del sistema de gestión de la fábrica.
+- Login simulado (cualquier usuario y contraseña entra; se indica en pantalla).
+- Franja visible en todas sus pantallas: «Demo · Datos ficticios». Meta robots noindex.
+- Mismo estilo visual que la web pública y mismos criterios de móvil.
+- Nombres de clientes, obras y personas claramente inventados. Nunca empresas reales.
+- Enlace «Área clientes» en cabecera (escritorio y móvil) y pie → /area-clientes/.
+- Todo lo que sea propuesta propia se anota como tal para validarlo con el cliente.
+- Existe una base de referencia externa (portal de otra empresa, sin relación con
+  Marchante) que SOLO se puede leer para estructura y funcionalidad: no se modifica, no se
+  copia nada de ella y su nombre no puede aparecer en ningún sitio de este proyecto
+  (código, comentarios, nombres de fichero, commits, documentos). Marchante no fabrica
+  persianas: no presentarlas como producto suyo. Antes de cada commit se ejecuta la
+  comprobación por grep indicada por el responsable y debe salir vacía.
+
+## Documentos de preguntas
+- `PREGUNTAS_CLIENTE.md`: para entregar al cliente. Lenguaje sencillo, por temas (web
+  pública, textos legales, fotos y materiales, datos técnicos, portal de clientes). Cada
+  pregunta: contexto en 1–2 frases, la pregunta y, si las hay, opciones con recomendación.
+- `PREGUNTAS.md`: interno, con notas técnicas y decisiones tomadas.
+- Ante una duda nueva: decidir, seguir y anotarla en el documento que corresponda.
+
 ## Forma de trabajo
 Trabajo **autónomo hasta terminar la web completa, sin parar entre fases**. Ante una
 duda: decidir con el mejor criterio, seguir y anotarla en PREGUNTAS.md junto con lo
@@ -138,7 +201,7 @@ Las páginas de web/ son HTML completo y son la fuente de verdad (no hay compila
 - Las fotos de obra se usan de forma provisional (licencia por confirmar con Cortizo).
 - Logos: de momento los PNG; los vectoriales se pedirán.
 - Descartadas: mapamundi, foto de reunión y foto de la acería.
-- PremiDoor 76: queda fuera de la web (anotado en PREGUNTAS.md).
+- El sistema de puerta elevadora de otro fabricante queda fuera de la web.
 - Imagen principal de portada: obras/corredera-elevadora-comedor-vistas-valle.jpeg
 
 ### Meta final

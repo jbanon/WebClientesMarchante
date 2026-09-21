@@ -14,9 +14,9 @@ Cada punto indica **qué se decidió** para no bloquear el trabajo. Lo marcado c
 | 5 | ⚠️ **Foto de ventanas embaladas / transporte** | `/profesionales/` (marcador visible) |
 | 6 | ⚠️ Confirmar con Cortizo la **licencia de las fotos de ambiente** | todas las fotos de `obras/` |
 | 7 | ⚠️ **Logos vectoriales** (Marchante y partners) | cabecera, pie, franja de marcas |
-| 8 | ⚠️ Confirmar 4 **datos técnicos contradictorios** entre la web antigua y las fichas PDF (apartado C) | fichas A70 y A84 HO |
+| 8 | ⚠️ Confirmar los **datos técnicos** marcados en el apartado C (A84 Uw, C70, E170, versión Passivhaus) | fichas |
 | 9 | ⚠️ PDFs de **«Posibilidades de apertura»** de cada sistema (no estaban en la copia) | las 5 fichas |
-| 10 | ⚠️ PDFs de **cartas de colores foliados** estándar y especial (no estaban en la copia) | `/acabados/pvc-foliado/` |
+| 10 | ⚠️ Carta de colores: ¿completa de Cortizo o una selección? Permiso de uso de imágenes de Cortizo | `/acabados/pvc-foliado/` |
 | 11 | Horario de atención y coordenadas, si se quieren añadir | contacto y datos estructurados |
 | 12 | Tipo de servidor del alojamiento (Apache/Nginx) para las redirecciones | `web/.htaccess`, REDIRECCIONES.md |
 
@@ -32,34 +32,69 @@ Cada punto indica **qué se decidió** para no bloquear el trabajo. Lo marcado c
   tamaño de cabecera, pero no da para más. Pendiente el vectorial (⚠️ 7).
 - **Descartadas**: mapamundi, foto de reunión y foto de la acería (Unsplash), movidas a
   `recursos/imagenes/descartadas/`. No hay ninguna imagen de stock en la web.
-- **PremiDoor 76**: fuera de la web. La imagen sigue en
-  `recursos/imagenes/productos/perfil-premidoor76-elevadora-seccion.png` por si en el
-  futuro se añade el sistema (haría falta texto, ficha y una imagen mayor que 323×360).
+- **Puerta elevadora de otro fabricante** (imagen suelta de la web antigua): fuera de
+  la web; la imagen está en `recursos/imagenes/descartadas/`.
 - **Imagen principal de portada**: `obras/corredera-elevadora-comedor-vistas-valle.jpeg`.
 
-## C. Datos técnicos: contradicciones encontradas ⚠️
+## C. Datos técnicos: fuente elegida para cada dato
 
-Regla aplicada: no inventar. Cuando el texto de la web antigua y la ficha PDF no
-coinciden se ha elegido una fuente y se anota aquí para confirmar.
+Regla (permanente, en CLAUDE.md): ante una contradicción manda la **web oficial de
+Cortizo** (páginas enlazadas en `referencia/cortizo.md`, consultadas el 21/09/2026). De
+Cortizo solo se toman datos; los textos son de redacción propia.
 
-1. **A70 · acristalamiento máximo**: la web antigua dice **42 mm**; la ficha PDF dice
-   **40 mm**. *Decidido:* 42 mm (texto de la web, que es el contenido a mantener).
-2. **A70 · aperturas**: la web dice «practicable, oscilo-batiente, oscilo-paralela y
-   abatible»; la ficha PDF menciona también «plegable». *Decidido:* texto de la web.
-3. **A84 HO · estanqueidad**: en la web antigua el párrafo dice **E1650** y la tabla
-   **E2250**; la ficha PDF dice **E1650**. *Decidido:* E1650.
-4. **A84 HO · acústica y transmitancia**: la web mezcla «hasta 50 dB» con «Rw hasta
-   46 dB», y «transmitancia desde 1.0» con 0,71/0,74. *Decidido:* hasta 50 dB (ficha
-   PDF) y Uw 0,71 (HO Passivhaus) / 0,74 (HO); se ha omitido la cifra «1.0», que
-   contradice al resto. En el párrafo de estanqueidad la fuente tenía el caudal de agua
-   en blanco («…»), así que no se indica.
-5. **A84 HO · acristalamiento máximo**: no figura en ninguna fuente; en la tabla
-   comparativa aparece «—».
-6. **Portada · cifras destacadas** (Uw 0,71 · 50 dB · Clase 4 · C5): son los mejores
-   valores de la gama, tomados del A84 HO, con nota aclaratoria debajo.
-7. **Códigos de color foliado**: el texto dice «US-Negro ulti-mate» y «WS-Blanco
-   efecto madera»; los archivos de imagen se llaman «UD-NEGRO» y «WX-BLANCO».
-   *Decidido:* códigos del texto (US y WS). Confirmar con la carta de Cortizo.
+| Sistema | Dato | Web antigua Marchante | Ficha PDF | Web oficial Cortizo | **Publicado** |
+|---|---|---|---|---|---|
+| A70 | Acristalamiento máx. | 42 mm | 40 mm | 42 mm (mín. 4) | **42 mm** · Cortizo |
+| A70 | Aperturas | sin «plegable» | con «plegable» | — | **sin «plegable»** · web antigua |
+| A70 | Uw / Rw / aire / agua / viento | 0,9 · 46 dB · 4 · E1800 · C5 | igual | igual | sin cambios |
+| A84 | **Uw desde** | 0,79 | 0,79 | **1,0** | **1,0 W/m²K** · Cortizo ⚠️ |
+| A84 | Acristalamiento | 54 mm | 54 mm | 24–54 mm | **24–54 mm** |
+| A84 | Rw / aire / agua / viento | 46 dB · 4 · E1500 · C5 | igual | igual | sin cambios |
+| A84 Hoja Oculta | Uw desde | 0,71 / 0,74 (y «1.0») | 0,71 / 0,74 | **0,74** | **0,74 W/m²K** · Cortizo |
+| A84 Hoja Oculta | Estanqueidad | E1650 y E2250 | E1650 | **Clase 2250** | **E2250** · Cortizo |
+| A84 Hoja Oculta | Acústica | 50 dB y 46 dB | 50 dB | **Rw hasta 46 dB** | **46 dB** · Cortizo |
+| A84 Hoja Oculta | Acristalamiento | — | — | 32–46,5 mm | **32–46,5 mm** · Cortizo |
+| C70 | Acristalamiento máx. | 24 mm | 24 mm | **28 mm** (mín. 4) | **28 mm** · Cortizo ⚠️ |
+| C70 | Uw / Rw / aire / agua / viento | 1,3 · 38 dB · 4 · 7A · C5 | igual | igual | sin cambios |
+| E170 | Medida máx. de hoja | 3 × 2,75 m | 3 × 2,75 m | L 3300 · H 2800 mm (dimensiones máx.) | **3 × 2,75 m** · web antigua ⚠️ |
+| E170 | Uw / Rw / aire / agua / peso | 0,9 · 42 dB · 4 · 7A · 300 kg | igual | igual (acrist. 18–40 mm) | sin cambios |
+
+Notas:
+- ⚠️ **A84, Uw**: la ficha PDF que se descarga desde la propia página sigue diciendo 0,79.
+  Se publica el valor actual de Cortizo (1,0), que es el prudente. Convendría pedir a
+  Cortizo la ficha actualizada. Va a PREGUNTAS_CLIENTE.md.
+- ⚠️ **C70** (28 mm) y **E170** (la cifra de Cortizo no está claro que se refiera a la
+  hoja, así que se mantiene la de Marchante): a confirmar.
+- **A84 Hoja Oculta / Passivhaus**: el texto antiguo de Marchante describía dos
+  versiones. En Cortizo, «A 84 Hoja Oculta Passivhaus» es un sistema aparte que no está
+  en la web de Marchante. La ficha se centra ahora en la A 84 Hoja Oculta (datos
+  oficiales) y deja una nota breve sobre la versión Passivhaus (Uw 0,71, dato del texto
+  y la ficha de Marchante) con «consúltanos disponibilidad». A confirmar con el cliente.
+- Las cifras destacadas de la portada pasan a: Uw desde 0,74 (A 84 Hoja Oculta), hasta
+  46 dB, Clase 4 y C5.
+- Denominación: se usa «A84 Hoja Oculta» y «E170 Corredera Elevable» en títulos, menú y
+  formulario; en cada ficha el sobretítulo lleva el nombre Cortizo («Cortizo PVC® ·
+  A 84 Hoja Oculta»). Las URLs no cambian (`/ventanas/a84-ho-abisagrada/`,
+  `/ventanas/e170-elevadora/`).
+- Añadida a cada ficha la fila «Acristalamiento (mín.–máx.)» con el dato de Cortizo. No
+  se han añadido pesos ni dimensiones de hoja de Cortizo (dependen de tipología).
+
+### Carta de colores
+- La web antigua mostraba 18 colores de la carta de **otro fabricante de perfiles**.
+  Retirados (a `descartadas/`). Ahora: carta oficial de Cortizo, 48 muestras en 4
+  familias, descargadas a `recursos/imagenes/colores-cortizo/` y servidas en local.
+- «Turner Oak Toffee»: se usa la grafía de `referencia/cortizo.md`.
+- Explicación de «1 cara / 2 caras» redactada por nosotros (acabado en una cara del
+  perfil y la otra en blanco / mismo acabado en ambas). A confirmar qué cara.
+- Referencias al otro fabricante eliminadas de web/, documentos y herramientas
+  (`herramientas/comprobar_nombres.sh` lo verifica). En `contenido/paginas/` se han
+  sustituido por notas. Quedan, inevitablemente, en `antigua/` (solo lectura) y en el
+  historial de git anterior a este cambio.
+- ⚠️ El producto de limpieza «PREVent» aparece en el texto de mantenimiento de la web
+  antigua atribuido a Cortizo PVC®. No lo he podido verificar en la web de Cortizo.
+  Se mantiene tal cual; a confirmar con el cliente.
+- ⚠️ Las 6 fotos de ambiente probablemente proceden del banco de imágenes de ese otro
+  fabricante, no de Cortizo: la licencia no la puede dar Cortizo.
 
 ## D. Contenido de la web antigua que NO se ha trasladado (y por qué)
 

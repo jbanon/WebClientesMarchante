@@ -7,7 +7,7 @@
 
 - Diseno-sin-titulo-copia-2.png
 - LOGO-NEW-OP02-copia-3.png
-- Sistema-PremiDoor76.png
+- (imagen de un sistema de puerta de otro fabricante de perfiles: descartada)
 - WhatsApp-Image-2023-10-27-at-14.55.01-1.jpeg
 - WhatsApp-Image-2023-10-27-at-14.55.01-2.jpeg
 - WhatsApp-Image-2023-10-27-at-14.55.01.jpeg

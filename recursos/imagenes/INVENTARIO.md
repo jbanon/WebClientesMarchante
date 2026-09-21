@@ -16,7 +16,6 @@ cuidado) · **baja** (no usar, o solo en miniatura).
 | `perfil-a84-ho-abisagrada-seccion.webp` | `1514-1024-3-1340x701-1.webp` | Render 3D en esquina del perfil A84 HO (hoja oculta), blanco, triple vidrio, fondo blanco | 1340×701 | aceptable | Página `/ventanas/a84-ho-abisagrada/` y tarjeta |
 | `perfil-c70-corredera-seccion.webp` | `1514-1024-1340x701-1.webp` | Render 3D en esquina del perfil C70 corredera, blanco, doble vidrio, fondo blanco | 1340×701 | aceptable | Página `/ventanas/c70-corredera/` y tarjeta |
 | `perfil-e170-elevadora-seccion.webp` | `1464-1024-1340x701-1.webp` | Render 3D del perfil E170 elevadora con umbral de aluminio, blanco, triple vidrio, fondo blanco | 1340×701 | aceptable | Página `/ventanas/e170-elevadora/` y tarjeta |
-| `perfil-premidoor76-elevadora-seccion.png` | `Sistema-PremiDoor76.png` | Render de la sección de una puerta elevadora-corredera PremiDoor 76 (dos hojas, triple vidrio), fondo transparente | 323×360 | baja | No usar de momento: sistema sin página propia (ver PREGUNTAS.md). Si se crea página, pedir imagen a mayor resolución |
 
 Notas sobre los renders de perfiles:
 - Los cinco comparten encuadre, luz y fondo blanco puro: funcionan muy bien como serie
@@ -67,6 +66,36 @@ Vacía tras la revisión de la Fase 0 (ver «Movimientos posteriores»).
 
 **No se usa ninguna imagen de stock en la web.**
 
+## colores-cortizo/ (añadida en septiembre de 2026)
+
+Carta oficial de foliados de Cortizo: **48 muestras** PNG de 496×238 px descargadas de
+https://ventanascortizo.com/es/productos/acabados/foliados/ y servidas desde la propia web
+(`web/img/colores/*.webp`). Calidad: aceptable (son las de la web de Cortizo; suficientes
+para una carta en pantalla). Nombre de archivo: `<familia>--<color>.png`.
+`colores.json` guarda familia, nombre y URL de origen de cada muestra.
+
+| Familia | Muestras |
+|---|---|
+| Estándar 2 caras (3) | Blanco, Roble Dorado, Nogal |
+| Estándar 1 cara (2) | Roble Dorado, Nogal |
+| Especiales (35) | Azul Acero, Marrón Claro/Oscuro/Mate, Verde Mate, Gris Mate, Negro Mate, Pino Veteado, Roble Claro/Oscuro/Rústico, Abeto, Caoba, Sapelly, Walnuss Nogal, Roble Newcastle, Antracita y Ocre Metalizado, Plata Aluminio, Gris Liso/Antracita/Ágata/Claro/Plata, Blanco Foliado, Blanco Crema, Bronce, Oro, Rojo Vino, Verde Pino, Verde Musgo, Azul Brillante, Sheffield Claro/Oscuro, Roble Malta |
+| Ultra Performance (8) | Roble Malta Woodec, Kitami Oscuro, Turner Oak Toffee, Blanco/Cuarzo/Marrón/Gris Antracita/Negro Ultramate |
+
+Pendiente: confirmación de Cortizo para usar sus imágenes (PREGUNTAS_CLIENTE.md).
+
+## Material de otro fabricante de perfiles → descartadas/
+
+La web antigua mezclaba material de OTRO fabricante de perfiles, que no corresponde a
+Marchante (solo trabaja con Cortizo). Movido a `descartadas/` y fuera de la web:
+
+| Archivo en descartadas/ | Qué era |
+|---|---|
+| `colores-foliado-otro-fabricante/` (18 JPG) | Las muestras de foliado que mostraba la web antigua: carta de otro fabricante |
+| `perfil-puerta-elevadora-otro-fabricante.png` | Render (323×360) de una puerta elevadora de otro fabricante, sin página en la web |
+
+Ojo: es probable que las 6 fotos de `obras/` procedan también del banco de imágenes de
+ese otro fabricante y no de Cortizo (ver PREGUNTAS_CLIENTE.md).
+
 ## Uso real en la web (Fase 2)
 
 | Imagen | Páginas |
@@ -79,11 +108,10 @@ Vacía tras la revisión de la Fase 0 (ver «Movimientos posteriores»).
 | `obras/nino-junto-a-corredera-…jpeg` | `/profesionales/` (mantenimiento), ficha C70 |
 | `obras/…-oscurecida.jpg` | No se usa (se prefiere la versión limpia) |
 | `productos/perfil-*-seccion.webp` (5) | Portada, `/ventanas/`, cada ficha, `/acabados/pvc-blanco/` |
-| `productos/perfil-premidoor76-…png` | No se usa (sistema fuera de la web) |
-| `colores-foliado/*` (18) | `/acabados/pvc-foliado/`, portada, `/acabados/`, fichas |
+| `colores-cortizo/*` (48) | `/acabados/pvc-foliado/` (carta completa), portada, `/acabados/`, fichas y demo del portal |
 
 Las versiones WebP para la web se generan con `herramientas/imagenes.py` en `web/img/`
-(fotos a 640/1024/1600 px, renders recortados a cuadrado a 400/700 px, muestras a 480 px).
+(fotos a 640/1024/1600 px, renders recortados a cuadrado a 400/700 px, muestras de color a 496×238 px).
 
 ## Resumen para el diseño
 
@@ -95,4 +123,4 @@ Las versiones WebP para la web se generan con `herramientas/imagenes.py` en `web
 - **Carencias:** fábrica/equipo, fotos de detalle (herrajes, manillas, acabados
   foliados instalados), vidrios, instalación/transporte para las guías de
   profesionales, logo vectorial.
-- Las muestras de `colores-foliado/` no se han tocado (ya estaban clasificadas).
+

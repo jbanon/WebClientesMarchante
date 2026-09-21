@@ -65,33 +65,9 @@ Hace mucho que las ventanas de PVC dejaron de ser solo blancas, y es el proceso 
 
 La principal ventaja del PVC foliado es que **podemos fabricar ventanas que destacan por su valor estético, sin renunciar a elevadas prestaciones térmicas y de hermeticidad**.
 
-**FOLIADO Estándar (Descargar colores estándar)**
-
-Existen varios tipos de acabado dentro de la gama estándar:
-
-* HB-Roble natural
-* 52-Nogal
-* 58-Verde pino
-* UD-Gris forja ulti-mate
-* US-Negro ulti-mate
-* ZB-Bronce oscuro
-
-**FOLIADO Especial (Descargar colores especiales)**
-
-Existen varios tipos de acabado dentro de la gama especial:
-
-* 32-Embero
-* 21-Gris plata
-* 24-Caoba
-* 42-Sapelli
-* 44-Granate
-* AR-Gris metalizado plata
-* CQ-Blanco crema
-* MQ-Cuarzo
-* PD-Marrón chocolate
-* PF-Marrón sepia
-* WI-Castaño
-* WS-Blanco efecto madera
+> NOTA (sept. 2026): aquí la web antigua listaba 18 colores de la carta de OTRO fabricante de
+> perfiles. Se han retirado. La carta válida es la de Cortizo: ver referencia/cortizo.md y
+> recursos/imagenes/colores-cortizo/colores.json.
 
 #### Estamos aquí para ayudarte
 

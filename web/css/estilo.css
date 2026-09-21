@@ -408,13 +408,19 @@ figure { margin: 0; }
 .bloque-blanco { aspect-ratio: 4 / 3; display: grid; place-items: center; background: #fff; border: 1px solid var(--linea); }
 .bloque-blanco img { width: 62%; aspect-ratio: 1; object-fit: contain; }
 
-/* ---------- Muestras de foliado ---------- */
-.muestras { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem 1rem; list-style: none; margin: 0; padding: 0; }
-@media (min-width: 40em) { .muestras { grid-template-columns: repeat(3, 1fr); gap: 2rem 1.5rem; } }
-@media (min-width: 68em) { .muestras { grid-template-columns: repeat(6, 1fr); } .muestras--4 { grid-template-columns: repeat(4, 1fr); } }
-.muestra img { width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid rgba(23, 38, 47, 0.12); }
-.muestra figcaption { margin-top: 0.75rem; line-height: 1.3; color: var(--tinta); font-weight: 500; font-size: 0.9688rem; }
-.muestra figcaption span { display: block; font-size: 0.75rem; font-weight: 400; letter-spacing: 0.1em; color: var(--gris-medio); margin-bottom: 0.15rem; }
+/* ---------- Muestras de foliado (carta Cortizo, muestras 2:1) ---------- */
+.muestras { display: grid; grid-template-columns: repeat(auto-fill, minmax(9.25rem, 1fr)); gap: 1.75rem 1rem; list-style: none; margin: 0; padding: 0; }
+@media (min-width: 40em) { .muestras { grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr)); gap: 2.25rem 1.5rem; } }
+.muestras--3 { grid-template-columns: repeat(3, 1fr) !important; gap: 1rem !important; }
+.muestra img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border: 1px solid rgba(23, 38, 47, 0.14); }
+.muestra figcaption { margin-top: 0.7rem; line-height: 1.3; color: var(--tinta); font-weight: 500; font-size: 1rem; }
+.muestras--3 figcaption { font-size: 0.875rem; }
+.seccion--carta { padding-block: clamp(3rem, 6vw, 5rem); }
+.seccion--carta .encabezado { margin-bottom: clamp(1.75rem, 4vw, 3rem); }
+.aviso-color { margin: 2rem 0 0; padding-left: 1.25rem; border-left: 2px solid var(--rojo); max-width: 44em; font-size: 0.9688rem; }
+.saltos { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem; }
+.saltos a { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0.5rem 1rem; border: 1px solid var(--linea); text-decoration: none; font-size: 0.9375rem; font-weight: 500; color: var(--tinta); transition: border-color 0.2s; }
+.saltos a:hover { border-color: var(--tinta); }
 
 /* ---------- Cronología ---------- */
 .cronologia { list-style: none; margin: 0; padding: 0; display: grid; }

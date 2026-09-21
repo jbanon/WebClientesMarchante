@@ -1,0 +1,290 @@
+[
+ {
+  "familia": "estandar-2-caras",
+  "nombre": "BLANCO",
+  "archivo": "estandar-2-caras--blanco.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/BLANCO.png"
+ },
+ {
+  "familia": "estandar-2-caras",
+  "nombre": "ROBLE DORADO",
+  "archivo": "estandar-2-caras--roble-dorado.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/ROBLE-DORADO.png"
+ },
+ {
+  "familia": "estandar-2-caras",
+  "nombre": "NOGAL",
+  "archivo": "estandar-2-caras--nogal.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/NOGAL.png"
+ },
+ {
+  "familia": "estandar-1-cara",
+  "nombre": "ROBLE DORADO",
+  "archivo": "estandar-1-cara--roble-dorado.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/ROBLE-DORADO-1C.png"
+ },
+ {
+  "familia": "estandar-1-cara",
+  "nombre": "NOGAL",
+  "archivo": "estandar-1-cara--nogal.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/NOGAL-1C.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "AZUL ACERO",
+  "archivo": "especiales--azul-acero.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/AZUL-ACERO.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "MARRÓN CLARO",
+  "archivo": "especiales--marron-claro.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/marron_claro.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "MARRÓN OSCURO",
+  "archivo": "especiales--marron-oscuro.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/marron_oscuro.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "MARRÓN MATE",
+  "archivo": "especiales--marron-mate.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/marron_mate.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "VERDE MATE",
+  "archivo": "especiales--verde-mate.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/verde_mate.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "GRIS MATE",
+  "archivo": "especiales--gris-mate.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/gris_mate.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "NEGRO MATE",
+  "archivo": "especiales--negro-mate.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/negro_mate.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "PINO VETEADO",
+  "archivo": "especiales--pino-veteado.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/pinoveteado.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "ROBLE CLARO",
+  "archivo": "especiales--roble-claro.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/robleclaro.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "ROBLE OSCURO",
+  "archivo": "especiales--roble-oscuro.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/robleoscuro.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "ROBLE RÚSTICO",
+  "archivo": "especiales--roble-rustico.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/roble_rustico.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "ABETO",
+  "archivo": "especiales--abeto.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/abeto.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "CAOBA",
+  "archivo": "especiales--caoba.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/caoba.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "SAPELLY",
+  "archivo": "especiales--sapelly.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/sapelly.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "WALNUSS NOGAL",
+  "archivo": "especiales--walnuss-nogal.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/walnuss_nogal.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "ROBLE NEWCASTLE",
+  "archivo": "especiales--roble-newcastle.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/roblenewcastle.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "ANTRACITA METALIZADO",
+  "archivo": "especiales--antracita-metalizado.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/antracita_metalizado.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "OCRE METALIZADO",
+  "archivo": "especiales--ocre-metalizado.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/ocre_metalizado.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "PLATA ALUMINIO",
+  "archivo": "especiales--plata-aluminio.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/plata_aluminio.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "GRIS LISO",
+  "archivo": "especiales--gris-liso.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/gris_liso.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "GRIS ANTRACITA",
+  "archivo": "especiales--gris-antracita.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/gris_antracita.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "GRIS ÁGATA",
+  "archivo": "especiales--gris-agata.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/gris_agata.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "BLANCO FOLIADO",
+  "archivo": "especiales--blanco-foliado.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/blanco_foliado.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "BLANCO CREMA",
+  "archivo": "especiales--blanco-crema.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/blanco_crema.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "GRIS CLARO",
+  "archivo": "especiales--gris-claro.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/gris_claro.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "GRIS PLATA",
+  "archivo": "especiales--gris-plata.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/gris_plata.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "BRONCE",
+  "archivo": "especiales--bronce.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/bronce.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "ORO",
+  "archivo": "especiales--oro.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/oro.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "ROJO VINO",
+  "archivo": "especiales--rojo-vino.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/rojo_vino.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "VERDE PINO",
+  "archivo": "especiales--verde-pino.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/verde_pino.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "VERDE MUSGO",
+  "archivo": "especiales--verde-musgo.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/verde_musgo.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "AZUL BRILLANTE",
+  "archivo": "especiales--azul-brillante.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/azul_brillante.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "SHEFFIELD CLARO",
+  "archivo": "especiales--sheffield-claro.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/sheffiel_claro.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "SHEFFIELD OSCURO",
+  "archivo": "especiales--sheffield-oscuro.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/sheffield_oscuro.png"
+ },
+ {
+  "familia": "especiales",
+  "nombre": "ROBLE MALTA",
+  "archivo": "especiales--roble-malta.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/roble_malta.png"
+ },
+ {
+  "familia": "ultra-performance",
+  "nombre": "ROBLE MALTA WOODEC",
+  "archivo": "ultra-performance--roble-malta-woodec.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/ROBLE_MALTA_WOOTEC.png"
+ },
+ {
+  "familia": "ultra-performance",
+  "nombre": "KITAMI OSCURO",
+  "archivo": "ultra-performance--kitami-oscuro.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/KITAMI-OSCURO.png"
+ },
+ {
+  "familia": "ultra-performance",
+  "nombre": "TURNER OAK TOFFE",
+  "archivo": "ultra-performance--turner-oak-toffe.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/TURNER.png"
+ },
+ {
+  "familia": "ultra-performance",
+  "nombre": "BLANCO ULTRAMATE",
+  "archivo": "ultra-performance--blanco-ultramate.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/BLANCO_ULTRAMATE.png"
+ },
+ {
+  "familia": "ultra-performance",
+  "nombre": "CUARZO ULTRAMATE",
+  "archivo": "ultra-performance--cuarzo-ultramate.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/QUARZO-ULTRAMATE.png"
+ },
+ {
+  "familia": "ultra-performance",
+  "nombre": "MARRÓN ULTRAMATE",
+  "archivo": "ultra-performance--marron-ultramate.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/MARRON-ULTRAMATE.png"
+ },
+ {
+  "familia": "ultra-performance",
+  "nombre": "GRIS ANTRACITA ULTRAMATE",
+  "archivo": "ultra-performance--gris-antracita-ultramate.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/GRIS-ANTRACITA-ULTRAMATE.png"
+ },
+ {
+  "familia": "ultra-performance",
+  "nombre": "NEGRO ULTRAMATE",
+  "archivo": "ultra-performance--negro-ultramate.png",
+  "origen": "https://ventanascortizo.com/assets/productos/acabados/foliados/negro-ultramate.png"
+ }
+]
