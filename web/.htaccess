@@ -1,0 +1,52 @@
+# Marchante PVC — configuración para Apache (si el alojamiento es Apache)
+ErrorDocument 404 /404.html
+Options -Indexes
+
+# Redirecciones 301 de la web antigua (ver REDIRECCIONES.md)
+RedirectMatch 301 ^/quienes-somos/?$ /empresa/
+RedirectMatch 301 ^/services/sistema-a70-abisagrada/?$ /ventanas/a70-abisagrada/
+RedirectMatch 301 ^/services/sistema-a84-abisagrada/?$ /ventanas/a84-abisagrada/
+RedirectMatch 301 ^/services/sistema-a84-ho-abisagrada/?$ /ventanas/a84-ho-abisagrada/
+RedirectMatch 301 ^/services/sistema-c70-corredera/?$ /ventanas/c70-corredera/
+RedirectMatch 301 ^/services/sistema-e170-elevadora/?$ /ventanas/e170-elevadora/
+RedirectMatch 301 ^/services/pvc-blanco/?$ /acabados/pvc-blanco/
+RedirectMatch 301 ^/services/pvc-foliado/?$ /acabados/pvc-foliado/
+RedirectMatch 301 ^/services/tipo-de-vidrios/?$ /acabados/vidrios/
+RedirectMatch 301 ^/services/v-vis-v-vinilos-y-vidrios/?$ /acabados/vidrios/
+RedirectMatch 301 ^/services/requisitos-y-tecnicas-de-instalacion/?$ /profesionales/
+RedirectMatch 301 ^/services/mantenimiento-de-ventanas/?$ /profesionales/
+RedirectMatch 301 ^/services/almacenaje-y-transporte/?$ /profesionales/
+RedirectMatch 301 ^/services/?$ /ventanas/
+RedirectMatch 301 ^/politica-de-privacidad/?$ /privacidad/
+RedirectMatch 301 ^/politica-de-cookies/?$ /cookies/
+RedirectMatch 301 ^/compromiso-proteccion-datos-personales/?$ /proteccion-de-datos/
+RedirectMatch 301 ^/team(/.*)?$ /empresa/
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/FICHA-TECNICA-A70_ABISAGRADA\.pdf$ /docs/ficha-tecnica-a70-abisagrada.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/FICHA-TECNICA-A84_ABISAGRADA\.pdf$ /docs/ficha-tecnica-a84-abisagrada.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/FICHA-TECNICA-A84_HO\.pdf$ /docs/ficha-tecnica-a84-ho.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/FICHA-TECNICA-C70_CORREDERA\.pdf$ /docs/ficha-tecnica-c70-corredera.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/FICHA-TECNICA-E170_CORREDERA_ELEVABLE\.pdf$ /docs/ficha-tecnica-e170-corredera-elevable.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/01-avant\.pdf$ /docs/01-avant.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/02-lido\.pdf$ /docs/02-lido.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/03-natura\.pdf$ /docs/03-natura.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/04-avplus\.pdf$ /docs/04-avplus.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/05-innova\.pdf$ /docs/05-innova.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/06-taracea\.pdf$ /docs/06-taracea.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/07-basica\.pdf$ /docs/07-basica.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/08-rustica\.pdf$ /docs/08-rustica.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/09-clasica2\.pdf$ /docs/09-clasica2.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/10-TEMPO\.pdf$ /docs/10-tempo.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/11-ip\.pdf$ /docs/11-ip.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/PDF-ACCESORIOS\.pdf$ /docs/pdf-accesorios.pdf
+RedirectMatch 301 ^/wp-content/uploads/[0-9]{4}/[0-9]{2}/PDF-PANELES-MINIATURAS\.pdf$ /docs/pdf-paneles-miniaturas.pdf
+RedirectMatch 301 ^/wp-content/uploads/.*\.pdf$ /ventanas/
+RedirectMatch 301 ^/(wp-admin|wp-login\.php|wp-content|wp-includes|feed|comments)(/.*)?$ /
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/webp "access plus 6 months"
+  ExpiresByType image/png "access plus 6 months"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

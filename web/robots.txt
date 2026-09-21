@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /estilo.html
+
+Sitemap: https://marchantepvc.com/sitemap.xml
