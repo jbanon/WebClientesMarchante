@@ -350,7 +350,7 @@
           var l = docs.filter(function (d) { return d.categoria === cat; });
           return '<section class="p-seccion"><div class="p-seccion__cab"><h2>' + tit + '</h2></div>' + (texto ? '<p style="margin-bottom:1rem">' + texto + '</p>' : '') + '<ul class="descargas descargas--3">' + l.map(function (d) {
             var pdf = /\.pdf$/.test(d.url);
-            return '<li><a class="descarga" style="background:var(--papel)" href="' + d.url + '"><span class="descarga__tipo" aria-hidden="true">' + (pdf ? 'PDF' : 'WEB') + '</span><span class="descarga__texto"><strong>' + esc(d.titulo) + '</strong><span>' + (pdf ? 'PDF · ' + String(d.pesoMB).replace('.', ',') + ' MB' : 'Guía en la web') + '</span></span></a></li>';
+            return '<li><a class="descarga' + (pdf ? '' : ' descarga--web') + '" style="background:var(--papel)" href="' + d.url + '"><span class="descarga__tipo" aria-hidden="true">' + (pdf ? 'PDF' : 'WEB') + '</span><span class="descarga__texto"><strong>' + esc(d.titulo) + '</strong><span>' + (pdf ? 'PDF · ' + String(d.pesoMB).replace('.', ',') + ' MB' : 'Guía en la web') + '</span></span></a></li>';
           }).join('') + '</ul></section>';
         }
         pintar(titulo('Documentación técnica', 'Todo el material técnico, siempre en su última versión.') +

@@ -646,8 +646,6 @@ body { padding-bottom: calc(3.25rem + env(safe-area-inset-bottom)); }
   .llamada__datos { gap: 0.25rem; }
   .llamada__datos a { display: flex; align-items: center; min-height: 2.75rem; }
   .contacto__lista dd a { display: inline-flex; align-items: center; min-height: 2.75rem; }
-  .contacto__lista dd br { display: none; }
-  .contacto__lista dd { display: grid; justify-items: start; }
   .contacto__lista dd .enlace { margin-top: 0 !important; }
   .radios span { padding: 0.72rem 1.1rem; }
   .casilla { min-height: 2.75rem; align-items: center; }
@@ -675,3 +673,7 @@ body { padding-bottom: calc(3.25rem + env(safe-area-inset-bottom)); }
   .tabla--comparativa tbody tr:hover td, .tabla--comparativa tbody tr:hover th { background: none; }
 }
 @media (max-width: 67.99em) { .nav__cta .boton { white-space: nowrap; font-size: 0.9063rem; padding-inline: 0.4rem; } }
+
+.contacto__redes, .contacto__tels { display: flex; flex-wrap: wrap; gap: 0 1.5rem; align-items: baseline; }
+.contacto__tels { flex-direction: column; }
+.descarga--web::after { content: "→"; }

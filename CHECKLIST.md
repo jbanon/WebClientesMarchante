@@ -1,4 +1,68 @@
-# Checklist de revisión (Fase 3)
+# Checklist de revisión
+
+> **Última revisión: 21/09/2026 (segunda pasada)**, tras la carta de colores Cortizo, los
+> datos oficiales de los sistemas, el bloque de móvil y la demo del área de clientes.
+> Lo nuevo está en el apartado «Segunda revisión»; el resto es la revisión de la Fase 3,
+> que sigue vigente salvo lo que se indica.
+
+## Segunda revisión
+
+Alcance: **34 páginas HTML** (22 de la web pública + 12 de `/area-clientes/`), publicadas
+en https://clientesmarchante.winsoft.es con `herramientas/publicar.sh`.
+
+### Móvil (requisito prioritario) — `herramientas/movil.py`
+Auditoría automática de las 33 páginas navegables en **360×800, 390×844, 414×896 y
+horizontal 844×390** (132 combinaciones) con Chromium en modo táctil: **0 problemas**.
+- [x] Sin scroll horizontal en ninguna página ni anchura.
+- [x] Texto ≥ 12 px en todo el sitio (cuerpo a 17 px); campos de formulario a 16 px (iPhone no hace zoom).
+- [x] Zonas táctiles ≥ 44×44 px en enlaces y botones: migas, pie, índices, menú, filtros,
+      casillas, opciones, enlaces de flecha, teléfonos… Quedan exentos solo los enlaces
+      dentro de una frase (criterio WCAG 2.5.8 para enlaces «en línea»).
+- [x] Menú móvil cómodo con una mano: enlaces de ≥ 44 px, submenús a dos columnas y
+      acciones fijas abajo (Pedir presupuesto · Área clientes · teléfono). Cierre con Escape.
+- [x] «Área clientes» visible en la cabecera (móvil y escritorio), en el menú móvil y en el pie.
+- [x] Tabla comparativa de `/ventanas/`: en móvil es una tarjeta por sistema con pares
+      dato–valor (en tableta, dos columnas); en escritorio sigue siendo tabla.
+- [x] WhatsApp no tapa nada: en móvil y tableta se sustituye el botón flotante por una
+      barra inferior fija (Llamar · WhatsApp · Presupuesto) para la que la página reserva
+      espacio; comprobado que al final de cada página no cubre ningún enlace ni botón.
+      En escritorio ancho el botón queda en el margen, fuera de la columna de contenido.
+- [x] Horizontal (844×390): la cabecera deja de ser fija y la barra inferior se reduce.
+- [x] Carta de colores: rejilla adaptable (2 columnas a 360–414 px, hasta 6 en escritorio), nombres a 16 px.
+- [x] Revisión visual con capturas de portada, ventanas, contacto, foliado, menú abierto y las pantallas del portal.
+- [ ] **WebKit (Safari de iPhone): NO probado.** El navegador está descargado, pero faltan
+      librerías del sistema y hace falta sudo: `sudo .venv/bin/playwright install-deps webkit`.
+      Después: `.venv/bin/python herramientas/movil.py --motor webkit`. Precauciones ya
+      tomadas para Safari: campos a 16 px, `viewport-fit=cover` + `env(safe-area-inset-bottom)`
+      en las barras inferiores, sin `100vh` en elementos críticos, `-webkit-text-size-adjust`.
+
+### Carta de colores y sistemas
+- [x] 48 muestras de la carta oficial de Cortizo en 4 familias, servidas desde `/img/colores/` (0 peticiones a terceros).
+- [x] Aviso de colores orientativos por la calibración de pantalla.
+- [x] Muestras antiguas (de otro fabricante) movidas a `descartadas/`; INVENTARIO.md actualizado.
+- [x] Datos técnicos contrastados con las 5 páginas oficiales de Cortizo; tabla de fuente por dato en PREGUNTAS.md (apartado C).
+- [x] Denominación Cortizo en fichas, menú, comparativa y formulario; URLs sin cambios.
+- [x] Sin referencias al otro fabricante en web/, documentos ni herramientas (`herramientas/comprobar_nombres.sh`).
+- [x] Textos de colores y sistemas redactados con palabras propias (de Cortizo, solo datos).
+
+### Demo del área de clientes (`/area-clientes/`)
+- [x] Login simulado (cualquier usuario y contraseña), indicado en la pantalla de acceso; sin sesión, todas las pantallas llevan al acceso.
+- [x] Franja «Demo · Datos ficticios» fija en las 12 pantallas; `noindex, nofollow` en las 12; fuera del sitemap.
+- [x] Recorrido probado con Playwright: entrar → aceptar presupuesto (cambia a «Aceptado») → abrir incidencia con pedido preseleccionado → aparece en el listado → salir. 0 errores de JavaScript, 0 peticiones externas.
+- [x] Descargas: PDF de muestra (presupuesto, factura, albarán) y los 18 PDF reales de `web/docs/`.
+- [x] Nombres de clientes, obras y personas claramente ficticios; colores de la carta Cortizo.
+- [x] Mismo sistema visual (tipografías, paleta, botones) y mismos criterios de móvil; navegación inferior de 5 secciones en móvil.
+- [x] Propuestas propias marcadas en pantalla con la etiqueta «Propuesta» y recogidas en PREGUNTAS_CLIENTE.md.
+- [x] Datos con forma de API y documentados (`web/area-clientes/datos/LEEME.md`).
+
+### Servidor
+- [x] `despliegue/redirecciones.nginx.conf` generado desde `web/.htaccess`; `nginx -t` correcto y redirecciones probadas en un nginx temporal (301 en páginas, PDF y restos de WordPress; 404 propio).
+- [ ] **Pendiente de instalar en el nginx real (requiere root)**: ver PREGUNTAS.md, apartado K.
+- [x] Publicado y comprobado por HTTPS: portada, portal, JSON de datos e imágenes responden 200.
+
+---
+
+# Revisión de la Fase 3
 
 Revisado el 21/09/2026 sobre las 22 páginas HTML de `web/` (20 del mapa del sitio en
 `sitemap.xml` + `404.html` + `estilo.html`).
@@ -19,7 +83,7 @@ Cómo se ha comprobado:
 | Página | Móvil 390 | Escritorio 1440 | Observaciones |
 |---|:-:|:-:|---|
 | `/` | ✅ | ✅ | Foto principal a sangre en móvil; tarjetas de sistema compactas en móvil |
-| `/ventanas/` | ✅ | ✅ | La tabla comparativa se desplaza en horizontal dentro de su caja en móvil (accesible con teclado) |
+| `/ventanas/` | ✅ | ✅ | Comparativa en tarjetas en móvil, tabla en escritorio |
 | `/ventanas/a70-abisagrada/` | ✅ | ✅ | |
 | `/ventanas/a84-abisagrada/` | ✅ | ✅ | Muestra de la Fase 1 |
 | `/ventanas/a84-ho-abisagrada/` | ✅ | ✅ | |
@@ -28,7 +92,7 @@ Cómo se ha comprobado:
 | `/paneles-y-accesorios/` | ✅ | ✅ | 13 PDF comprobados |
 | `/acabados/` | ✅ | ✅ | |
 | `/acabados/pvc-blanco/` | ✅ | ✅ | |
-| `/acabados/pvc-foliado/` | ✅ | ✅ | 18 muestras: 2 columnas en móvil, 6 en escritorio |
+| `/acabados/pvc-foliado/` | ✅ | ✅ | Carta Cortizo: 48 muestras en 4 familias |
 | `/acabados/vidrios/` | ✅ | ✅ | Índice lateral fijo en escritorio |
 | `/profesionales/` | ✅ | ✅ | Contiene 1 marcador de foto pendiente |
 | `/distribuidores/` | ✅ | ✅ | |

@@ -1,8 +1,9 @@
 # Redirecciones: URL antigua → URL nueva
 
-Todas deben ser redirecciones **301 (permanentes)**. Están ya escritas para Apache en
-`web/.htaccess`; si el alojamiento es Nginx u otro, hay que trasladarlas a su
-configuración (la tabla es la referencia). Las URLs antiguas funcionan con y sin barra final.
+Todas deben ser redirecciones **301 (permanentes)**. Están escritas para **nginx** en
+`despliegue/redirecciones.nginx.conf` (para incluir dentro del bloque `server`; validado
+con `nginx -t`) y para Apache en `web/.htaccess`. Hay que mantener los dos a la par con
+esta tabla, que es la referencia. Las URLs antiguas funcionan con y sin barra final.
 
 ## Páginas
 

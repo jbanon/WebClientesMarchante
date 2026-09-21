@@ -194,6 +194,11 @@ Las páginas de web/ son HTML completo y son la fuente de verdad (no hay compila
 - `imagenes.py`: regenera web/img/ (WebP) desde recursos/.
 - `enlaces.py`: enlaces rotos, alt, title/description, h1.
 - `captura_menu.py` y `trozo.py`: capturas del menú y recortes para revisar.
+- `movil.py`: auditoría de móvil (360/390/414 y 844×390; `--motor webkit`, `--capturas`).
+- `datos_demo.py` y `pdf_demo.py`: generan los datos ficticios y los PDF de muestra de la
+  demo del portal. `comunes.py` ignora web/area-clientes/ (su marco lo pinta portal.js).
+- `comprobar_nombres.sh`: obligatorio antes de cada commit (nombres prohibidos en ficheros
+  y en mensajes de commit). `publicar.sh`: publica web/ en el servidor.
 
 ### Decisiones ya tomadas por el responsable
 - Cortizo es el proveedor de perfiles; los sistemas A70, A84, A84 HO, C70 y E170 son

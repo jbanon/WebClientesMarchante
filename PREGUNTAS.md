@@ -1,4 +1,7 @@
-# Preguntas, decisiones tomadas y pendientes
+# Preguntas, decisiones tomadas y pendientes (documento INTERNO)
+
+> Las preguntas que debe responder el cliente están, en lenguaje sencillo, en
+> `PREGUNTAS_CLIENTE.md`. Aquí quedan las notas técnicas y las decisiones tomadas.
 
 Cada punto indica **qué se decidió** para no bloquear el trabajo. Lo marcado con
 ⚠️ necesita una respuesta o un material por parte del responsable.
@@ -18,7 +21,9 @@ Cada punto indica **qué se decidió** para no bloquear el trabajo. Lo marcado c
 | 9 | ⚠️ PDFs de **«Posibilidades de apertura»** de cada sistema (no estaban en la copia) | las 5 fichas |
 | 10 | ⚠️ Carta de colores: ¿completa de Cortizo o una selección? Permiso de uso de imágenes de Cortizo | `/acabados/pvc-foliado/` |
 | 11 | Horario de atención y coordenadas, si se quieren añadir | contacto y datos estructurados |
-| 12 | Tipo de servidor del alojamiento (Apache/Nginx) para las redirecciones | `web/.htaccess`, REDIRECCIONES.md |
+| 12 | ⚠️ Incluir `despliegue/redirecciones.nginx.conf` en el bloque server de nginx (requiere root) | servidor |
+| 13 | ⚠️ `sudo .venv/bin/playwright install-deps webkit` para poder probar con WebKit (Safari) | revisión móvil |
+| 14 | Validar con el cliente la demo del portal y sus propuestas (apartado J) | `/area-clientes/` |
 
 ## B. Decisiones del responsable ya aplicadas
 
@@ -184,8 +189,11 @@ Notas:
 - **Rojo**: el corporativo `#EC1C24` se usa solo en filetes y detalles. Para botones y
   enlaces se usa `#C9121A`, porque el corporativo no alcanza contraste AA con texto
   blanco (4,4:1). ⚠️ Confirmar el rojo exacto cuando llegue el logo vectorial.
-- **WhatsApp**: botón flotante al 623 146 934 (el móvil de contacto.md), en color
-  tinta para no competir con el rojo; pasa a verde al pasar el ratón.
+- **WhatsApp**: en móvil y tableta (< 1280 px) NO hay botón flotante, porque cualquier
+  botón flotante acaba tapando contenido: hay una **barra de contacto inferior** fija
+  (Llamar · WhatsApp · Presupuesto) y la página reserva su altura. En escritorio ancho
+  el botón de WhatsApp (623 146 934) vive en el margen derecho, fuera de la columna de
+  contenido. La barra se oculta con el menú móvil abierto.
 - **Facebook**: además de Instagram, se enlaza `facebook.com/marchantepvc` (estaba en la
   web antigua). La web antigua enlazaba también un perfil «Aluminios Marchante»; no se
   ha incluido. ⚠️ Confirmar cuál es el vigente.
@@ -202,3 +210,64 @@ Notas:
 - No hay fotos de detalle (herrajes, manillas, foliados instalados), de vidrios ni de
   instalación. La web funciona sin ellas, pero mejorarían fichas y guías.
 - Los colores foliados en pantalla son orientativos (se avisa en la página).
+
+## J. Demo del área de clientes (`/area-clientes/`)
+
+Decisiones (todo a validar con el cliente; ver PREGUNTAS_CLIENTE.md, tema 5):
+- **Qué es**: maqueta estática. Login simulado (cualquier usuario/contraseña), franja
+  «Demo · Datos ficticios» fija en todas las pantallas, `noindex, nofollow` en todas sus
+  páginas y fuera del sitemap. No se bloquea en robots.txt a propósito: si se bloquea,
+  los buscadores no llegan a leer el `noindex`.
+- **Pantallas**: acceso, inicio (resumen + pedidos en curso + presupuestos por aceptar),
+  presupuestos (listado con filtros, detalle con partidas, PDF y botón de aceptar),
+  pedidos (listado y detalle con seguimiento por 4 fases y fecha prevista), facturas y
+  albaranes, incidencias (listado, detalle con historial, alta con fotos), documentación
+  técnica (PDF reales de `web/docs/` + guías de la web) y datos de la cuenta.
+- **Propuestas propias** (marcadas en pantalla con la etiqueta «Propuesta»): avisos por
+  correo configurables, vencimientos y descarga múltiple de facturas, marcado CE y
+  declaración de prestaciones por pedido, alta de direcciones de obra, varios usuarios
+  con permisos, comercial asignado, documentación reservada, confirmación de dirección
+  al aceptar. También son propuesta: la factura de anticipo del 40 %, los tipos de
+  incidencia y las condiciones comerciales visibles.
+- **Datos**: `web/area-clientes/datos/*.json`, generados por `herramientas/datos_demo.py`
+  con forma de respuesta de API (`{meta, datos}`), documentados en `datos/LEEME.md` con
+  el endpoint futuro de cada uno. En `portal.js` solo la capa `api` conoce el origen de
+  los datos; los cambios de la demo (aceptar, nueva incidencia) viven en sessionStorage
+  y se pierden al cerrar la pestaña. Fecha «de hoy» de la demo fija: 21/09/2026.
+- **Nombres**: todos inventados y con marca de ficticio (Carpintería Ejemplo Demo, S.L.,
+  Villaejemplo, Residencial Los Almendros (obra ficticia)…). NIF B00000000, IBAN de
+  ceros, correos `@cliente-demo.example`. El teléfono y correo del «comercial» son los
+  generales de Marchante.
+- **Colores** de presupuestos y pedidos: de la carta Cortizo (Blanco, Gris Antracita,
+  Roble Dorado, Nogal, Negro Ultramate), con su muestra.
+- **PDF de muestra** (`docs-demo/`): presupuesto, factura y albarán ficticios generados
+  con `herramientas/pdf_demo.py`, con banda «Documento de muestra · Sin validez». Todos
+  los presupuestos/facturas de la demo descargan el mismo PDF de muestra.
+- **Móvil**: navegación inferior fija de 5 secciones (al alcance del pulgar); Documentación
+  y Cuenta quedan en la cabecera y el pie. En la web pública esa posición la ocupa la
+  barra de contacto; en el portal no hay barra de contacto.
+- **Base de referencia externa**: consultada solo para la estructura general (resumen,
+  pedidos con progreso por fases, presupuesto pendiente, documentos). No se ha tomado
+  ningún texto, dato, color ni recurso. Descartado por no encajar: catálogo por familias
+  de producto y novedades comerciales. `herramientas/comprobar_nombres.sh` se ejecuta
+  antes de cada commit.
+- El marco del portal (cabecera, navegación, pie) lo pinta `portal.js`; por eso
+  `herramientas/comunes.py` ignora `web/area-clientes/`.
+
+## K. Servidor y publicación
+
+- Publicación: `herramientas/publicar.sh` (rsync a `/var/www/clientesmarchante/`, excluye
+  `.htaccess`). URL: https://clientesmarchante.winsoft.es
+- ⚠️ **Por instalar (root)**: las redirecciones. Añadir dentro del bloque `server { … }`:
+  `include /home/dev/proyectos/GestionMarchante/webClientes/despliegue/redirecciones.nginx.conf;`
+  (o copiar el fichero a `/etc/nginx/snippets/`), luego `sudo nginx -t && sudo systemctl
+  reload nginx`. El fichero incluye también `error_page 404 /404.html;` y cabeceras de
+  caché. Validado con `nginx -t` y con peticiones reales en un nginx temporal local.
+  Si el bloque server ya define `error_page 404` o `location` iguales, quitar los duplicados.
+- Mientras el sitio esté en un dominio de pruebas conviene que no lo indexe Google: ahora
+  mismo la web pública es indexable y sus canónicas apuntan a `marchantepvc.com`.
+  Propuesta: añadir en nginx `add_header X-Robots-Tag "noindex" always;` hasta el lanzamiento.
+- ⚠️ **WebKit**: descargado, pero faltan librerías del sistema (libgtk-4, gstreamer…).
+  Hace falta `sudo .venv/bin/playwright install-deps webkit`. Después:
+  `.venv/bin/python herramientas/movil.py --motor webkit`. Hasta entonces la auditoría
+  móvil se ha pasado solo con Chromium (emulación táctil).
