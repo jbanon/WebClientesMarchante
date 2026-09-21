@@ -27,6 +27,7 @@
     <a class="cabecera__logo" href="/" aria-label="Marchante PVC, inicio">
       <img src="/img/marca/logo-marchante.png" alt="Marchante, sistemas de ventanas" width="352" height="149">
     </a>
+    <a class="cabecera__area" href="/area-clientes/"><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>Área clientes</span></a>
     <button class="menu-boton" type="button" aria-expanded="false" aria-controls="nav">
       <span class="menu-boton__texto">Menú</span><span class="menu-boton__icono" aria-hidden="true"></span>
     </button>
@@ -57,6 +58,7 @@
       <div class="nav__cta">
         <a class="nav__tel" href="tel:+34967095320">967 095 320</a>
         <a class="boton" href="/contacto/#presupuesto">Pedir presupuesto</a>
+        <a class="boton boton--linea nav__area" href="/area-clientes/">Área clientes</a>
       </div>
     </nav>
   </div>
@@ -199,6 +201,7 @@
           <li><a href="/profesionales/">Profesionales</a></li>
           <li><a href="/distribuidores/">Distribuidores</a></li>
           <li><a href="/contacto/">Contacto</a></li>
+          <li><a href="/area-clientes/">Área clientes</a></li>
         </ul>
       </div>
       <div>
@@ -206,10 +209,10 @@
         <address>
           Calle Arturo Díaz Jiménez, 3<br>
           02600 Villarrobledo (Albacete)<br>
-          <a href="tel:+34967095320">967 095 320</a> · <a href="tel:+34623146934">623 146 934</a><br>
+          <span class="pie__tels"><a href="tel:+34967095320">967 095 320</a> <a href="tel:+34623146934">623 146 934</a></span>
           <a href="mailto:info@marchantepvc.com">info@marchantepvc.com</a>
         </address>
-        <ul style="margin-top:1rem; display:flex; gap:1.25rem">
+        <ul class="pie__redes">
           <li><a href="https://www.instagram.com/marchantepvc/" rel="noopener">Instagram</a></li>
           <li><a href="https://www.facebook.com/marchantepvc" rel="noopener">Facebook</a></li>
         </ul>
@@ -226,6 +229,11 @@
     </div>
   </div>
 </footer>
+<nav class="barra-contacto" aria-label="Contacto rápido">
+  <a href="tel:+34967095320"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h3l1.5 4.5-2 1.4a12 12 0 0 0 6 6l1.4-2L21 14.4v3c0 1.4-1.2 2.6-2.6 2.6C10.4 20 4 13.600 4 5.6 4 4.200 5.200 3 6.600 3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>Llamar</span></a>
+  <a href="https://wa.me/34623146934" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.42 15.1L2 22l5.03-1.58A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.13 15.07l-.3-.18-2.98.94.96-2.9-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.4 3.9c-.17 0-.45.06-.68.32-.24.26-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.78 2.85 4.4 3.88 2.17.86 2.62.69 3.09.64.47-.04 1.52-.62 1.74-1.22.21-.6.21-1.11.15-1.22-.07-.1-.24-.17-.5-.3-.26-.13-1.52-.75-1.76-.84-.23-.08-.4-.13-.58.13-.17.26-.66.84-.81 1.01-.15.17-.3.2-.56.07-.26-.13-1.09-.4-2.07-1.28a7.8 7.8 0 0 1-1.44-1.79c-.15-.26-.02-.4.11-.53.12-.11.26-.3.39-.45.13-.15.17-.26.26-.43.08-.17.04-.32-.02-.45-.07-.13-.57-1.42-.8-1.94-.2-.47-.41-.4-.57-.41h-.5Z"/></svg><span>WhatsApp</span></a>
+  <a class="barra-contacto__cta" href="/contacto/#presupuesto"><span>Presupuesto</span></a>
+</nav>
 <a class="whatsapp" href="https://wa.me/34623146934" rel="noopener" aria-label="Escríbenos por WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.42 15.1L2 22l5.03-1.58A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.13 15.07l-.3-.18-2.98.94.96-2.9-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.4 3.9c-.17 0-.45.06-.68.32-.24.26-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.78 2.85 4.4 3.88 2.17.86 2.62.69 3.09.64.47-.04 1.52-.62 1.74-1.22.21-.6.21-1.11.15-1.22-.07-.1-.24-.17-.5-.3-.26-.13-1.52-.75-1.76-.84-.23-.08-.4-.13-.58.13-.17.26-.66.84-.81 1.01-.15.17-.3.2-.56.07-.26-.13-1.09-.4-2.07-1.28a7.8 7.8 0 0 1-1.44-1.79c-.15-.26-.02-.4.11-.53.12-.11.26-.3.39-.45.13-.15.17-.26.26-.43.08-.17.04-.32-.02-.45-.07-.13-.57-1.42-.8-1.94-.2-.47-.41-.4-.57-.41h-.5Z"/></svg>
   <span>WhatsApp</span>

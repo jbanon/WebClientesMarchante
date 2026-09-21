@@ -362,7 +362,7 @@ figure { margin: 0; }
   border: 1px solid var(--linea); text-decoration: none; color: var(--tinta); transition: border-color 0.2s, background-color 0.2s;
 }
 .descarga:hover { border-color: var(--tinta); background: var(--papel-2); }
-.descarga__tipo { flex: none; display: grid; place-items: center; width: 3rem; height: 3.75rem; border: 1px solid var(--tinta); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; }
+.descarga__tipo { flex: none; display: grid; place-items: center; width: 3rem; height: 3.75rem; border: 1px solid var(--tinta); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; }
 .descarga__texto { display: grid; gap: 0.1rem; line-height: 1.35; }
 .descarga__texto strong { font-weight: 600; }
 .descarga__texto span { font-size: 0.875rem; color: var(--gris-medio); }
@@ -576,3 +576,102 @@ body.menu-abierto .whatsapp { display: none; }
 .pie__rejilla ul { gap: 0.1rem; }
 .pie li a, .pie address a { display: inline-block; padding-block: 0.3rem; }
 .pie address { line-height: 1.5; }
+
+/* ==========================================================================
+   MÓVIL — requisito prioritario (ver CLAUDE.md). Auditoría: herramientas/movil.py
+   ========================================================================== */
+
+/* Enlace «Área clientes» de la cabecera */
+.cabecera__area { display: inline-flex; align-items: center; gap: 0.45rem; min-height: 2.75rem; margin-left: auto; padding: 0 0.25rem; font-size: 0.9063rem; font-weight: 500; color: var(--tinta); text-decoration: none; white-space: nowrap; }
+.cabecera__area:hover { color: var(--rojo-ui); }
+.cabecera__area svg { flex: none; }
+.cabecera__barra { gap: 0.5rem; }
+@media (max-width: 22.4em) { .cabecera__logo img { height: 2.5rem; } .cabecera__area { font-size: 0.8438rem; } }
+@media (min-width: 68em) {
+  .cabecera__barra { gap: 1.5rem; }
+  .nav { margin-left: auto; }
+  .cabecera__area { order: 3; margin-left: 0; padding-left: 1.25rem; border-left: 1px solid var(--linea); }
+  .nav__area { display: none; }
+  .nav { gap: 1.5rem; }
+}
+
+/* Menú móvil cómodo con una mano: enlaces altos y acciones fijas abajo, al alcance del pulgar */
+@media (max-width: 67.99em) {
+  .nav { padding-bottom: 0; display: none; flex-direction: column; }
+  .nav.abierta { display: flex; }
+  .nav__lista { flex: 1 0 auto; padding-bottom: 1.5rem; }
+  .nav__lista > li > a { padding: 0.85rem 0; min-height: 3rem; }
+  .nav__sub { margin: -0.15rem 0 0.9rem; grid-template-columns: 1fr 1fr; column-gap: 1rem; }
+  .nav__sub a { display: flex; align-items: center; min-height: 2.75rem; padding: 0.25rem 0; line-height: 1.25; }
+  .nav__cta { position: sticky; bottom: 0; margin: 0 calc(var(--margen) * -1); padding: 0.85rem var(--margen) calc(0.85rem + env(safe-area-inset-bottom)); grid-template-columns: 1fr 1fr; gap: 0.6rem; background: var(--papel); border-top: 1px solid var(--linea); }
+  .nav__cta .boton { min-height: 3rem; padding-inline: 0.75rem; font-size: 0.9688rem; }
+  .nav__tel { grid-column: 1 / -1; order: 3; min-height: 2.75rem; display: flex; align-items: center; justify-content: center; padding: 0; }
+  body.menu-abierto .barra-contacto { display: none; }
+}
+
+/* Barra de contacto inferior (móvil y tableta): sustituye al botón flotante de WhatsApp para
+   no tapar nunca contenido; la página reserva su altura. En escritorio ancho, botón en el margen. */
+.barra-contacto { position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; display: grid; grid-template-columns: 1fr 1fr 1.25fr; background: var(--tinta); padding-bottom: env(safe-area-inset-bottom); box-shadow: 0 -6px 24px rgba(18, 28, 34, 0.16); }
+.barra-contacto a { display: flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 3.25rem; color: #fff; text-decoration: none; font-size: 0.9375rem; font-weight: 500; border-left: 1px solid rgba(255, 255, 255, 0.14); }
+.barra-contacto a:first-child { border-left: 0; }
+.barra-contacto svg { width: 1.25rem; height: 1.25rem; fill: currentColor; flex: none; }
+.barra-contacto a:first-child svg { fill: none; }
+.barra-contacto__cta { background: var(--rojo-ui); }
+body { padding-bottom: calc(3.25rem + env(safe-area-inset-bottom)); }
+.whatsapp { display: none; }
+@media (min-width: 80em) {
+  .barra-contacto { display: none; }
+  body { padding-bottom: 0; }
+  .whatsapp { display: flex; right: 0.25rem; bottom: 1.5rem; width: 3rem; height: 3rem; padding: 0; justify-content: center; }
+  .whatsapp span { display: none; }
+}
+@media (min-width: 96em) { .whatsapp { right: 1.5rem; width: auto; height: 3.5rem; padding: 0 1.25rem; } .whatsapp span { display: inline; } }
+/* En horizontal con poca altura la cabecera deja de ser fija para no comerse la pantalla */
+@media (max-height: 30em) { .cabecera { position: static; } .barra-contacto a { min-height: 2.75rem; } body { padding-bottom: 2.75rem; } html { scroll-padding-top: 1rem; } }
+
+/* Zonas táctiles ≥ 44 px */
+@media (max-width: 79.99em) {
+  .migas { gap: 0 0.35rem; margin-bottom: 1.25rem; }
+  .migas a, .migas li[aria-current] { display: inline-flex; align-items: center; min-height: 2.75rem; min-width: 2.75rem; }
+  .migas li { display: inline-flex; align-items: center; }
+  .migas li + li::before { margin-right: 0.35rem; }
+  .enlace { min-height: 2.75rem; padding-bottom: 0; }
+  .botones { gap: 0.75rem 1.25rem; }
+  .pie__rejilla ul { gap: 0; }
+  .pie li a, .pie address a { display: inline-flex; align-items: center; min-height: 2.75rem; min-width: 2.75rem; padding-block: 0; }
+  .pie__tels { display: flex; flex-wrap: wrap; gap: 0 1.5rem; }
+  .pie address a { display: flex; }
+  .pie__base ul { gap: 0 1.5rem; }
+  .indice a { display: flex; align-items: center; min-height: 2.75rem; padding-block: 0.4rem; }
+  .llamada__datos { gap: 0.25rem; }
+  .llamada__datos a { display: flex; align-items: center; min-height: 2.75rem; }
+  .contacto__lista dd a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+  .contacto__lista dd br { display: none; }
+  .contacto__lista dd { display: grid; justify-items: start; }
+  .contacto__lista dd .enlace { margin-top: 0 !important; }
+  .radios span { padding: 0.72rem 1.1rem; }
+  .casilla { min-height: 2.75rem; align-items: center; }
+  .casilla input { margin-top: 0; width: 1.5rem; height: 1.5rem; }
+  .casilla { grid-template-columns: 1.5rem 1fr; }
+  .otros a { min-height: 2.75rem; }
+  .tarjeta__mas { display: inline-flex; align-items: center; min-height: 2.75rem; }
+  .prosa table a, .tabla a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+}
+.pie__redes { margin-top: 0.5rem !important; display: flex !important; gap: 0 1.5rem !important; }
+
+/* Tabla comparativa → tarjetas en móvil */
+@media (max-width: 59.99em) {
+  .tabla--comparativa { min-width: 0; display: block; }
+  .tabla--comparativa thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .tabla--comparativa tbody { display: grid; gap: 1rem; }
+  @media (min-width: 40em) { .tabla--comparativa tbody { grid-template-columns: 1fr 1fr; } }
+  .tabla--comparativa tr { display: block; padding: 1.25rem 1.25rem 0.5rem; border: 1px solid var(--linea); background: var(--papel); }
+  .tabla--comparativa tbody th { display: block; padding: 0 0 0.75rem; border: 0 !important; border-bottom: 1px solid var(--tinta) !important; font-size: 1.9rem; white-space: normal; }
+  .tabla--comparativa tbody th a { display: flex; justify-content: space-between; align-items: center; min-height: 2.75rem; }
+  .tabla--comparativa tbody th a::after { content: "→"; font-family: var(--sans); font-size: 1.1rem; color: var(--rojo-ui); }
+  .tabla--comparativa td { display: flex; justify-content: space-between; gap: 1rem; padding: 0.7rem 0; border-top: 0 !important; white-space: normal; text-align: right; color: var(--tinta); font-weight: 600; font-size: 1rem; }
+  .tabla--comparativa tr td:last-child { border-bottom: 0; }
+  .tabla--comparativa td::before { content: attr(data-label); font-weight: 400; color: var(--texto); text-align: left; }
+  .tabla--comparativa tbody tr:hover td, .tabla--comparativa tbody tr:hover th { background: none; }
+}
+@media (max-width: 67.99em) { .nav__cta .boton { white-space: nowrap; font-size: 0.9063rem; padding-inline: 0.4rem; } }
