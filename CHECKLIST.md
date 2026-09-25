@@ -18,6 +18,8 @@ Alcance: 5 fichas de sistema, `/ventanas/`, `/acabados/pvc-blanco/`, `/acabados/
 - [x] `sitemap.xml`: URL nueva y `lastmod` de las páginas modificadas.
 - [x] `estilo.html`: ejemplo de la tarjeta `.documento`.
 - [x] PDF pesados reducidos con ghostscript: catálogo Indupanel 37,5 → 18,7 MB; aperturas A84 HO 9,8 → 0,3 MB. El peso se muestra en cada enlace.
+- [x] Portada: héroe con el vídeo de YouTube de fondo (`youtube-nocookie`, bucle, silenciado, sin subtítulos) y textos encima; imagen de reserva mientras carga y con «reducir movimiento». `movil.py` 0 problemas. ⚠️ En Chromium sin cabeza el reproductor da error y muestra su rótulo: comprobar la reproducción en un navegador real (escritorio y iPhone).
+- [ ] Aviso de cookies: pendiente (la portada vuelve a cargar YouTube).
 - [ ] WebKit sigue sin probar (ver segunda revisión).
 - [ ] Esquema «Formulación» del folleto: descartado (no se lee a 390 px).
 

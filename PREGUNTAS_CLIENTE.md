@@ -29,7 +29,12 @@ encontrado en la web antigua.
 La web antigua enlazaba dos: «marchantepvc» y una más antigua, «Aluminios Marchante».
 Hemos puesto solo la primera. ¿Es correcto? ¿El Instagram (@marchantepvc) sigue activo?
 
-**1.4. ¿Queréis recuperar los vídeos de YouTube que había en la portada?**
+**1.4. El vídeo de YouTube de la portada. (Decidido: se mantiene como en la web actual)**
+Está puesto de fondo en la cabecera de la portada, en bucle, sin sonido y sin subtítulos,
+con los textos y el teléfono encima. Al cargar YouTube se instalan cookies de Google, así
+que la web necesita un aviso de cookies: hay que decidir con la asesoría el texto y si
+basta un aviso informativo o hace falta botón de aceptar/rechazar (en ese caso el vídeo
+solo se cargaría tras aceptar). Lo que había antes:
 Los hemos quitado porque, tal como estaban, obligan por ley a poner un aviso de cookies.
 - Opción A (recomendada): mostrarlos como una imagen con un botón de «ver vídeo», que solo
   carga YouTube cuando alguien lo pulsa. Así no hace falta aviso de cookies.

@@ -12,7 +12,7 @@ Cada punto indica **qué se decidió** para no bloquear el trabajo. Lo marcado c
 |---|---|---|
 | 1 | ⚠️ **Servicio del formulario de contacto** | `web/contacto/index.html`, atributo `action` del `<form id="formulario-contacto">` (único sitio) |
 | 2 | ⚠️ **Texto del aviso legal** (la web antigua no tenía uno real) | `/aviso-legal/` |
-| 3 | ⚠️ **Revisar la política de cookies**: describe un banner y cookies de Google/YouTube que la web nueva ya no usa | `/cookies/` |
+| 3 | ⚠️ **Cookies**: desde el 25/09/2026 la portada vuelve a incrustar el vídeo de YouTube (decisión del cliente: replicar la web anterior), así que las cookies de Google/YouTube que describe la política SÍ se instalan. Hace falta un **aviso/banner de cookies** (la web no lo tiene) y que la asesoría revise el texto | `/` y `/cookies/` |
 | 4 | ⚠️ **Fotos de la fábrica / equipo** | `/empresa/` (marcador visible) |
 | 5 | ⚠️ **Foto de ventanas embaladas / transporte** | `/profesionales/` (marcador visible) |
 | 6 | ⚠️ Confirmar con Cortizo la **licencia de las fotos de ambiente** | todas las fotos de `obras/` |
@@ -119,7 +119,11 @@ Notas:
 6. **Bloque «Sistemas practicables / deslizantes / de persiana / Puertas de entrada /
    Curiosidades / Vídeos informativos»** de la portada: eran títulos sin contenido
    (uno, «Gas and oil industry», resto de la plantilla).
-7. **Vídeos de YouTube** de la portada (fondo y «¿Quiénes somos?»): incrustar YouTube
+7. ~~**Vídeos de YouTube**~~ (25/09/2026: el cliente pidió replicar la web anterior; el vídeo
+   `tyro2m9wbl0` vuelve a estar de fondo en el héroe de la portada, vía `youtube-nocookie.com`,
+   en bucle completo, silenciado y sin subtítulos, con los textos, botones y teléfono encima;
+   la foto del comedor queda como imagen de reserva y con «reducir movimiento»). Texto original:
+   incrustar YouTube
    instala cookies de terceros y obligaría a un banner de consentimiento. ⚠️ Si se
    quieren recuperar, propongo un enlace o una miniatura que cargue el vídeo solo al
    pulsar (`youtube-nocookie`).
