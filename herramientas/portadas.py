@@ -18,10 +18,6 @@ PDFS = [
     "catalogo-indupanel-paneles", "pdf-paneles-miniaturas", "pdf-accesorios", "plafones-pf-indupanel",
     "01-avant", "02-lido", "03-natura", "04-avplus", "05-innova", "06-taracea", "07-basica",
     "08-rustica", "09-clasica2", "10-tempo", "11-ip",
-    "aperturas-a70-abisagrada", "aperturas-a84-abisagrada", "aperturas-a84-ho",
-    "aperturas-c70-corredera", "aperturas-e170-corredera-elevable",
-    "ficha-tecnica-a70-abisagrada", "ficha-tecnica-a84-abisagrada", "ficha-tecnica-a84-ho",
-    "ficha-tecnica-c70-corredera", "ficha-tecnica-e170-corredera-elevable",
 ]
 
 
