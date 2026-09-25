@@ -272,6 +272,10 @@ Decisiones (todo a validar con el cliente; ver PREGUNTAS_CLIENTE.md, tema 5):
 
 - Publicación: `herramientas/publicar.sh` (rsync a `/var/www/clientesmarchante/`, excluye
   `.htaccess`). URL: https://clientesmarchante.winsoft.es
+- ⏸️ **Web de pruebas PARADA desde el 25/09/2026, hasta nuevo aviso del responsable.** En
+  `/var/www/clientesmarchante/` solo hay una página «Web en preparación» (`noindex`,
+  `robots.txt` con `Disallow: /`); el resto de rutas devuelven 404. Para volver a
+  publicarla basta ejecutar `herramientas/publicar.sh` (repone todo el contenido de `web/`).
 - ⚠️ **Por instalar (root)**: las redirecciones. Añadir dentro del bloque `server { … }`:
   `include /home/dev/proyectos/GestionMarchante/webClientes/despliegue/redirecciones.nginx.conf;`
   (o copiar el fichero a `/etc/nginx/snippets/`), luego `sudo nginx -t && sudo systemctl
