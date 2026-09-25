@@ -96,6 +96,29 @@ Marchante (solo trabaja con Cortizo). Movido a `descartadas/` y fuera de la web:
 Ojo: es probable que las 6 fotos de `obras/` procedan también del banco de imágenes de
 ese otro fabricante y no de Cortizo (ver PREGUNTAS_CLIENTE.md).
 
+## Material recibido el 25/09/2026 (antigua/WEB-antigua)
+
+Estudio completo en `RECURSOS_NUEVOS.md` (raíz del proyecto).
+
+- **productos/**: los cinco renders de perfil en su tamaño original (1514×1024 y ~90 KB,
+  frente a los recortes 1340×701 de 13–21 KB que había). Sustituyen a los `.webp`
+  anteriores como `perfil-<sistema>-seccion.jpg`.
+- **obras/** (siete fotos de ambiente de Cortizo, misma procedencia que las seis
+  anteriores; licencia pendiente igual que aquellas):
+
+| Archivo | Qué muestra | Tamaño | Uso |
+|---|---|---|---|
+| `salon-ventana-dos-hojas-antracita.jpg` | Salón con ventana de dos hojas en antracita | 1536×1024 | Foto ancha de `/ventanas/a70-abisagrada/` |
+| `salon-balconera-nogal-jardin.jpg` | Salón blanco con balconera en nogal abierta al jardín | 1403×1024 | Foto ancha de `/ventanas/a84-abisagrada/` |
+| `hormigon-ventana-cuadrada-negra.jpg` | Ventana cuadrada de marco negro en muro de hormigón | 1533×1024 | Foto ancha de `/ventanas/a84-ho-abisagrada/` |
+| `interior-corredera-madera-patio.png` | Interior con corredera de madera hacia un patio | 1200×841 | Foto ancha de `/ventanas/c70-corredera/` (máx. 1024) |
+| `vivienda-moderna-anochecer-correderas.jpg` | Vivienda moderna al anochecer, grandes correderas | 1535×1024 | Foto ancha de `/ventanas/e170-elevadora/` |
+| `dormitorio-ventana-blanca.jpg` | Dormitorio-estudio con ventana blanca (vertical) | 683×1024 | Bloque «Luz y sencillez» de `/acabados/pvc-blanco/` |
+| `casa-piedra-balconera-oscura-terraza.jpg` | Casa de piedra con balconera oscura y terraza (vertical) | 683×1024 | Reserva (generada a 640) |
+
+Las portadas de los PDF (`web/img/docs/`) no son imágenes de origen: las genera
+`herramientas/portadas.py` a partir de `web/docs/`.
+
 ## Uso real en la web (Fase 2)
 
 | Imagen | Páginas |

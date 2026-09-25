@@ -18,8 +18,8 @@ Cada punto indica **qué se decidió** para no bloquear el trabajo. Lo marcado c
 | 6 | ⚠️ Confirmar con Cortizo la **licencia de las fotos de ambiente** | todas las fotos de `obras/` |
 | 7 | ⚠️ **Logos vectoriales** (Marchante y partners) | cabecera, pie, franja de marcas |
 | 8 | ⚠️ Confirmar los **datos técnicos** marcados en el apartado C (A84 Uw, C70, E170, versión Passivhaus) | fichas |
-| 9 | ⚠️ PDFs de **«Posibilidades de apertura»** de cada sistema (no estaban en la copia) | las 5 fichas |
-| 10 | ⚠️ Carta de colores: ¿completa de Cortizo o una selección? Permiso de uso de imágenes de Cortizo | `/acabados/pvc-foliado/` |
+| 9 | ✅ PDFs de **«Posibilidades de apertura»**: recibidos el 25/09/2026 y publicados en las 5 fichas y en `/documentacion/` | las 5 fichas |
+| 10 | ✅ Carta de colores: las cartas oficiales en PDF recibidas el 25/09/2026 contienen exactamente los 40 colores de la web (3+2 estándar, 35 especiales). Pendiente solo el permiso de uso (3.4 del cliente) | `/acabados/pvc-foliado/` |
 | 11 | Horario de atención y coordenadas, si se quieren añadir | contacto y datos estructurados |
 | 12 | ⚠️ Incluir `despliegue/redirecciones.nginx.conf` en el bloque server de nginx (requiere root) | servidor |
 | 13 | ⚠️ `sudo .venv/bin/playwright install-deps webkit` para poder probar con WebKit (Safari) | revisión móvil |
@@ -52,7 +52,7 @@ Cortizo solo se toman datos; los textos son de redacción propia.
 | A70 | Acristalamiento máx. | 42 mm | 40 mm | 42 mm (mín. 4) | **42 mm** · Cortizo |
 | A70 | Aperturas | sin «plegable» | con «plegable» | — | **sin «plegable»** · web antigua |
 | A70 | Uw / Rw / aire / agua / viento | 0,9 · 46 dB · 4 · E1800 · C5 | igual | igual | sin cambios |
-| A84 | **Uw desde** | 0,79 | 0,79 | **1,0** | **1,0 W/m²K** · Cortizo ⚠️ |
+| A84 | **Uw desde** | 0,79 | 0,79 | **1,0** | **1,0 W/m²K** · Cortizo ⚠️ (el folleto de calidad de nov. 2024 también dice 0,79; la web oficial, consultada de nuevo el 25/09/2026, sigue en 1,0) |
 | A84 | Acristalamiento | 54 mm | 54 mm | 24–54 mm | **24–54 mm** |
 | A84 | Rw / aire / agua / viento | 46 dB · 4 · E1500 · C5 | igual | igual | sin cambios |
 | A84 Hoja Oculta | Uw desde | 0,71 / 0,74 (y «1.0») | 0,71 / 0,74 | **0,74** | **0,74 W/m²K** · Cortizo |
@@ -136,7 +136,13 @@ Notas:
 2. **`/profesionales/`** reúne las tres guías en una sola página con índice y anclas
    (`#instalacion`, `#mantenimiento`, `#transporte`) y enlaza a vidrios. Los textos son
    cortos y no justificaban tres subpáginas.
-3. **`/acabados/vidrios/`** fusiona «Tipo de vidrios» y «V vis V: vinilos y vidrios».
+3. **Página nueva `/documentacion/`** (25/09/2026): reúne los 5 PDF de fichas técnicas,
+   los 5 de configuraciones y aperturas, las 2 cartas de foliados y el folleto de calidad,
+   y enlaza a `/paneles-y-accesorios/`. Entra por el submenú «Ventanas», el pie y el
+   botón de `/profesionales/`. Componente nuevo `.documento` (tarjeta con portada del
+   PDF, generada con `herramientas/portadas.py`); el esquema «Formulación» del folleto
+   se descartó porque a 390 px no se lee. Detalle en `RECURSOS_NUEVOS.md`.
+4. **`/acabados/vidrios/`** fusiona «Tipo de vidrios» y «V vis V: vinilos y vidrios».
    El apartado «Rotura en vidrio por vinilo» de la web antigua repetía un párrafo del
    de estrés térmico; se ha dejado una sola vez.
 4. **`/aviso-legal/`** ⚠️: en la web antigua esa URL mostraba en realidad el
@@ -204,9 +210,13 @@ Notas:
 
 ## I. Imágenes
 
-- Renders de perfil muy comprimidos en origen (13–21 KB). ⚠️ Si Cortizo facilita los
-  originales, basta sustituirlos en `recursos/imagenes/productos/` y ejecutar
-  `herramientas/imagenes.py`.
+- ✅ Renders de perfil: el 25/09/2026 llegaron los originales (1514×1024, ~90 KB) y
+  sustituyen a los recortes comprimidos de 1340×701. Están en
+  `recursos/imagenes/productos/perfil-*-seccion.jpg`; `imagenes.py` recorta el cuadrado
+  centrado sin desplazamiento.
+- ✅ Fotos de ambiente por sistema (7 de Cortizo, 25/09/2026): cada ficha tiene ya su
+  foto ancha propia y PVC blanco un bloque con foto. Asignación por lo que se ve en cada
+  foto; pendiente de confirmar por el cliente (PREGUNTAS_CLIENTE 3.7).
 - No hay fotos de detalle (herrajes, manillas, foliados instalados), de vidrios ni de
   instalación. La web funciona sin ellas, pero mejorarían fichas y guías.
 - Los colores foliados en pantalla son orientativos (se avisa en la página).

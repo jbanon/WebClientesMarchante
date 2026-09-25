@@ -18,6 +18,13 @@ FOTOS = {  # destino: origen  → anchos 640/1024/1600
     "obras/sala-reuniones": "imagenes/obras/sala-reuniones-ventanas-oscilobatientes-bicolor.jpeg",
     "obras/atico-anochecer": "imagenes/obras/atico-terraza-piscina-correderas-anochecer.jpeg",
     "obras/nino-corredera": "imagenes/obras/nino-junto-a-corredera-salon-interior.jpeg",
+    "obras/salon-antracita": "imagenes/obras/salon-ventana-dos-hojas-antracita.jpg",
+    "obras/salon-balconera-nogal": "imagenes/obras/salon-balconera-nogal-jardin.jpg",
+    "obras/hormigon-ventana-negra": "imagenes/obras/hormigon-ventana-cuadrada-negra.jpg",
+    "obras/interior-corredera-madera": "imagenes/obras/interior-corredera-madera-patio.png",
+    "obras/vivienda-anochecer": "imagenes/obras/vivienda-moderna-anochecer-correderas.jpg",
+    "obras/dormitorio-ventana-blanca": "imagenes/obras/dormitorio-ventana-blanca.jpg",
+    "obras/casa-piedra-balconera": "imagenes/obras/casa-piedra-balconera-oscura-terraza.jpg",
 }
 PERFILES = ["a70-abisagrada", "a84-abisagrada", "a84-ho-abisagrada", "c70-corredera", "e170-elevadora"]
 LOGOS = {
@@ -40,14 +47,16 @@ def main():
     for dest, orig in FOTOS.items():
         im = ImageOps.exif_transpose(Image.open(REC / orig)).convert("RGB")
         for w in (640, 1024, 1600):
+            if w > im.width * 1.25:  # fotos pequeñas (683 o 1200 px): no se inventan tamaños mayores
+                continue
             real = min(w, im.width)  # el nombre lleva el ancho nominal aunque el original sea 1 px menor
             guardar(im.resize((real, round(im.height * real / im.width)), Image.LANCZOS), IMG / f"{dest}-{w}.webp")
 
-    # Renders de perfil: recorte cuadrado centrado en el sujeto (ocupa el tercio central)
+    # Renders de perfil (originales de Cortizo, ~1514x1024): recorte cuadrado centrado en el perfil
     for p in PERFILES:
-        im = Image.open(REC / f"imagenes/productos/perfil-{p}-seccion.webp").convert("RGB")
+        im = Image.open(REC / f"imagenes/productos/perfil-{p}-seccion.jpg").convert("RGB")
         lado = im.height
-        x0 = (im.width - lado) // 2 - 20
+        x0 = (im.width - lado) // 2
         cuadrado = im.crop((x0, 0, x0 + lado, lado))
         for w in (400, 700):
             guardar(cuadrado.resize((w, w), Image.LANCZOS), IMG / f"productos/perfil-{p}-{w}.webp", 86)

@@ -48,8 +48,15 @@ alguna, decidnos cuál y la ponemos. Si no, mejor no mencionarlo (así está aho
 
 **1.7. Paneles de puerta y accesorios.**
 La web antigua enlazaba 13 catálogos en PDF (paneles de puerta por colecciones y
-accesorios). Les hemos hecho una página propia. ¿Queréis añadir algún texto sobre las
-puertas de entrada que hacéis? Ahora mismo solo están los catálogos.
+accesorios). Les hemos hecho una página propia, y con lo que nos habéis pasado ahora
+están también el catálogo general de Indupanel, la versión nueva de las miniaturas, el
+catálogo de accesorios nuevo y la lámina de plafones PF. ¿Queréis añadir algún texto
+sobre las puertas de entrada que hacéis? Ahora mismo solo están los catálogos.
+→ El catálogo general pesaba 37 MB; lo hemos reducido a 19 MB para la web. Si Indupanel
+tiene una versión ligera, mejor.
+→ El catálogo de accesorios que nos habéis pasado es una edición distinta de la que
+teníamos (esta no trae la página de vidrios). Hemos publicado el vuestro; decidnos si
+la edición correcta es la otra.
 
 ---
 
@@ -101,8 +108,16 @@ Ahora usamos de Cortizo: las 48 muestras de color de su carta y los dibujos en 3
 cinco perfiles. Como fabricante oficial de su red lo normal es que podáis, pero conviene
 tenerlo confirmado.
 → ¿Podéis pedir a vuestro contacto en Cortizo que os confirme que podéis usar en vuestra
-web sus muestras de color, los dibujos de los perfiles y fotos de obra? Si además os
-pasan los dibujos de los perfiles en alta calidad, mejor: los actuales son pequeños.
+web sus muestras de color, los dibujos de los perfiles, las fotos de ambiente y los
+documentos (cartas, folleto de calidad, aperturas)? Los dibujos de los perfiles en alta
+calidad ya nos han llegado y están puestos.
+
+**3.7. Las siete fotos de ambiente nuevas: ¿es correcta la asignación?**
+Las hemos repartido por lo que se ve en cada una: salón con ventana antracita → A70;
+salón con balconera en nogal → A84; ventana cuadrada en muro de hormigón → A84 Hoja
+Oculta; corredera de madera hacia un patio → C70; casa moderna al anochecer → E170;
+dormitorio con ventana blanca → PVC blanco. La de la casa de piedra con terraza queda
+de reserva. Si alguna es de otro sistema, se cambia en un minuto.
 
 **3.5. El logotipo en buena calidad.**
 Solo tenemos el logo en un tamaño pequeño. ¿Tenéis el archivo original (suele acabar en
@@ -153,9 +168,12 @@ desde la web todavía dice 0,79. De paso, las de los otros cuatro sistemas.
 - E 170: tamaño máximo de hoja de 3 × 2,75 m (vuestra web). Cortizo indica 3,3 × 2,8 m,
   pero no está claro que se refiera a lo mismo. Hemos dejado 3 × 2,75.
 
-**4.6. Documentos que faltan.**
-La web antigua enlazaba un PDF de «Posibilidades de apertura» para cada sistema, pero los
-archivos no estaban. ¿Los tenéis? Si nos los pasáis, los añadimos a cada ficha.
+**4.6. Documentos que faltan. (Resuelto)**
+Los cinco PDF de «Posibilidades de apertura» ya están en cada ficha y en la nueva página
+«Documentación técnica», junto con las cartas de foliados y el folleto de calidad de
+Cortizo.
+→ El folleto menciona el A 84 Passivhaus y el A 70 de triple junta. ¿Los fabricáis? De
+momento no los hemos añadido (ver 4.2 y 4.3).
 
 **4.7. El limpiador «PREVent».**
 En los consejos de mantenimiento de la web antigua se recomienda este producto como si

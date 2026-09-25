@@ -1,9 +1,25 @@
 # Checklist de revisión
 
-> **Última revisión: 21/09/2026 (segunda pasada)**, tras la carta de colores Cortizo, los
+> **Última revisión: 25/09/2026 (tercera pasada, recursos nuevos)**. Antes: 21/09/2026 (segunda pasada), tras la carta de colores Cortizo, los
 > datos oficiales de los sistemas, el bloque de móvil y la demo del área de clientes.
 > Lo nuevo está en el apartado «Segunda revisión»; el resto es la revisión de la Fase 3,
 > que sigue vigente salvo lo que se indica.
+
+## Tercera revisión (25/09/2026): recursos nuevos
+
+Alcance: 5 fichas de sistema, `/ventanas/`, `/acabados/pvc-blanco/`, `/acabados/pvc-foliado/`,
+`/paneles-y-accesorios/`, `/profesionales/` y la página nueva `/documentacion/`
+(35 páginas HTML en total). Publicado con `herramientas/publicar.sh`.
+
+- [x] `herramientas/comprobar_nombres.sh`: sin nombres prohibidos.
+- [x] `herramientas/enlaces.py`: 35 páginas, 0 problemas (todos los PDF nuevos existen; `alt` en todas las imágenes; title y description en la página nueva).
+- [x] `herramientas/movil.py` (Chromium, 11 páginas × 4 vistas): 0 problemas. Las tarjetas de documento pasan a horizontal en móvil (portada a la izquierda) y toda la tarjeta es zona táctil.
+- [x] Capturas a 390 y 1440 px de las páginas tocadas, revisadas: renders nuevos bien encuadrados, fotos propias en cada ficha, rejillas de tarjetas sin celdas vacías (11 colecciones, 3 documentos de Cortizo).
+- [x] `sitemap.xml`: URL nueva y `lastmod` de las páginas modificadas.
+- [x] `estilo.html`: ejemplo de la tarjeta `.documento`.
+- [x] PDF pesados reducidos con ghostscript: catálogo Indupanel 37,5 → 18,7 MB; aperturas A84 HO 9,8 → 0,3 MB. El peso se muestra en cada enlace.
+- [ ] WebKit sigue sin probar (ver segunda revisión).
+- [ ] Esquema «Formulación» del folleto: descartado (no se lee a 390 px).
 
 ## Segunda revisión
 
