@@ -19,6 +19,7 @@ Alcance: 5 fichas de sistema, `/ventanas/`, `/acabados/pvc-blanco/`, `/acabados/
 - [x] `estilo.html`: ejemplo de la tarjeta `.documento`.
 - [x] PDF pesados reducidos con ghostscript: catálogo Indupanel 37,5 → 18,7 MB; aperturas A84 HO 9,8 → 0,3 MB. El peso se muestra en cada enlace.
 - [x] Portada: héroe con el vídeo de YouTube de fondo (`youtube-nocookie`, bucle, silenciado, sin subtítulos) y textos encima; imagen de reserva mientras carga y con «reducir movimiento». `movil.py` 0 problemas. ⚠️ En Chromium sin cabeza el reproductor da error y muestra su rótulo: comprobar la reproducción en un navegador real (escritorio y iPhone).
+- [x] Vídeos de sistema (27/09/2026) en A70, A84, A84 HO y C70: portada local 16:9 con botón de reproducir, YouTube solo al pulsar; enlace «Ver el vídeo» en la cabecera de la ficha. Capturas revisadas a 390 y 1440 px; `movil.py` 0 problemas. ⚠️ Comprobar en navegador real que al pulsar arranca con sonido (escritorio y iPhone).
 - [ ] Aviso de cookies: pendiente (la portada vuelve a cargar YouTube).
 - [ ] WebKit sigue sin probar (ver segunda revisión).
 - [ ] Esquema «Formulación» del folleto: descartado (no se lee a 390 px).

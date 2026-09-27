@@ -145,6 +145,9 @@ caras, estándar a una cara, especiales y Ultra Performance).
 También: ¿hay colores con más plazo o recargo que convenga avisar?
 
 **4.2. ¿Qué otros sistemas de Cortizo fabricáis?**
+→ En vuestro canal de YouTube hay un vídeo del **A78 Abisagrada**, que no está en la web.
+Si lo fabricáis, le hacemos su página (con datos de la web oficial de Cortizo) y le
+ponemos el vídeo como a los demás. Y nos falta el enlace del vídeo del **E170**.
 En la web están los cinco que ya teníais: A 70, A 84, A 84 Hoja Oculta, C 70 Corredera y
 E 170 Corredera Elevable. Cortizo tiene además estos, que **no** hemos añadido. Marcad los
 que fabricáis y queréis mostrar:

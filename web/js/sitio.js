@@ -22,3 +22,22 @@
     window.matchMedia('(min-width: 68em)').addEventListener('change', cerrar);
   }
 })();
+
+/* Vídeo de sistema: YouTube solo se carga al pulsar (sin peticiones a terceros hasta entonces) */
+(function () {
+  var marcos = document.querySelectorAll('.video__marco[data-video]');
+  Array.prototype.forEach.call(marcos, function (marco) {
+    var boton = marco.querySelector('.video__boton');
+    if (!boton) return;
+    boton.addEventListener('click', function () {
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + marco.getAttribute('data-video') + '?autoplay=1&rel=0&playsinline=1';
+      iframe.title = boton.getAttribute('aria-label') || 'Vídeo';
+      iframe.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+      iframe.setAttribute('allowfullscreen', '');
+      marco.innerHTML = '';
+      marco.appendChild(iframe);
+      iframe.focus();
+    });
+  });
+})();

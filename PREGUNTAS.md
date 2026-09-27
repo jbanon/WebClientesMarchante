@@ -146,7 +146,16 @@ Notas:
    botón de `/profesionales/`. Componente nuevo `.documento` (tarjeta con portada del
    PDF, generada con `herramientas/portadas.py`); el esquema «Formulación» del folleto
    se descartó porque a 390 px no se lee. Detalle en `RECURSOS_NUEVOS.md`.
-4. **`/acabados/vidrios/`** fusiona «Tipo de vidrios» y «V vis V: vinilos y vidrios».
+4. **Vídeos de sistema** (27/09/2026): el canal de YouTube de Marchante tiene un vídeo por
+   sistema. En las fichas A70, A84, A84 HO y C70 el bloque de foto de ambiente se ha
+   sustituido por un bloque «Vídeo · m:ss» (`.video`): portada servida en local con botón
+   de reproducir; YouTube (`youtube-nocookie`) solo se carga al pulsar (`sitio.js`). La
+   cabecera de cada ficha enlaza al bloque. Portadas: fotograma del vídeo (A84, A84 HO,
+   C70) y foto de ambiente (A70, porque el fotograma era un render con texto).
+   ⚠️ E170: hay vídeo en el canal pero no se ha recibido el enlace; conserva la foto.
+   ⚠️ A78: hay vídeo, pero el sistema no está en la web (PREGUNTAS_CLIENTE 4.2).
+   Las fotos de ambiente de A84, A84 HO y C70 quedan sin uso (reserva).
+5. **`/acabados/vidrios/`** fusiona «Tipo de vidrios» y «V vis V: vinilos y vidrios».
    El apartado «Rotura en vidrio por vinilo» de la web antigua repetía un párrafo del
    de estrés térmico; se ha dejado una sola vez.
 4. **`/aviso-legal/`** ⚠️: en la web antigua esa URL mostraba en realidad el

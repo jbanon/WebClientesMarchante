@@ -25,6 +25,10 @@ FOTOS = {  # destino: origen  → anchos 640/1024/1600
     "obras/vivienda-anochecer": "imagenes/obras/vivienda-moderna-anochecer-correderas.jpg",
     "obras/dormitorio-ventana-blanca": "imagenes/obras/dormitorio-ventana-blanca.jpg",
     "obras/casa-piedra-balconera": "imagenes/obras/casa-piedra-balconera-oscura-terraza.jpg",
+    # Portadas de los vídeos de sistema (fotograma de YouTube, 1280 px): se sirven en local
+    "video/a84-abisagrada": "imagenes/video/portada-video-a84-abisagrada.jpg",
+    "video/a84-ho": "imagenes/video/portada-video-a84-ho.jpg",
+    "video/c70-corredera": "imagenes/video/portada-video-c70-corredera.jpg",
 }
 PERFILES = ["a70-abisagrada", "a84-abisagrada", "a84-ho-abisagrada", "c70-corredera", "e170-elevadora"]
 LOGOS = {

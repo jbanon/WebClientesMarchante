@@ -230,6 +230,25 @@ body.menu-abierto { overflow: hidden; }
 .foto-ancha img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 @media (min-width: 48em) { .foto-ancha img { aspect-ratio: 21 / 9; } }
 
+/* ---------- Vídeo del sistema (YouTube, se carga al pulsar) ---------- */
+.video { padding-block: 0 var(--seccion); }
+.video__marco { position: relative; max-width: 64rem; margin-inline: auto; aspect-ratio: 16 / 9; overflow: hidden; background: var(--tinta); }
+.video__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.video__boton { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; width: 100%; margin: 0; padding: clamp(1.25rem, 4vw, 2.5rem); border: 0; background: linear-gradient(180deg, rgba(23, 38, 47, 0) 35%, rgba(23, 38, 47, 0.78) 100%); color: #fff; text-align: left; font: inherit; cursor: pointer; }
+.video__icono { position: absolute; left: 50%; top: 50%; display: grid; place-items: center; width: clamp(4rem, 9vw, 5.5rem); height: clamp(4rem, 9vw, 5.5rem); border-radius: 50%; background: var(--rojo-ui); transform: translate(-50%, -50%); transition: transform 0.25s, background-color 0.2s; }
+.video__icono svg { width: 38%; height: 38%; margin-left: 8%; fill: #fff; }
+.video__tipo { display: block; margin-bottom: 0.5rem; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255, 255, 255, 0.8); }
+.video__titulo { display: block; max-width: 16em; font-family: var(--serif); font-size: clamp(1.5rem, 3.4vw, 2.5rem); line-height: 1.1; text-wrap: balance; }
+.video__boton:hover .video__icono, .video__boton:focus-visible .video__icono { transform: translate(-50%, -50%) scale(1.08); background: var(--rojo); }
+.video__boton:hover ~ .video__poster, .video__marco:hover .video__poster { transform: scale(1.03); }
+.video__boton:focus-visible { outline: 2px solid #fff; outline-offset: -6px; }
+.video__marco iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video__pie { max-width: 64rem; margin: 1rem auto 0; font-size: 0.875rem; color: var(--gris-medio); }
+@media (max-width: 47.99em) { .video .contenedor { padding-inline: 0; } .video__pie { padding-inline: var(--margen); } }
+.portadilla__video { margin-top: 1.5rem; }
+.portadilla__video .enlace { gap: 0.6rem; }
+.portadilla__video svg { width: 0.9rem; height: 0.9rem; fill: var(--rojo-ui); flex: none; }
+
 /* ---------- Cifras / datos clave ---------- */
 .datos { display: grid; grid-template-columns: repeat(2, 1fr); margin: 0; border-top: 1px solid var(--linea); }
 .datos > div { padding: 1.5rem 1rem 1.5rem 0; border-bottom: 1px solid var(--linea); }

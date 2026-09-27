@@ -116,6 +116,10 @@ Estudio completo en `RECURSOS_NUEVOS.md` (raíz del proyecto).
 | `dormitorio-ventana-blanca.jpg` | Dormitorio-estudio con ventana blanca (vertical) | 683×1024 | Bloque «Luz y sencillez» de `/acabados/pvc-blanco/` |
 | `casa-piedra-balconera-oscura-terraza.jpg` | Casa de piedra con balconera oscura y terraza (vertical) | 683×1024 | Reserva (generada a 640) |
 
+- **video/** (27/09/2026): fotogramas de portada de los vídeos de YouTube de A84, A84 HO y
+  C70 (1280×720), servidos en local como `web/img/video/*.webp`. El del A70 se descartó
+  (render con texto) y su ficha usa la foto de ambiente del salón.
+
 Las portadas de los PDF (`web/img/docs/`) no son imágenes de origen: las genera
 `herramientas/portadas.py` a partir de `web/docs/`.
 
