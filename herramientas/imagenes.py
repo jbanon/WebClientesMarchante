@@ -25,6 +25,8 @@ FOTOS = {  # destino: origen  → anchos 640/1024/1600
     "obras/vivienda-anochecer": "imagenes/obras/vivienda-moderna-anochecer-correderas.jpg",
     "obras/dormitorio-ventana-blanca": "imagenes/obras/dormitorio-ventana-blanca.jpg",
     "obras/casa-piedra-balconera": "imagenes/obras/casa-piedra-balconera-oscura-terraza.jpg",
+    "obras/limpieza-ventana": "imagenes/obras/limpieza-ventana-padre-hijo-perro.webp",
+    "obras/camion-ventanas": "imagenes/obras/camion-ventanas-embaladas-nave.webp",
     # Portadas de los vídeos de sistema (fotograma de YouTube, 1280 px): se sirven en local
     "video/a84-abisagrada": "imagenes/video/portada-video-a84-abisagrada.jpg",
     "video/a84-ho": "imagenes/video/portada-video-a84-ho.jpg",

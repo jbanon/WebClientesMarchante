@@ -23,21 +23,63 @@
   }
 })();
 
-/* Vídeo de sistema: YouTube solo se carga al pulsar (sin peticiones a terceros hasta entonces) */
+/* Cookies: solo YouTube. Sin consentimiento no se carga nada de Google (localStorage, sin cookie propia) */
+var cookiesMarchante = (function () {
+  var CLAVE = 'cookies-youtube';
+  var banner = document.getElementById('cookies');
+  function estado() { try { return localStorage.getItem(CLAVE); } catch (e) { return null; } }
+  function guardar(v) { try { localStorage.setItem(CLAVE, v); } catch (e) {} }
+  function fondos() {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-video-fondo]'), function (f) {
+      if (f.querySelector('iframe') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var id = f.getAttribute('data-video-fondo');
+      var i = document.createElement('iframe');
+      i.className = 'heroe__video';
+      i.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&mute=1&loop=1&playlist=' + id + '&controls=0&playsinline=1&rel=0&disablekb=1&iv_load_policy=3';
+      i.title = 'Vídeo de presentación de Marchante PVC';
+      i.allow = 'autoplay; encrypted-media';
+      i.tabIndex = -1;
+      f.appendChild(i);
+    });
+  }
+  function mostrar() { if (banner) { banner.hidden = false; banner.querySelector('[data-acepta]').focus(); } }
+  function ocultar() { if (banner) banner.hidden = true; }
+  function aceptar() { guardar('si'); ocultar(); fondos(); }
+  function rechazar() { guardar('no'); ocultar(); }
+  if (banner) {
+    banner.querySelector('[data-acepta]').addEventListener('click', aceptar);
+    banner.querySelector('[data-rechaza]').addEventListener('click', rechazar);
+    Array.prototype.forEach.call(document.querySelectorAll('.cookies__abrir'), function (b) { b.addEventListener('click', mostrar); });
+    if (estado() === 'si') fondos(); else if (estado() !== 'no') banner.hidden = false;
+  }
+  return { estado: estado, aceptar: aceptar };
+})();
+
+/* Vídeo de sistema: YouTube solo se carga al pulsar y con las cookies aceptadas */
 (function () {
-  var marcos = document.querySelectorAll('.video__marco[data-video]');
-  Array.prototype.forEach.call(marcos, function (marco) {
+  function reproducir(marco, titulo) {
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + marco.getAttribute('data-video') + '?autoplay=1&rel=0&playsinline=1';
+    iframe.title = titulo;
+    iframe.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+    iframe.setAttribute('allowfullscreen', '');
+    marco.innerHTML = '';
+    marco.appendChild(iframe);
+    iframe.focus();
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.video__marco[data-video]'), function (marco) {
     var boton = marco.querySelector('.video__boton');
     if (!boton) return;
+    var titulo = boton.getAttribute('aria-label') || 'Vídeo';
     boton.addEventListener('click', function () {
-      var iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube-nocookie.com/embed/' + marco.getAttribute('data-video') + '?autoplay=1&rel=0&playsinline=1';
-      iframe.title = boton.getAttribute('aria-label') || 'Vídeo';
-      iframe.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
-      iframe.setAttribute('allowfullscreen', '');
-      marco.innerHTML = '';
-      marco.appendChild(iframe);
-      iframe.focus();
+      if (cookiesMarchante.estado() === 'si') { reproducir(marco, titulo); return; }
+      var aviso = document.createElement('div');
+      aviso.className = 'video__aviso';
+      aviso.innerHTML = '<p>Este vídeo se reproduce desde YouTube, que instala cookies de Google. Para verlo hay que aceptarlas.</p>' +
+        '<div class="botones"><button type="button" class="boton" data-ver>Aceptar cookies y ver el vídeo</button> <a href="/cookies/">Política de cookies</a></div>';
+      marco.appendChild(aviso);
+      aviso.querySelector('[data-ver]').addEventListener('click', function () { cookiesMarchante.aceptar(); reproducir(marco, titulo); });
+      aviso.querySelector('[data-ver]').focus();
     });
   });
 })();

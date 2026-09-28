@@ -29,7 +29,7 @@ encontrado en la web antigua.
 La web antigua enlazaba dos: «marchantepvc» y una más antigua, «Aluminios Marchante».
 Hemos puesto solo la primera. ¿Es correcto? ¿El Instagram (@marchantepvc) sigue activo?
 
-**1.4. El vídeo de YouTube de la portada. (Decidido: se mantiene como en la web actual)**
+**1.4. El vídeo de YouTube de la portada. (Decidido: se mantiene, con aviso de cookies desde el 28/09/2026)**
 Está puesto de fondo en la cabecera de la portada, en bucle, sin sonido y sin subtítulos,
 con los textos y el teléfono encima. Al cargar YouTube se instalan cookies de Google, así
 que la web necesita un aviso de cookies: hay que decidir con la asesoría el texto y si
@@ -72,6 +72,13 @@ La sección «Contenido de interés» tiene una página de ocho curiosidades. To
 datos ya publicados (folleto de calidad de Cortizo, fichas y guías), redactadas por
 nosotros. Revisadlas y, si tenéis más ideas o textos, se añaden.
 
+**1.9. Marcas con las que trabajáis (bloque rediseñado el 28/09/2026).**
+Ahora cada marca lleva una línea con lo que aporta a la ventana: Cortizo (perfiles),
+Climalit (vidrio aislante de Saint-Gobain), Guardian Sun (vidrio de control solar),
+Procomsa · GU (herrajes) e Indupanel (paneles de puerta). Falta STAC: cuando tengamos el
+logotipo en buena calidad lo añadimos. ¿Qué os suministra STAC (manillas, accesorios…)?
+Y confirmad que las cinco descripciones son correctas.
+
 ## 2. Textos legales
 
 **2.1. Falta el aviso legal.**
@@ -95,6 +102,21 @@ En los textos legales figura `administracion@marchantepvc.com` y en el resto de 
 `info@marchantepvc.com`. ¿Los dos están activos?
 
 ---
+
+**2.5. Textos añadidos el 28/09/2026 que debe revisar la asesoría.**
+- En el formulario de contacto, la «información básica» de protección de datos completa
+  (responsable con NIF, finalidad, legitimación, destinatarios, derechos), con
+  administracion@marchantepvc.com como dirección para ejercer derechos (la que figura en
+  la política de privacidad).
+- En la política de privacidad, un apartado nuevo «Formularios y contacto a través de
+  esta web» con los datos tratados, la finalidad, la base legal, el plazo, los
+  destinatarios (el proveedor técnico como encargado) y los derechos.
+- En la política de cookies, un recuadro «Cómo funciona en esta web»: solo cookies de
+  YouTube, con aviso de aceptar/rechazar y opción de cambiar la decisión en el pie. El
+  resto del texto (heredado, habla de un panel de configuración por casillas) conviene
+  simplificarlo.
+→ ¿Podéis pasarlos a vuestra asesoría para que los valide? Son redacciones nuestras
+ajustadas a lo que hace la web, no textos jurídicos revisados.
 
 ## 3. Fotos y materiales
 
@@ -143,6 +165,7 @@ Para la guía de «Almacenaje y transporte» de la zona de profesionales (hay ot
 ## 4. Datos técnicos y producto
 
 **4.1. ¿Ofrecéis toda la carta de colores de Cortizo o solo una parte?**
+→ 28/09/2026: el Marrón Claro figura como descatalogado a finales de 2025, como nos habéis indicado; se mantiene en la carta con esa nota.
 Los colores que mostraba la web antigua eran de otro fabricante, así que los hemos
 sustituido por la carta oficial de Cortizo: 48 colores en cuatro grupos (estándar a dos
 caras, estándar a una cara, especiales y Ultra Performance).

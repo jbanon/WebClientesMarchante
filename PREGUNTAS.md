@@ -12,9 +12,9 @@ Cada punto indica **qué se decidió** para no bloquear el trabajo. Lo marcado c
 |---|---|---|
 | 1 | ⚠️ **Servicio del formulario de contacto** | `web/contacto/index.html`, atributo `action` del `<form id="formulario-contacto">` (único sitio) |
 | 2 | ⚠️ **Texto del aviso legal** (la web antigua no tenía uno real) | `/aviso-legal/` |
-| 3 | ⚠️ **Cookies**: desde el 25/09/2026 la portada vuelve a incrustar el vídeo de YouTube (decisión del cliente: replicar la web anterior), así que las cookies de Google/YouTube que describe la política SÍ se instalan. Hace falta un **aviso/banner de cookies** (la web no lo tiene) y que la asesoría revise el texto | `/` y `/cookies/` |
+| 3 | ✅ **Cookies**: desde el 28/09/2026 hay aviso de consentimiento (aceptar/rechazar, decisión guardada en localStorage, cambiable desde el pie). Sin aceptar no se carga nada de YouTube: la portada muestra la foto y los vídeos de sistema piden aceptar al pulsar. Pendiente solo que la asesoría revise los textos (PREGUNTAS_CLIENTE 2.5) | `/`, fichas, `/cookies/` |
 | 4 | ⚠️ **Fotos de la fábrica / equipo** | `/empresa/` (marcador visible) |
-| 5 | ⚠️ **Foto de ventanas embaladas / transporte** | `/profesionales/` (marcador visible) |
+| 5 | ✅ Foto de ventanas embaladas / transporte: recibida y puesta el 28/09/2026 | `/profesionales/` |
 | 6 | ⚠️ Confirmar con Cortizo la **licencia de las fotos de ambiente** | todas las fotos de `obras/` |
 | 7 | ⚠️ **Logos vectoriales** (Marchante y partners) | cabecera, pie, franja de marcas |
 | 8 | ⚠️ Confirmar los **datos técnicos** marcados en el apartado C (A84 Uw, C70, E170, versión Passivhaus) | fichas |

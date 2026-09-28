@@ -266,8 +266,8 @@
           <a href="mailto:info@marchantepvc.com">info@marchantepvc.com</a>
         </address>
         <ul class="pie__redes">
-          <li><a href="https://www.instagram.com/marchantepvc/" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.facebook.com/marchantepvc" rel="noopener">Facebook</a></li>
+          <li><a class="red" href="https://www.instagram.com/marchantepvc/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.4a4.6 4.6 0 1 0 0 9.2 4.6 4.6 0 0 0 0-9.2zm0 7.6a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.9-7.8a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 3.8c2.7 0 3 0 4 .06 2.7.12 3.9 1.4 4.06 4.06.05 1 .06 1.3.06 4s0 3-.06 4c-.12 2.66-1.4 3.94-4.06 4.06-1 .05-1.3.06-4 .06s-3 0-4-.06c-2.7-.12-3.94-1.4-4.06-4.06C3.9 15 3.9 14.7 3.9 12s0-3 .05-4C4.07 5.3 5.35 4 8 3.86c1-.05 1.3-.06 4-.06zM12 2c-2.7 0-3.06.01-4.12.06C4.2 2.23 2.23 4.2 2.06 7.88 2.01 8.94 2 9.3 2 12s.01 3.06.06 4.12c.17 3.68 2.14 5.65 5.82 5.82C8.94 21.99 9.3 22 12 22s3.06-.01 4.12-.06c3.68-.17 5.65-2.14 5.82-5.82.05-1.06.06-1.42.06-4.12s-.01-3.06-.06-4.12C21.77 4.2 19.8 2.23 16.12 2.06 15.06 2.01 14.7 2 12 2z"/></svg>Instagram</a></li>
+          <li><a class="red" href="https://www.facebook.com/marchantepvc" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.3h-3.2V8.4c0-.9.3-1.6 1.6-1.6h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.3h2.8V22h3.4z"/></svg>Facebook</a></li>
         </ul>
       </div>
     </div>
@@ -278,6 +278,7 @@
         <li><a href="/privacidad/">Privacidad</a></li>
         <li><a href="/cookies/">Cookies</a></li>
         <li><a href="/proteccion-de-datos/">Protección de datos</a></li>
+        <li><button type="button" class="cookies__abrir">Cookies: cambiar decisión</button></li>
       </ul>
     </div>
   </div>
@@ -291,6 +292,14 @@
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.42 15.1L2 22l5.03-1.58A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.13 15.07l-.3-.18-2.98.94.96-2.9-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.4 3.9c-.17 0-.45.06-.68.32-.24.26-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.78 2.85 4.4 3.88 2.17.86 2.62.69 3.09.64.47-.04 1.52-.62 1.74-1.22.21-.6.21-1.11.15-1.22-.07-.1-.24-.17-.5-.3-.26-.13-1.52-.75-1.76-.84-.23-.08-.4-.13-.58.13-.17.26-.66.84-.81 1.01-.15.17-.3.2-.56.07-.26-.13-1.09-.4-2.07-1.28a7.8 7.8 0 0 1-1.44-1.79c-.15-.26-.02-.4.11-.53.12-.11.26-.3.39-.45.13-.15.17-.26.26-.43.08-.17.04-.32-.02-.45-.07-.13-.57-1.42-.8-1.94-.2-.47-.41-.4-.57-.41h-.5Z"/></svg>
   <span>WhatsApp</span>
 </a>
+<div class="cookies" id="cookies" role="region" aria-label="Aviso de cookies" hidden>
+  <p class="cookies__texto"><strong>Cookies de YouTube.</strong> Esta web no usa cookies propias ni de análisis. Solo si aceptas, cargamos los vídeos de YouTube (el de la portada y los de cada sistema), que instalan cookies de Google. Si rechazas, verás una foto en su lugar y podrás cambiar de opinión desde el pie de página.</p>
+  <div class="cookies__botones">
+    <button type="button" class="boton" data-acepta>Aceptar</button>
+    <button type="button" class="boton boton--linea" data-rechaza>Rechazar</button>
+    <a href="/cookies/">Política de cookies</a>
+  </div>
+</div>
 <script src="/js/sitio.js" defer></script>
 <!-- /pie -->
 </body>

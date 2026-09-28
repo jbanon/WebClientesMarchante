@@ -203,6 +203,7 @@ body.menu-abierto { overflow: hidden; }
 /* ---------- Portada: héroe con vídeo de fondo (YouTube, como la web anterior) ---------- */
 .heroe { --alto: clamp(30rem, calc(100vh - var(--cabecera)), 54rem); --alto: clamp(30rem, calc(100svh - var(--cabecera)), 54rem); position: relative; overflow: hidden; display: grid; align-items: center; min-height: var(--alto); background: var(--papel-2); }
 .heroe__fondo { position: absolute; inset: 0; }
+.heroe__fondo img { width: 100%; height: 100%; object-fit: cover; }
 .heroe__video { position: absolute; top: 50%; left: 50%; width: max(100%, calc(var(--alto) * 16 / 9)); height: max(var(--alto), 56.25vw); border: 0; transform: translate(-50%, -46%) scale(1.25); pointer-events: none; }
 .heroe__capa { position: relative; display: grid; gap: 1.25rem; padding-block: clamp(3rem, 8vw, 6rem) clamp(4rem, 9vw, 7rem); }
 .heroe h1 { max-width: 11em; color: var(--rojo); }
@@ -749,3 +750,44 @@ body { padding-bottom: calc(3.25rem + env(safe-area-inset-bottom)); }
 .nav__lista > li > a small { display: block; margin-top: 0.1rem; font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gris-medio); line-height: 1.2; }
 .nav__lista > li > a:hover small, .nav__lista > li > a[aria-current] small { color: var(--rojo-ui); }
 @media (max-width: 67.99em) { .nav__lista > li > a small { margin-top: 0.15rem; } }
+
+/* Redes sociales con icono */
+.red { display: inline-flex; align-items: center; gap: 0.5rem; }
+.red svg { width: 1.15rem; height: 1.15rem; fill: currentColor; flex: none; }
+/* Notas breves bajo una rejilla de documentos y nota en una muestra de color */
+.notas { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: 0.5rem; max-width: 64rem; font-size: 0.9375rem; line-height: 1.55; color: var(--texto); }
+.notas li { padding-left: 1.25rem; border-left: 2px solid var(--rojo); }
+.muestra__nota { display: block; margin-top: 0.15rem; font-size: 0.75rem; font-weight: 400; color: var(--gris-medio); }
+
+/* ---------- Aviso de cookies (solo YouTube) ---------- */
+.cookies { position: fixed; left: 1rem; right: 1rem; bottom: calc(3.25rem + env(safe-area-inset-bottom) + 0.75rem); z-index: 95; max-width: 30rem; padding: 1.25rem 1.5rem; background: var(--papel); border: 1px solid var(--linea); border-top: 2px solid var(--rojo); box-shadow: 0 12px 40px rgba(18, 28, 34, 0.18); font-size: 0.9375rem; line-height: 1.5; }
+.cookies__texto { margin: 0 0 1rem; }
+.cookies__botones { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; }
+.cookies__botones .boton { min-height: 2.75rem; padding: 0.55rem 1.1rem; font-size: 0.9375rem; }
+.cookies__botones a { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: 0.875rem; color: var(--gris-medio); }
+@media (min-width: 80em) { .cookies { bottom: 1.5rem; left: 1.5rem; right: auto; } }
+.cookies__abrir { padding: 0; border: 0; background: none; font: inherit; color: #dfe2e5; cursor: pointer; }
+.cookies__abrir:hover { color: #fff; text-decoration: underline; }
+@media (max-width: 79.99em) { .cookies__abrir { display: inline-flex; align-items: center; min-height: 2.75rem; } }
+/* Consentimiento en el propio vídeo */
+.video__aviso { position: absolute; inset: 0; display: grid; align-content: center; justify-items: start; gap: 1rem; padding: clamp(1.25rem, 4vw, 2.5rem); background: rgba(23, 38, 47, 0.86); color: #fff; }
+.video__aviso p { margin: 0; max-width: 34em; font-size: 0.9688rem; line-height: 1.5; }
+.video__aviso .botones { margin: 0; }
+.video__aviso a { color: #fff; }
+
+/* ---------- Marcas con las que trabajamos: tarjetas con logo y papel de cada una ---------- */
+.aliados { list-style: none; margin: 0; padding: 1px 0 0 1px; display: grid; }
+.aliado { display: grid; grid-template-columns: 6.5rem 1fr; column-gap: 1.25rem; align-items: start; margin: -1px 0 0 -1px; padding: 1.5rem 1.25rem; background: var(--papel); border: 1px solid var(--linea); }
+.aliado__logo { grid-row: 1 / span 3; display: grid; place-items: center; min-height: 4.5rem; padding: 0.5rem; background: var(--papel-2); }
+.aliado__logo img { max-width: 100%; max-height: 3.25rem; width: auto; height: auto; object-fit: contain; filter: grayscale(1); opacity: 0.8; transition: filter 0.3s, opacity 0.3s; }
+.aliado:hover .aliado__logo img { filter: none; opacity: 1; }
+.aliado__tipo { margin: 0 0 0.25rem; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gris-medio); }
+.aliado h3 { margin-bottom: 0.4rem; font-family: var(--serif); font-size: 1.5rem; line-height: 1.1; }
+.aliado p:last-child { margin: 0; font-size: 0.9375rem; line-height: 1.5; color: var(--texto); }
+@media (min-width: 48em) { .aliados { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 68em) {
+  .aliados { grid-template-columns: repeat(3, 1fr); }
+  .aliado { grid-template-columns: 1fr; row-gap: 0.25rem; padding: 1.75rem 1.75rem 2rem; }
+  .aliado__logo { grid-row: auto; margin-bottom: 1.25rem; min-height: 6rem; }
+  .aliado__logo img { max-height: 3.75rem; max-width: 11rem; }
+}
