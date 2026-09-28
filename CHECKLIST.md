@@ -20,6 +20,7 @@ Alcance: 5 fichas de sistema, `/ventanas/`, `/acabados/pvc-blanco/`, `/acabados/
 - [x] PDF pesados reducidos con ghostscript: catálogo Indupanel 37,5 → 18,7 MB; aperturas A84 HO 9,8 → 0,3 MB. El peso se muestra en cada enlace.
 - [x] Portada: héroe con el vídeo de YouTube de fondo (`youtube-nocookie`, bucle, silenciado, sin subtítulos) y textos encima; imagen de reserva mientras carga y con «reducir movimiento». `movil.py` 0 problemas. ⚠️ En Chromium sin cabeza el reproductor da error y muestra su rótulo: comprobar la reproducción en un navegador real (escritorio y iPhone).
 - [x] Vídeos de sistema (27/09/2026) en A70, A84, A84 HO y C70: portada local 16:9 con botón de reproducir, YouTube solo al pulsar; enlace «Ver el vídeo» en la cabecera de la ficha. Capturas revisadas a 390 y 1440 px; `movil.py` 0 problemas. ⚠️ Comprobar en navegador real que al pulsar arranca con sonido (escritorio y iPhone).
+- [x] Reorganización del menú (28/09/2026): Sistemas PVC Cortizo · Acabados (con Paneles) · Guías técnicas · Contenido de interés (¿Lo sabías?, El rincón del distribuidor, Vidrios, Vídeos) · Empresa · Contacto. Comprobado que las seis entradas caben en una línea de 1088 a 1600 px. Páginas nuevas `/contenido-de-interes/` y `/lo-sabias/`; `enlaces.py` 37 páginas, 0 problemas; `movil.py` 7 páginas × 4 vistas, 0 problemas; capturas revisadas.
 - [ ] Aviso de cookies: pendiente (la portada vuelve a cargar YouTube).
 - [ ] WebKit sigue sin probar (ver segunda revisión).
 - [ ] Esquema «Formulación» del folleto: descartado (no se lee a 390 px).

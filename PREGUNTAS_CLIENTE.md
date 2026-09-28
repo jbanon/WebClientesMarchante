@@ -51,7 +51,9 @@ PVC y asesoría técnica, 2019 expansión nacional, 2023 cambio de nombre a Marc
 ¿Es correcto? La web antigua hablaba de «certificaciones medioambientales»: si tenéis
 alguna, decidnos cuál y la ponemos. Si no, mejor no mencionarlo (así está ahora).
 
-**1.7. Paneles de puerta y accesorios.**
+**1.7. Paneles de puerta y accesorios. (Texto añadido el 28/09/2026: revisadlo)**
+Hemos escrito una introducción sobre la puerta de entrada de PVC y el panel, con datos del
+catálogo de Indupanel. Decidnos si algo no se corresponde con lo que fabricáis.
 La web antigua enlazaba 13 catálogos en PDF (paneles de puerta por colecciones y
 accesorios). Les hemos hecho una página propia, y con lo que nos habéis pasado ahora
 están también el catálogo general de Indupanel, la versión nueva de las miniaturas, el
@@ -64,6 +66,11 @@ teníamos (esta no trae la página de vidrios). Hemos publicado el vuestro; deci
 la edición correcta es la otra.
 
 ---
+
+**1.8. «¿Lo sabías?» (nuevo, 28/09/2026).**
+La sección «Contenido de interés» tiene una página de ocho curiosidades. Todas salen de
+datos ya publicados (folleto de calidad de Cortizo, fichas y guías), redactadas por
+nosotros. Revisadlas y, si tenéis más ideas o textos, se añaden.
 
 ## 2. Textos legales
 

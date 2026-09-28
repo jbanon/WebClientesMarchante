@@ -155,7 +155,19 @@ Notas:
    ⚠️ E170: hay vídeo en el canal pero no se ha recibido el enlace; conserva la foto.
    ⚠️ A78: hay vídeo, pero el sistema no está en la web (PREGUNTAS_CLIENTE 4.2).
    Las fotos de ambiente de A84, A84 HO y C70 quedan sin uso (reserva).
-5. **`/acabados/vidrios/`** fusiona «Tipo de vidrios» y «V vis V: vinilos y vidrios».
+5. **Menú reorganizado (28/09/2026, a petición del responsable):** «Sistemas PVC Cortizo»
+   (`/ventanas/`, sin cambiar URL) · «Acabados» (PVC blanco, PVC foliado, Paneles y
+   accesorios) · «Guías técnicas» (`/profesionales/`, con anclas y Documentación técnica) ·
+   «Contenido de interés» (página nueva `/contenido-de-interes/`: `/lo-sabias/` nueva,
+   «El rincón del distribuidor» = `/distribuidores/`, Vidrios = `/acabados/vidrios/` y los
+   vídeos de los sistemas) · Empresa · Contacto. Ninguna URL cambia. `/lo-sabias/` son
+   ocho curiosidades redactadas solo con datos ya publicados (folleto de calidad, fichas y
+   guías); el cliente debe validarlas. `/paneles-y-accesorios/` tiene ahora un texto sobre
+   la puerta de entrada (datos del catálogo de Indupanel: núcleos Thermipanel/Thermiplus/
+   Thermimax, caras de aluminio lacado/anodizado/RAL, vitrorresina e inox).
+   Menú de escritorio compactado entre 68 y 80 em (seis entradas largas en una línea;
+   «Área clientes» solo icono; teléfono visible desde 96 em).
+6. **`/acabados/vidrios/`** fusiona «Tipo de vidrios» y «V vis V: vinilos y vidrios».
    El apartado «Rotura en vidrio por vinilo» de la web antigua repetía un párrafo del
    de estrés térmico; se ha dejado una sola vez.
 4. **`/aviso-legal/`** ⚠️: en la web antigua esa URL mostraba en realidad el

@@ -198,7 +198,7 @@ body.menu-abierto { overflow: hidden; }
   .nav__cta .boton { min-height: 2.75rem; padding: 0.6rem 1.25rem; font-size: 0.9375rem; }
   .nav__tel { display: none; }
 }
-@media (min-width: 80em) { .nav__tel { display: block; padding: 0; font-size: 0.9375rem; } }
+@media (min-width: 96em) { .nav__tel { display: block; padding: 0; font-size: 0.9375rem; } }
 
 /* ---------- Portada: héroe con vídeo de fondo (YouTube, como la web anterior) ---------- */
 .heroe { --alto: clamp(30rem, calc(100vh - var(--cabecera)), 54rem); --alto: clamp(30rem, calc(100svh - var(--cabecera)), 54rem); position: relative; overflow: hidden; display: grid; align-items: center; min-height: var(--alto); background: var(--papel-2); }
@@ -245,6 +245,10 @@ body.menu-abierto { overflow: hidden; }
 .video__marco iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .video__pie { max-width: 64rem; margin: 1rem auto 0; font-size: 0.875rem; color: var(--gris-medio); }
 @media (max-width: 47.99em) { .video .contenedor { padding-inline: 0; } .video__pie { padding-inline: var(--margen); } }
+.videos { display: grid; gap: 1.5rem; align-items: start; }
+.videos .video__marco { max-width: none; width: 100%; }
+.videos .video__titulo { font-size: clamp(1.35rem, 2.2vw, 1.75rem); }
+@media (min-width: 48em) { .videos { grid-template-columns: 1fr 1fr; gap: 2rem; } }
 .portadilla__video { margin-top: 1.5rem; }
 .portadilla__video .enlace { gap: 0.6rem; }
 .portadilla__video svg { width: 0.9rem; height: 0.9rem; fill: var(--rojo-ui); flex: none; }
@@ -720,3 +724,23 @@ body { padding-bottom: calc(3.25rem + env(safe-area-inset-bottom)); }
 .contacto__redes, .contacto__tels { display: flex; flex-wrap: wrap; gap: 0 1.5rem; align-items: baseline; }
 .contacto__tels { flex-direction: column; }
 .descarga--web::after { content: "→"; }
+
+/* Menú de escritorio: seis entradas largas en una sola línea (compacto hasta 80em, normal hasta 96em) */
+@media (min-width: 68em) {
+  .nav__lista > li > a { white-space: nowrap; font-size: 0.875rem; }
+  .nav__lista { gap: 1rem; }
+  .nav, .cabecera__barra { gap: 1rem; }
+  .cabecera__logo img { height: 2.75rem; }
+  .cabecera__area { padding-left: 0.85rem; }
+  .cabecera__area span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .nav__cta .boton { padding: 0.6rem 1rem; font-size: 0.875rem; }
+}
+@media (min-width: 80em) {
+  .nav__lista > li > a { font-size: 0.9375rem; }
+  .nav__lista { gap: 1.5rem; }
+  .nav, .cabecera__barra { gap: 1.5rem; }
+  .cabecera__logo img { height: 3.25rem; }
+  .cabecera__area { padding-left: 1.25rem; }
+  .cabecera__area span { position: static; width: auto; height: auto; overflow: visible; clip-path: none; }
+  .nav__cta .boton { padding: 0.6rem 1.25rem; font-size: 0.9375rem; }
+}
