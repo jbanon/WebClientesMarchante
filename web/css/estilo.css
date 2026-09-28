@@ -744,3 +744,8 @@ body { padding-bottom: calc(3.25rem + env(safe-area-inset-bottom)); }
   .cabecera__area span { position: static; width: auto; height: auto; overflow: visible; clip-path: none; }
   .nav__cta .boton { padding: 0.6rem 1.25rem; font-size: 0.9375rem; }
 }
+
+/* Entrada de menú con subtítulo («Profesionales / Guías técnicas»): un solo enlace, dos líneas */
+.nav__lista > li > a small { display: block; margin-top: 0.1rem; font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gris-medio); line-height: 1.2; }
+.nav__lista > li > a:hover small, .nav__lista > li > a[aria-current] small { color: var(--rojo-ui); }
+@media (max-width: 67.99em) { .nav__lista > li > a small { margin-top: 0.15rem; } }

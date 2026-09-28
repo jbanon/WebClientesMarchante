@@ -157,7 +157,7 @@ Notas:
    Las fotos de ambiente de A84, A84 HO y C70 quedan sin uso (reserva).
 5. **Menú reorganizado (28/09/2026, a petición del responsable):** «Sistemas PVC Cortizo»
    (`/ventanas/`, sin cambiar URL) · «Acabados» (PVC blanco, PVC foliado, Paneles y
-   accesorios) · «Guías técnicas» (`/profesionales/`, con anclas y Documentación técnica) ·
+   accesorios) · «Profesionales» con el subtítulo «Guías técnicas» en la misma entrada (`/profesionales/`, con anclas y Documentación técnica) ·
    «Contenido de interés» (página nueva `/contenido-de-interes/`: `/lo-sabias/` nueva,
    «El rincón del distribuidor» = `/distribuidores/`, Vidrios = `/acabados/vidrios/` y los
    vídeos de los sistemas) · Empresa · Contacto. Ninguna URL cambia. `/lo-sabias/` son
