@@ -158,9 +158,11 @@ Notas:
 5. **Menú reorganizado (28/09/2026, a petición del responsable):** «Sistemas PVC Cortizo»
    (`/ventanas/`, sin cambiar URL) · «Acabados» (PVC blanco, PVC foliado, Paneles y
    accesorios) · «Profesionales» con el subtítulo «Guías técnicas» en la misma entrada (`/profesionales/`, con anclas y Documentación técnica) ·
-   «Contenido de interés» (página nueva `/contenido-de-interes/`: `/lo-sabias/` nueva,
-   «El rincón del distribuidor» = `/distribuidores/`, Vidrios = `/acabados/vidrios/` y los
-   vídeos de los sistemas) · Empresa · Contacto. Ninguna URL cambia. `/lo-sabias/` son
+   «Contenido de interés» con el subtítulo «¿Lo sabías?»: UNA sola página
+   (`/contenido-de-interes/`) que reúne la guía de vidrios completa (antes
+   `/acabados/vidrios/`, que ahora salta a ella y está en las redirecciones), las ocho
+   curiosidades (`#lo-sabias`) y los vídeos de los sistemas (`#videos`). «Distribuidores»
+   sale del menú; la página sigue en el pie y desde Guías técnicas. Las curiosidades son
    ocho curiosidades redactadas solo con datos ya publicados (folleto de calidad, fichas y
    guías); el cliente debe validarlas. `/paneles-y-accesorios/` tiene ahora un texto sobre
    la puerta de entrada (datos del catálogo de Indupanel: núcleos Thermipanel/Thermiplus/

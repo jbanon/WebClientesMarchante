@@ -11,8 +11,8 @@ RedirectMatch 301 ^/services/sistema-c70-corredera/?$ /ventanas/c70-corredera/
 RedirectMatch 301 ^/services/sistema-e170-elevadora/?$ /ventanas/e170-elevadora/
 RedirectMatch 301 ^/services/pvc-blanco/?$ /acabados/pvc-blanco/
 RedirectMatch 301 ^/services/pvc-foliado/?$ /acabados/pvc-foliado/
-RedirectMatch 301 ^/services/tipo-de-vidrios/?$ /acabados/vidrios/
-RedirectMatch 301 ^/services/v-vis-v-vinilos-y-vidrios/?$ /acabados/vidrios/
+RedirectMatch 301 ^/services/tipo-de-vidrios/?$ /contenido-de-interes/#vidrios
+RedirectMatch 301 ^/services/v-vis-v-vinilos-y-vidrios/?$ /contenido-de-interes/#vidrios
 RedirectMatch 301 ^/services/requisitos-y-tecnicas-de-instalacion/?$ /profesionales/
 RedirectMatch 301 ^/services/mantenimiento-de-ventanas/?$ /profesionales/
 RedirectMatch 301 ^/services/almacenaje-y-transporte/?$ /profesionales/
@@ -50,3 +50,5 @@ RedirectMatch 301 ^/(wp-admin|wp-login\.php|wp-content|wp-includes|feed|comments
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
 </IfModule>
+RedirectMatch 301 ^/acabados/vidrios/?$ /contenido-de-interes/#vidrios
+RedirectMatch 301 ^/lo-sabias/?$ /contenido-de-interes/#lo-sabias

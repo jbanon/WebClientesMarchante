@@ -21,8 +21,8 @@ esta tabla, que es la referencia. Las URLs antiguas funcionan con y sin barra fi
 | `/services/sistema-e170-elevadora/` | `/ventanas/e170-elevadora/` | |
 | `/services/pvc-blanco/` | `/acabados/pvc-blanco/` | |
 | `/services/pvc-foliado/` | `/acabados/pvc-foliado/` | |
-| `/services/tipo-de-vidrios/` | `/acabados/vidrios/` | Fusionada |
-| `/services/v-vis-v-vinilos-y-vidrios/` | `/acabados/vidrios/` | Fusionada (sección `#vinilos`) |
+| `/services/tipo-de-vidrios/` | `/contenido-de-interes/#vidrios` | Fusionada en «Contenido de interés» (antes `/acabados/vidrios/`, que ahora salta a la nueva) |
+| `/services/v-vis-v-vinilos-y-vidrios/` | `/contenido-de-interes/#vinilos` | Fusionada (sección `#vinilos`) |
 | `/services/requisitos-y-tecnicas-de-instalacion/` | `/profesionales/` | Sección `#instalacion` |
 | `/services/mantenimiento-de-ventanas/` | `/profesionales/` | Sección `#mantenimiento` |
 | `/services/almacenaje-y-transporte/` | `/profesionales/` | Sección `#transporte` |
