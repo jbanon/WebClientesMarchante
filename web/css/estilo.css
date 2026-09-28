@@ -337,14 +337,6 @@ body.menu-abierto { overflow: hidden; }
 .opinion figcaption { font-size: 0.9375rem; }
 .opinion figcaption span { color: var(--gris-medio); }
 
-/* ---------- Marcas colaboradoras ---------- */
-.marcas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--linea); border: 1px solid var(--linea); }
-.marcas li { display: grid; place-items: center; min-height: 7.5rem; padding: 1.5rem; background: var(--papel); }
-.marcas img { max-height: 3.25rem; width: auto; max-width: 9.5rem; object-fit: contain; filter: grayscale(1); opacity: 0.75; transition: filter 0.3s, opacity 0.3s; }
-.marcas li:hover img { filter: none; opacity: 1; }
-.marcas li:first-child { grid-column: span 2; }
-@media (min-width: 60em) { .marcas { grid-template-columns: repeat(5, 1fr); } .marcas li:first-child { grid-column: auto; } }
-
 /* ---------- Banda de contacto ---------- */
 .llamada { display: grid; gap: 2.5rem; }
 .llamada h2 { max-width: 12em; }

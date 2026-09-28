@@ -75,9 +75,9 @@ nosotros. Revisadlas y, si tenéis más ideas o textos, se añaden.
 **1.9. Marcas con las que trabajáis (bloque rediseñado el 28/09/2026).**
 Ahora cada marca lleva una línea con lo que aporta a la ventana: Cortizo (perfiles),
 Climalit (vidrio aislante de Saint-Gobain), Guardian Sun (vidrio de control solar),
-Procomsa · GU (herrajes) e Indupanel (paneles de puerta). Falta STAC: cuando tengamos el
-logotipo en buena calidad lo añadimos. ¿Qué os suministra STAC (manillas, accesorios…)?
-Y confirmad que las cinco descripciones son correctas.
+Procomsa · GU (herrajes), STAC (herraje, accesorios y juntas de estanqueidad, según su
+web) e Indupanel (paneles de puerta). Los logotipos de Cortizo, Procomsa, STAC e Indupanel
+son ahora los oficiales de sus webs. Confirmad que las seis descripciones son correctas.
 
 ## 2. Textos legales
 

@@ -27,6 +27,10 @@ FOTOS = {  # destino: origen  → anchos 640/1024/1600
     "obras/casa-piedra-balconera": "imagenes/obras/casa-piedra-balconera-oscura-terraza.jpg",
     "obras/limpieza-ventana": "imagenes/obras/limpieza-ventana-padre-hijo-perro.webp",
     "obras/camion-ventanas": "imagenes/obras/camion-ventanas-embaladas-nave.webp",
+    "fabrica/ventana-nogal-embalada": "imagenes/fabrica/ventana-nogal-embalada-nave.jpg",
+    "fabrica/carros-perfiles": "imagenes/fabrica/nave-carros-perfiles-marca.jpg",
+    "fabrica/palet-ventanas": "imagenes/fabrica/palet-ventanas-blancas-carretilla.jpg",
+    "fabrica/carretilla-salida": "imagenes/fabrica/carretilla-ventanas-salida-nave.jpg",
     # Portadas de los vídeos de sistema (fotograma de YouTube, 1280 px): se sirven en local
     "video/a84-abisagrada": "imagenes/video/portada-video-a84-abisagrada.jpg",
     "video/a84-ho": "imagenes/video/portada-video-a84-ho.jpg",
@@ -40,7 +44,7 @@ LOGOS = {
     "marca/partners/climalit": "marca/partners/Logo-climalit.png",
     "marca/partners/guardian-sun": "marca/partners/Guardian_Sun_Logo-1.png",
     "marca/partners/procomsa-gu": "marca/partners/LOGO-PROCOMSA-GU-COLOR.png",
-    "marca/partners/indupanel": "marca/partners/indupanel-logo-1.png",
+    "marca/partners/indupanel": "marca/partners/logo-indupanel-web.png",
 }
 
 

@@ -46,9 +46,18 @@ Notas sobre las fotos de obra:
 
 ## fabrica/
 
-Vacía. **No hay ninguna foto de la fábrica, maquinaria, equipo ni instalaciones.**
-Para transmitir "fabricante serio" en `/empresa/` y portada harían falta. Anotado en
-PREGUNTAS.md; mientras tanto se pondrán marcadores visibles.
+Recibidas el 28/09/2026 (cuatro fotos verticales 1086×1448, una llegó repetida):
+
+| Archivo | Qué muestra | Uso |
+|---|---|---|
+| `ventana-nogal-embalada-nave.jpg` | Ventana foliada en nogal embalada sobre la mesa giratoria, con la nave detrás | Portada, bloque «La empresa» |
+| `nave-carros-perfiles-marca.jpg` | Carros con perfiles y ventanas en fabricación; lleva marca de agua de Marchante | `/empresa/`, «Áreas de negocio» |
+| `palet-ventanas-blancas-carretilla.jpg` | Palé con ventanas blancas embaladas y carretilla | `/distribuidores/` |
+| `carretilla-ventanas-salida-nave.jpg` | Carretilla sacando ventanas por la puerta de la nave | Reserva |
+
+Además, la foto de la nave con el logo (`web/img/empresa/fabrica-nave-*`, 23/09/2026) en
+«Nuestra historia» y el camión cargado (`obras/camion-ventanas-embaladas-nave.webp`) en
+Guías técnicas.
 
 ## otras/
 
