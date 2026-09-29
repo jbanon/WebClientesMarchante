@@ -29,17 +29,22 @@ var cookiesMarchante = (function () {
   var banner = document.getElementById('cookies');
   function estado() { try { return localStorage.getItem(CLAVE); } catch (e) { return null; } }
   function guardar(v) { try { localStorage.setItem(CLAVE, v); } catch (e) {} }
+  var ESPERA_VIDEO = 10000, inicio = Date.now();
   function fondos() {
     Array.prototype.forEach.call(document.querySelectorAll('[data-video-fondo]'), function (f) {
-      if (f.querySelector('iframe') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      var id = f.getAttribute('data-video-fondo');
-      var i = document.createElement('iframe');
-      i.className = 'heroe__video';
-      i.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&mute=1&loop=1&playlist=' + id + '&controls=0&playsinline=1&rel=0&disablekb=1&iv_load_policy=3';
-      i.title = 'Vídeo de presentación de Marchante PVC';
-      i.allow = 'autoplay; encrypted-media';
-      i.tabIndex = -1;
-      f.appendChild(i);
+      if (f.querySelector('iframe') || f.dataset.programado || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      f.dataset.programado = '1';
+      setTimeout(function () {
+        var id = f.getAttribute('data-video-fondo');
+        var i = document.createElement('iframe');
+        i.className = 'heroe__video';
+        i.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&mute=1&loop=1&playlist=' + id + '&controls=0&playsinline=1&rel=0&disablekb=1&iv_load_policy=3';
+        i.title = 'Vídeo de presentación de Marchante PVC';
+        i.allow = 'autoplay; encrypted-media';
+        i.tabIndex = -1;
+        i.addEventListener('load', function () { setTimeout(function () { i.classList.add('heroe__video--visible'); }, 1500); });
+        f.appendChild(i);
+      }, Math.max(0, ESPERA_VIDEO - (Date.now() - inicio)));
     });
   }
   function mostrar() { if (banner) { banner.hidden = false; banner.querySelector('[data-acepta]').focus(); } }

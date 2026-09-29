@@ -181,7 +181,7 @@ body.menu-abierto { overflow: hidden; }
   .menu-boton { display: none; }
   .cabecera__logo img { height: 3.25rem; }
   .nav { display: flex !important; position: static; inset: auto; overflow: visible; padding: 0; background: none; align-items: center; gap: 2.25rem; }
-  .nav__lista { display: flex; align-items: center; gap: clamp(1.1rem, 2vw, 2rem); }
+  .nav__lista { display: flex; align-items: baseline; gap: clamp(1.1rem, 2vw, 2rem); }
   .nav__lista > li { position: relative; border: 0; }
   .nav__lista > li > a { padding: 0.5rem 0; font: 500 0.9375rem/1.2 var(--sans); letter-spacing: 0.005em; position: relative; }
   .nav__lista > li > a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 0.1rem; height: 1px; background: var(--rojo); transition: right 0.25s; }
@@ -204,7 +204,10 @@ body.menu-abierto { overflow: hidden; }
 .heroe { --alto: clamp(30rem, calc(100vh - var(--cabecera)), 54rem); --alto: clamp(30rem, calc(100svh - var(--cabecera)), 54rem); position: relative; overflow: hidden; display: grid; align-items: center; min-height: var(--alto); background: var(--papel-2); }
 .heroe__fondo { position: absolute; inset: 0; }
 .heroe__fondo img { width: 100%; height: 100%; object-fit: cover; }
-.heroe__video { position: absolute; top: 50%; left: 50%; width: max(100%, calc(var(--alto) * 16 / 9)); height: max(var(--alto), 56.25vw); border: 0; transform: translate(-50%, -46%) scale(1.25); pointer-events: none; }
+.heroe__fondo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.55) 45%, rgba(255,255,255,0) 75%); }
+@media (min-width: 48em) { .heroe__fondo::after { background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.55) 35%, rgba(255,255,255,0) 62%); } }
+.heroe__video { position: absolute; top: 50%; left: 50%; width: max(100%, calc(var(--alto) * 16 / 9)); height: max(var(--alto), 56.25vw); border: 0; transform: translate(-50%, -46%) scale(1.25); pointer-events: none; opacity: 0; transition: opacity 1.5s ease; }
+.heroe__video--visible { opacity: 1; }
 .heroe__capa { position: relative; display: grid; gap: 1.25rem; padding-block: clamp(3rem, 8vw, 6rem) clamp(4rem, 9vw, 7rem); }
 .heroe h1 { max-width: 11em; color: var(--rojo); }
 .heroe__sub { margin: 0; max-width: 34em; font-size: clamp(1rem, 1.4vw, 1.125rem); line-height: 1.5; color: var(--rojo-ui); }
@@ -311,10 +314,14 @@ body.menu-abierto { overflow: hidden; }
 .publico h3 { margin-bottom: 1rem; }
 .publico p { max-width: 30em; }
 .publico .enlace { margin-top: 0.75rem; }
+.publico--unico { border-block: 1px solid var(--linea); }
 @media (min-width: 60em) {
   .publicos { grid-template-columns: 1fr 1fr; }
   .publico { padding: 3.5rem 4rem 3.5rem 0; }
   .publico + .publico { padding-left: 4rem; padding-right: 0; }
+  .publico--unico { display: grid; grid-template-columns: 1fr 2fr; column-gap: 4rem; align-items: start; padding-right: 0; }
+  .publico--unico h3 { margin-bottom: 0; }
+  .publico--unico p { max-width: 36em; }
 }
 
 /* ---------- Lista de ventajas numeradas ---------- */
@@ -739,9 +746,9 @@ body { padding-bottom: calc(3.25rem + env(safe-area-inset-bottom)); }
 }
 
 /* Entrada de menú con subtítulo («Profesionales / Guías técnicas»): un solo enlace, dos líneas */
-.nav__lista > li > a small { display: block; margin-top: 0.1rem; font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gris-medio); line-height: 1.2; }
+.nav__lista > li > a small { display: block; margin-top: 0.15rem; font-size: 0.75rem; font-weight: 400; letter-spacing: 0.01em; color: var(--gris-medio); line-height: 1.2; }
 .nav__lista > li > a:hover small, .nav__lista > li > a[aria-current] small { color: var(--rojo-ui); }
-@media (max-width: 67.99em) { .nav__lista > li > a small { margin-top: 0.15rem; } }
+@media (max-width: 67.99em) { .nav__lista > li > a small { margin-top: 0.3rem; font-family: var(--sans); font-size: 0.875rem; } }
 
 /* Redes sociales con icono */
 .red { display: inline-flex; align-items: center; gap: 0.5rem; }
@@ -768,18 +775,10 @@ body { padding-bottom: calc(3.25rem + env(safe-area-inset-bottom)); }
 .video__aviso a { color: #fff; }
 
 /* ---------- Marcas con las que trabajamos: tarjetas con logo y papel de cada una ---------- */
-.aliados { list-style: none; margin: 0; padding: 1px 0 0 1px; display: grid; }
-.aliado { display: grid; grid-template-columns: 6.5rem 1fr; column-gap: 1.25rem; align-items: start; margin: -1px 0 0 -1px; padding: 1.5rem 1.25rem; background: var(--papel); border: 1px solid var(--linea); }
-.aliado__logo { grid-row: 1 / span 3; display: grid; place-items: center; min-height: 4.5rem; padding: 0.5rem; background: var(--papel-2); }
-.aliado__logo img { max-width: 100%; max-height: 3.25rem; width: auto; height: auto; object-fit: contain; filter: grayscale(1); opacity: 0.8; transition: filter 0.3s, opacity 0.3s; }
-.aliado:hover .aliado__logo img { filter: none; opacity: 1; }
-.aliado__tipo { margin: 0 0 0.25rem; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gris-medio); }
-.aliado h3 { margin-bottom: 0.4rem; font-family: var(--serif); font-size: 1.5rem; line-height: 1.1; }
-.aliado p:last-child { margin: 0; font-size: 0.9375rem; line-height: 1.5; color: var(--texto); }
-@media (min-width: 48em) { .aliados { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 68em) {
-  .aliados { grid-template-columns: repeat(3, 1fr); }
-  .aliado { grid-template-columns: 1fr; row-gap: 0.25rem; padding: 1.75rem 1.75rem 2rem; }
-  .aliado__logo { grid-row: auto; margin-bottom: 1.25rem; min-height: 6rem; }
-  .aliado__logo img { max-height: 3.75rem; max-width: 11rem; }
-}
+.marcas { list-style: none; margin: 0; padding: 1px 0 0 1px; display: grid; grid-template-columns: repeat(2, 1fr); }
+.marca { display: grid; align-content: center; justify-items: center; gap: 0.8rem; margin: -1px 0 0 -1px; min-height: 8.5rem; padding: 1.5rem 1rem; background: var(--papel); border: 1px solid var(--linea); text-align: center; }
+.marca img { max-height: 2.75rem; max-width: 8.25rem; width: auto; height: auto; object-fit: contain; filter: grayscale(1); opacity: 0.75; transition: filter 0.3s, opacity 0.3s; }
+.marca:hover img { filter: none; opacity: 1; }
+.marca span { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.3; color: var(--gris-medio); }
+@media (min-width: 40em) { .marcas { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 64em) { .marcas { grid-template-columns: repeat(6, 1fr); } .marca { min-height: 9.5rem; } .marca img { max-height: 3rem; max-width: 9rem; } }

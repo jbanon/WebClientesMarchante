@@ -31,6 +31,9 @@ FOTOS = {  # destino: origen  → anchos 640/1024/1600
     "fabrica/carros-perfiles": "imagenes/fabrica/nave-carros-perfiles-marca.jpg",
     "fabrica/palet-ventanas": "imagenes/fabrica/palet-ventanas-blancas-carretilla.jpg",
     "fabrica/carretilla-salida": "imagenes/fabrica/carretilla-ventanas-salida-nave.jpg",
+    "productos/fachada-marchante": "imagenes/productos/fachada-marchante-atardecer.jpeg",
+    "productos/vidrio-fijo-hormigon": "imagenes/productos/vidrio-fijo-hormigon-logo.jpeg",
+    "productos/puerta-entrada-panel": "imagenes/productos/puerta-entrada-panel-hormigon.jpeg",
     # Portadas de los vídeos de sistema (fotograma de YouTube, 1280 px): se sirven en local
     "video/a84-abisagrada": "imagenes/video/portada-video-a84-abisagrada.jpg",
     "video/a84-ho": "imagenes/video/portada-video-a84-ho.jpg",
