@@ -750,9 +750,9 @@ body { padding-bottom: calc(3.25rem + env(safe-area-inset-bottom)); }
 }
 
 /* Entrada de menú con subtítulo («Profesionales / Guías técnicas»): un solo enlace, dos líneas */
-.nav__lista > li > a small { display: block; margin-top: 0.15rem; font-size: 0.75rem; font-weight: 400; letter-spacing: 0.01em; color: var(--gris-medio); line-height: 1.2; }
+.nav__lista > li > a small { display: block; margin-top: 0.15rem; text-align: center; font-size: 0.75rem; font-weight: 400; letter-spacing: 0.01em; color: var(--gris-medio); line-height: 1.2; }
 .nav__lista > li > a:hover small, .nav__lista > li > a[aria-current] small { color: var(--rojo-ui); }
-@media (max-width: 67.99em) { .nav__lista > li > a small { margin-top: 0.3rem; font-family: var(--sans); font-size: 0.875rem; } }
+@media (max-width: 67.99em) { .nav__lista > li > a small { margin-top: 0.3rem; text-align: left; font-family: var(--sans); font-size: 0.875rem; } }
 
 /* Redes sociales con icono */
 .red { display: inline-flex; align-items: center; gap: 0.5rem; }
