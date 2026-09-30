@@ -205,10 +205,11 @@ body.menu-abierto { overflow: hidden; }
 .heroe__fondo { position: absolute; inset: 0; }
 .heroe__fondo img { width: 100%; height: 100%; object-fit: cover; }
 .heroe__fondo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.55) 45%, rgba(255,255,255,0) 75%); }
-@media (min-width: 48em) { .heroe__fondo::after { background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.55) 35%, rgba(255,255,255,0) 62%); } }
+@media (min-width: 48em) { .heroe__fondo::after { background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.45) 35%, rgba(255,255,255,0) 62%); } }
 .heroe__video { position: absolute; top: 50%; left: 50%; width: max(100%, calc(var(--alto) * 16 / 9)); height: max(var(--alto), 56.25vw); border: 0; transform: translate(-50%, -46%) scale(1.25); pointer-events: none; opacity: 0; transition: opacity 1.5s ease; }
 .heroe__video--visible { opacity: 1; }
-.heroe__capa { position: relative; display: grid; gap: 1.25rem; padding-block: clamp(3rem, 8vw, 6rem) clamp(4rem, 9vw, 7rem); }
+.heroe__capa { position: relative; align-self: end; display: grid; gap: 1.25rem; padding-block: clamp(3rem, 8vw, 6rem) clamp(4rem, 9vw, 7rem); }
+@media (min-width: 48em) { .heroe__capa { padding-bottom: clamp(5rem, 11vw, 8rem); } }
 .heroe h1 { max-width: 11em; color: var(--rojo); }
 .heroe__sub { margin: 0; max-width: 34em; font-size: clamp(1rem, 1.4vw, 1.125rem); line-height: 1.5; color: var(--rojo-ui); }
 .heroe .botones { margin-top: 1rem; }
@@ -232,6 +233,8 @@ body.menu-abierto { overflow: hidden; }
 .migas a { text-decoration: none; }
 .migas a:hover { color: var(--rojo-ui); }
 .foto-ancha img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.figura { margin: 0 0 2.5rem; }
+.figura img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 @media (min-width: 48em) { .foto-ancha img { aspect-ratio: 21 / 9; } }
 
 /* ---------- Vídeo del sistema (YouTube, se carga al pulsar) ---------- */
@@ -494,6 +497,7 @@ figure { margin: 0; }
 .prosa > :first-child { margin-top: 0; }
 .prosa li { margin-bottom: 0.5em; }
 .prosa a { color: var(--rojo-ui); overflow-wrap: anywhere; }
+.prosa li > a:only-child, .prosa li > a:first-child { display: inline-flex; align-items: center; min-height: 2.75rem; }
 .prosa table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; margin-bottom: 1.5rem; }
 .prosa th, .prosa td { padding: 0.75rem 0.75rem 0.75rem 0; border-bottom: 1px solid var(--linea); text-align: left; vertical-align: top; }
 .prosa th { color: var(--tinta); font-weight: 600; border-bottom-color: var(--tinta); }

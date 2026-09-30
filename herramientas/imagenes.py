@@ -34,6 +34,10 @@ FOTOS = {  # destino: origen  → anchos 640/1024/1600
     "productos/fachada-marchante": "imagenes/productos/fachada-marchante-atardecer.jpeg",
     "productos/vidrio-fijo-hormigon": "imagenes/productos/vidrio-fijo-hormigon-logo.jpeg",
     "productos/puerta-entrada-panel": "imagenes/productos/puerta-entrada-panel-hormigon.jpeg",
+    "productos/terraza-piscina": "imagenes/productos/terraza-piscina-atardecer.jpeg",
+    "productos/muestrario-acabados": "imagenes/productos/muestrario-acabados.jpeg",
+    "productos/profesional-planos": "imagenes/productos/profesional-planos-perfiles.jpeg",
+    "productos/tablet-contenido": "imagenes/productos/tablet-contenido.jpeg",
     # Portadas de los vídeos de sistema (fotograma de YouTube, 1280 px): se sirven en local
     "video/a84-abisagrada": "imagenes/video/portada-video-a84-abisagrada.jpg",
     "video/a84-ho": "imagenes/video/portada-video-a84-ho.jpg",
