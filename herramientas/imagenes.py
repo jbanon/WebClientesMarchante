@@ -42,6 +42,7 @@ FOTOS = {  # destino: origen  → anchos 640/1024/1600
     "video/a84-abisagrada": "imagenes/video/portada-video-a84-abisagrada.jpg",
     "video/a84-ho": "imagenes/video/portada-video-a84-ho.jpg",
     "video/c70-corredera": "imagenes/video/portada-video-c70-corredera.jpg",
+    "video/e170-elevadora": "imagenes/video/portada-video-e170-elevadora.jpg",
 }
 PERFILES = ["a70-abisagrada", "a84-abisagrada", "a84-ho-abisagrada", "c70-corredera", "e170-elevadora"]
 LOGOS = {

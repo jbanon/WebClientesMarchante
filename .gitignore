@@ -4,3 +4,4 @@ Thumbs.db
 .venv/
 referencia/capturas/*.png
 __pycache__/
+*.mp4
