@@ -118,11 +118,6 @@ En los textos legales figura `administracion@marchantepvc.com` y en el resto de 
 → ¿Podéis pasarlos a vuestra asesoría para que los valide? Son redacciones nuestras
 ajustadas a lo que hace la web, no textos jurídicos revisados.
 
-**2.6. Datos del Registro Mercantil (30/09/2026).**
-El consultor jurídico pide incluir la inscripción registral (art. 10 LSSI). Necesitamos
-tomo, folio y hoja de MARCHANTE SISTEMAS DE VENTANAS, S.L. en el Registro Mercantil de
-Albacete. Mientras tanto, en Política de privacidad y Aviso legal figura «[PENDIENTE]».
-
 ## 3. Fotos y materiales
 
 **3.1. Fotos de la fábrica y del equipo. (Lo que más mejoraría la web)**
