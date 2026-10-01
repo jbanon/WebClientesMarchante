@@ -640,6 +640,7 @@ body.menu-abierto .whatsapp { display: none; }
 .cabecera__area { display: inline-flex; align-items: center; gap: 0.45rem; min-height: 2.75rem; margin-left: auto; padding: 0 0.25rem; font-size: 0.9063rem; font-weight: 500; color: var(--tinta); text-decoration: none; white-space: nowrap; }
 .cabecera__area:hover { color: var(--rojo-ui); }
 .cabecera__area svg { flex: none; }
+.cabecera__area small { margin-left: 0.3rem; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gris-medio); }
 .cabecera__barra { gap: 0.5rem; }
 @media (max-width: 22.4em) { .cabecera__logo img { height: 2.5rem; } .cabecera__area { font-size: 0.8438rem; } }
 @media (min-width: 68em) {
@@ -660,6 +661,8 @@ body.menu-abierto .whatsapp { display: none; }
   .nav__sub a { display: flex; align-items: center; min-height: 2.75rem; padding: 0.25rem 0; line-height: 1.25; }
   .nav__cta { position: sticky; bottom: 0; margin: 0 calc(var(--margen) * -1); padding: 0.85rem var(--margen) calc(0.85rem + env(safe-area-inset-bottom)); grid-template-columns: 1fr 1fr; gap: 0.6rem; background: var(--papel); border-top: 1px solid var(--linea); }
   .nav__cta .boton { min-height: 3rem; padding-inline: 0.75rem; font-size: 0.9688rem; }
+  .nav__cta .nav__area { flex-direction: column; gap: 0.1rem; }
+  .nav__area small { font-size: 0.75rem; font-weight: 400; letter-spacing: 0.03em; opacity: 0.75; }
   .nav__tel { grid-column: 1 / -1; order: 3; min-height: 2.75rem; display: flex; align-items: center; justify-content: center; padding: 0; }
   body.menu-abierto .barra-contacto { display: none; }
 }
