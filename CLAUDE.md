@@ -6,7 +6,6 @@ Marchante PVC es un fabricante de ventanas de PVC. Hay que rediseñar su web
 Se mantiene el contenido; el objetivo es un aspecto mucho más elegante y profesional.
 
 Público:
-- Particulares que reforman su vivienda
 - Profesionales: constructoras, arquitectos, instaladores y distribuidores
 
 Objetivo principal de la web: que el visitante pida presupuesto o contacte.
